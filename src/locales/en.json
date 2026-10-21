@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Ehsan Nouri – Mechatronics & Instrumentation Engineer",
+    "description": "Portfolio of Ehsan Nouri: mechatronic systems design, embedded hardware, software projects, education, work experience and certificates."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hello": "Hello, I am",
+    "name": "Ehsan Nouri",
+    "role": "Mechatronics & Instrumentation Engineer",
+    "tagline": "Designing mechatronic systems from idea to product: mechanics, electronics, firmware and software in one line of thought.",
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I am a mechatronics engineer based in Bavaria, Germany, with more than ten years of experience in the design of mechatronic systems. I hold two master's degrees, in mechatronics and in instrumentation.",
+    "p2": "I have worked in regulated engineering environments, where traceability, documentation and quality matter as much as the technical solution. Outside of work I build my own hardware and software projects, from embedded sensors to Android apps and VR simulations.",
+    "stats": [
+      { "value": "10+", "label": "Years in mechatronic systems design" },
+      { "value": "2", "label": "Master's degrees" },
+      { "value": "DE", "label": "Based in Bavaria, Germany" }
+    ]
+  },
+  "experience": {
+    "title": "Work experience",
+    "items": [
+      {
+        "role": "Senior Mechatronics Engineer",
+        "org": "Company name (edit me)",
+        "period": "20XX – Present",
+        "desc": "Design and integration of mechatronic systems in a regulated environment. Replace this text with your real responsibilities and achievements.",
+        "tags": ["Systems design", "Documentation", "Quality"]
+      },
+      {
+        "role": "Mechatronics Engineer",
+        "org": "Company name (edit me)",
+        "period": "20XX – 20XX",
+        "desc": "Development of sensors, actuators and control for industrial products. Replace this text with your real work history.",
+        "tags": ["Sensors", "Control", "Prototyping"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "role": "M.Sc. Instrumentation",
+        "org": "University name (edit me)",
+        "period": "20XX – 20XX",
+        "desc": "Measurement systems, sensors and signal processing.",
+        "tags": []
+      },
+      {
+        "role": "M.Sc. Mechatronics",
+        "org": "University name (edit me)",
+        "period": "20XX – 20XX",
+        "desc": "Integration of mechanics, electronics and software; control engineering.",
+        "tags": []
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Selected personal projects: hardware, firmware and software.",
+    "items": [
+      {
+        "title": "Smart Exercise Motion Tracker",
+        "desc": "A wearable device that tracks exercise motion and turns it into performance analytics. ESP32-C3 and an MPU6050 motion sensor, paired with an Android app.",
+        "tags": ["ESP32-C3", "MPU6050", "Android", "Embedded"],
+        "link": ""
+      },
+      {
+        "title": "VR Scooter Simulator",
+        "desc": "A virtual-reality scooter simulator built in Unity, with a Python launcher and a dedicated controller layer for riding physics.",
+        "tags": ["Unity", "C#", "Python", "VR"],
+        "link": ""
+      },
+      {
+        "title": "PDF Tablet Annotator",
+        "desc": "An Android app for annotating PDFs with a stylus on a tablet, written in Kotlin with Jetpack Compose.",
+        "tags": ["Kotlin", "Jetpack Compose", "Android"],
+        "link": ""
+      },
+      {
+        "title": "Handwriting to CNC",
+        "desc": "My own handwriting digitised into vector glyphs and a font, then reproduced by a CNC pen plotter through generated G-code.",
+        "tags": ["G-code", "CNC", "Vector graphics", "Python"],
+        "link": ""
+      }
+    ],
+    "viewCode": "View code"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "subtitle": "Courses, trainings and professional certifications.",
+    "items": [
+      { "title": "Certificate name (edit me)", "issuer": "Issuing organisation", "year": "20XX", "link": "" },
+      { "title": "Certificate name (edit me)", "issuer": "Issuing organisation", "year": "20XX", "link": "" },
+      { "title": "Certificate name (edit me)", "issuer": "Issuing organisation", "year": "20XX", "link": "" }
+    ],
+    "view": "View credential"
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      { "name": "Mechatronics & systems", "items": ["System architecture", "Sensors & actuators", "Control engineering", "Regulated development processes"] },
+      { "name": "Embedded & electronics", "items": ["ESP32", "MPU6050 / IMU", "PCB & prototyping", "3D printing"] },
+      { "name": "Software", "items": ["Python", "Kotlin / Jetpack Compose", "C# / Unity", "C / C++"] },
+      { "name": "Languages", "items": ["Persian", "English"] }
+    ]
+  },
+  "contact": {
+    "title": "Let's talk",
+    "text": "Interested in working together or just want to say hello? Write me a message.",
+    "email": "Send an e-mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "legal": "Legal notice & privacy: coming soon"
+  },
+  "lang": { "label": "Language" }
+}

@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Ehsan Nouri – Ingenieur für Mechatronik & Messtechnik",
+    "description": "Portfolio von Ehsan Nouri: Entwicklung mechatronischer Systeme, Embedded-Hardware, Softwareprojekte, Ausbildung, Berufserfahrung und Zertifikate."
+  },
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "experience": "Berufserfahrung",
+    "education": "Ausbildung",
+    "projects": "Projekte",
+    "certificates": "Zertifikate",
+    "skills": "Kompetenzen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "hello": "Hallo, ich bin",
+    "name": "Ehsan Nouri",
+    "role": "Ingenieur für Mechatronik & Messtechnik",
+    "tagline": "Ich entwickle mechatronische Systeme von der Idee bis zum Produkt: Mechanik, Elektronik, Firmware und Software aus einem Guss.",
+    "ctaProjects": "Projekte ansehen",
+    "ctaContact": "Kontakt aufnehmen",
+    "scroll": "Scrollen"
+  },
+  "about": {
+    "title": "Über mich",
+    "p1": "Ich bin Mechatronik-Ingenieur mit Sitz in Bayern und habe mehr als zehn Jahre Erfahrung in der Entwicklung mechatronischer Systeme. Ich besitze zwei Masterabschlüsse, in Mechatronik und in Messtechnik (Instrumentation).",
+    "p2": "Ich habe in regulierten Entwicklungsumgebungen gearbeitet, in denen Nachvollziehbarkeit, Dokumentation und Qualität genauso wichtig sind wie die technische Lösung. Privat baue ich eigene Hardware- und Softwareprojekte, von Embedded-Sensoren über Android-Apps bis zu VR-Simulationen.",
+    "stats": [
+      { "value": "10+", "label": "Jahre in der mechatronischen Systementwicklung" },
+      { "value": "2", "label": "Masterabschlüsse" },
+      { "value": "DE", "label": "Wohnhaft in Bayern, Deutschland" }
+    ]
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "items": [
+      {
+        "role": "Senior Mechatronik-Ingenieur",
+        "org": "Firmenname (bitte anpassen)",
+        "period": "20XX – heute",
+        "desc": "Entwicklung und Integration mechatronischer Systeme in einem regulierten Umfeld. Diesen Text durch deine echten Aufgaben und Erfolge ersetzen.",
+        "tags": ["Systementwicklung", "Dokumentation", "Qualität"]
+      },
+      {
+        "role": "Mechatronik-Ingenieur",
+        "org": "Firmenname (bitte anpassen)",
+        "period": "20XX – 20XX",
+        "desc": "Entwicklung von Sensorik, Aktorik und Regelung für industrielle Produkte. Diesen Text durch deinen echten Werdegang ersetzen.",
+        "tags": ["Sensorik", "Regelung", "Prototyping"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Ausbildung",
+    "items": [
+      {
+        "role": "M.Sc. Messtechnik (Instrumentation)",
+        "org": "Name der Universität (bitte anpassen)",
+        "period": "20XX – 20XX",
+        "desc": "Messsysteme, Sensorik und Signalverarbeitung.",
+        "tags": []
+      },
+      {
+        "role": "M.Sc. Mechatronik",
+        "org": "Name der Universität (bitte anpassen)",
+        "period": "20XX – 20XX",
+        "desc": "Integration von Mechanik, Elektronik und Software; Regelungstechnik.",
+        "tags": []
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Ausgewählte eigene Projekte: Hardware, Firmware und Software.",
+    "items": [
+      {
+        "title": "Smart Exercise Motion Tracker",
+        "desc": "Ein tragbares Gerät, das Trainingsbewegungen erfasst und in Leistungsanalysen umsetzt. ESP32-C3 und MPU6050-Bewegungssensor, gekoppelt mit einer Android-App.",
+        "tags": ["ESP32-C3", "MPU6050", "Android", "Embedded"],
+        "link": ""
+      },
+      {
+        "title": "VR-Scooter-Simulator",
+        "desc": "Ein Virtual-Reality-Rollersimulator in Unity mit Python-Launcher und eigener Controller-Schicht für die Fahrphysik.",
+        "tags": ["Unity", "C#", "Python", "VR"],
+        "link": ""
+      },
+      {
+        "title": "PDF Tablet Annotator",
+        "desc": "Eine Android-App zum Annotieren von PDFs mit Stift auf dem Tablet, entwickelt in Kotlin mit Jetpack Compose.",
+        "tags": ["Kotlin", "Jetpack Compose", "Android"],
+        "link": ""
+      },
+      {
+        "title": "Handschrift zu CNC",
+        "desc": "Meine eigene Handschrift, digitalisiert zu Vektor-Glyphen und einer Schriftart und per generiertem G-Code von einem CNC-Stiftplotter wiedergegeben.",
+        "tags": ["G-Code", "CNC", "Vektorgrafik", "Python"],
+        "link": ""
+      }
+    ],
+    "viewCode": "Code ansehen"
+  },
+  "certificates": {
+    "title": "Zertifikate",
+    "subtitle": "Kurse, Schulungen und berufliche Zertifizierungen.",
+    "items": [
+      { "title": "Zertifikatsname (bitte anpassen)", "issuer": "Ausstellende Organisation", "year": "20XX", "link": "" },
+      { "title": "Zertifikatsname (bitte anpassen)", "issuer": "Ausstellende Organisation", "year": "20XX", "link": "" },
+      { "title": "Zertifikatsname (bitte anpassen)", "issuer": "Ausstellende Organisation", "year": "20XX", "link": "" }
+    ],
+    "view": "Nachweis ansehen"
+  },
+  "skills": {
+    "title": "Kompetenzen",
+    "groups": [
+      { "name": "Mechatronik & Systeme", "items": ["Systemarchitektur", "Sensorik & Aktorik", "Regelungstechnik", "Regulierte Entwicklungsprozesse"] },
+      { "name": "Embedded & Elektronik", "items": ["ESP32", "MPU6050 / IMU", "Platinen & Prototyping", "3D-Druck"] },
+      { "name": "Software", "items": ["Python", "Kotlin / Jetpack Compose", "C# / Unity", "C / C++"] },
+      { "name": "Sprachen", "items": ["Persisch", "Englisch"] }
+    ]
+  },
+  "contact": {
+    "title": "Lass uns sprechen",
+    "text": "Interesse an einer Zusammenarbeit oder einfach Lust, Hallo zu sagen? Schreib mir eine Nachricht.",
+    "email": "E-Mail senden",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "legal": "Impressum & Datenschutz: folgt in Kürze"
+  },
+  "lang": { "label": "Sprache" }
+}
