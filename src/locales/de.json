@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Ehsan Nouri – Ingenieur für Mechatronik & Messtechnik",
-    "description": "Portfolio von Ehsan Nouri: Entwicklung mechatronischer Systeme, Embedded-Hardware, Softwareprojekte, Ausbildung, Berufserfahrung und Zertifikate."
+    "title": "Ehsan Nouri – Ingenieur für Maschinenbau-F&E & Mechatronik",
+    "description": "Portfolio von Ehsan Nouri: Präzisionskonstruktion, experimenteller Prototypenbau, wissenschaftliche Messtechnik, Projekte, Berufserfahrung, Ausbildung und Zertifikate."
   },
   "nav": {
     "home": "Start",
     "about": "Über mich",
-    "experience": "Berufserfahrung",
+    "experience": "Erfahrung",
     "education": "Ausbildung",
     "projects": "Projekte",
     "certificates": "Zertifikate",
@@ -16,38 +16,146 @@
   "hero": {
     "hello": "Hallo, ich bin",
     "name": "Ehsan Nouri",
-    "role": "Ingenieur für Mechatronik & Messtechnik",
-    "tagline": "Ich entwickle mechatronische Systeme von der Idee bis zum Produkt: Mechanik, Elektronik, Firmware und Software aus einem Guss.",
+    "role": "Ingenieur Maschinenbau-F&E · Mechatronik",
+    "tagline": "Präzisionskonstruktion, experimenteller Prototypenbau und wissenschaftliche Messtechnik: von CAD und Simulation bis zum funktionsfähigen Laborprototyp.",
     "ctaProjects": "Projekte ansehen",
     "ctaContact": "Kontakt aufnehmen",
     "scroll": "Scrollen"
   },
   "about": {
     "title": "Über mich",
-    "p1": "Ich bin Mechatronik-Ingenieur mit Sitz in Bayern und habe mehr als zehn Jahre Erfahrung in der Entwicklung mechatronischer Systeme. Ich besitze zwei Masterabschlüsse, in Mechatronik und in Messtechnik (Instrumentation).",
-    "p2": "Ich habe in regulierten Entwicklungsumgebungen gearbeitet, in denen Nachvollziehbarkeit, Dokumentation und Qualität genauso wichtig sind wie die technische Lösung. Privat baue ich eigene Hardware- und Softwareprojekte, von Embedded-Sensoren über Android-Apps bis zu VR-Simulationen.",
+    "p1": "Ich bin Ingenieur in der mechanischen Forschung und Entwicklung mit Schwerpunkt auf Präzisionskonstruktion, experimentellem Prototypenbau und wissenschaftlicher Messtechnik. Ich arbeite mit CAD-basierter Konstruktion, additiver Fertigung, FEA/CFD und praktischer Fertigung – mit starkem Fokus auf Rapid Prototyping, experimentelle Prüfung und iterative Designoptimierung.",
+    "p2": "Ich entwickle und validiere mechanische und elektromechanische Systeme, integriere Sensorik und Hardware und setze technische Konzepte in funktionsfähige Laborprototypen um. Nebenbei baue ich eigene Hardware- und Softwareprojekte, von Embedded-Sensoren über Android-Apps bis zu VR-Simulationen.",
     "stats": [
-      { "value": "10+", "label": "Jahre in der mechatronischen Systementwicklung" },
-      { "value": "2", "label": "Masterabschlüsse" },
-      { "value": "DE", "label": "Wohnhaft in Bayern, Deutschland" }
+      {
+        "value": "10+",
+        "label": "Jahre in Maschinenbau- und Mechatronik-Konstruktion"
+      },
+      {
+        "value": "2",
+        "label": "Master-Studiengänge: Messtechnik und Mechatronik"
+      },
+      {
+        "value": "4",
+        "label": "Sprachen: Persisch, Aserbaidschanisch, Englisch, Deutsch"
+      }
     ]
   },
   "experience": {
     "title": "Berufserfahrung",
     "items": [
       {
-        "role": "Senior Mechatronik-Ingenieur",
-        "org": "Firmenname (bitte anpassen)",
-        "period": "20XX – heute",
-        "desc": "Entwicklung und Integration mechatronischer Systeme in einem regulierten Umfeld. Diesen Text durch deine echten Aufgaben und Erfolge ersetzen.",
-        "tags": ["Systementwicklung", "Dokumentation", "Qualität"]
+        "role": "Studentische Hilfskraft",
+        "org": "Technische Hochschule Deggendorf, Deutschland",
+        "period": "Jul 2026 – Heute",
+        "desc": "",
+        "bullets": [
+          "Mitautorenschaft an wissenschaftlichen Manuskripten durch Entwicklung experimenteller Versuchsaufbauten, Laboruntersuchungen und Erfassung zuverlässiger empirischer Daten.",
+          "Charakterisierung des mechanischen Verhaltens und der strukturellen Leistungsfähigkeit durch iterative experimentelle Prüfungen und Finite-Elemente-Simulationen (FEM)."
+        ],
+        "tags": [
+          "FEM",
+          "Experimentelle Prüfung",
+          "Forschung"
+        ]
+      },
+      {
+        "role": "Konstruktionsingenieur Maschinenbau",
+        "org": "Pouyesh Mechatronics, Iran",
+        "period": "Okt 2024 – Feb 2026",
+        "desc": "",
+        "bullets": [
+          "Konstruktion präziser mechanischer Gehäuse für optische Kreiselsysteme (Gyroskope) mit CATIA unter Integration optischer Komponenten in mechanisch stabile, fertigungsgerechte Strukturen.",
+          "Erstellung fertigungsreifer technischer Zeichnungen nach den Prinzipien der geometrischen Produktspezifikation (GD&T) für Maßgenauigkeit und funktionale Schnittstellen.",
+          "Steuerung externer Fertigungsabläufe (CNC-Bearbeitung und additive Fertigung) und Validierung der gefertigten Bauteile durch Maßmesstechnik und Prüfung."
+        ],
+        "tags": [
+          "CATIA",
+          "GD&T",
+          "CNC",
+          "Additive Fertigung",
+          "Messtechnik"
+        ]
+      },
+      {
+        "role": "Wissenschaftliche Hilfskraft",
+        "org": "Institut für Prototypen und Modelltechnik (IPM), Deutschland",
+        "period": "Okt 2023 – Sep 2024",
+        "desc": "",
+        "bullets": [
+          "Untersuchung kritischer FDM-Prozessparameter beim neuartigen 3D-Druck mit Nadeleinsatz zur Verbesserung von Schichthaftung, Maßhaltigkeit und struktureller Leistung.",
+          "Zug- und Dehnungsanalysen technischer Polymere: Kombination aus experimenteller Charakterisierung und quantitativer Datenanalyse zur Bewertung der mechanischen Eigenschaften."
+        ],
+        "tags": [
+          "FDM",
+          "Zugversuch",
+          "Datenanalyse"
+        ]
+      },
+      {
+        "role": "Masterarbeit",
+        "org": "Institut für Prototypen und Modelltechnik (IPM), Deutschland",
+        "period": "Apr 2023 – Sep 2023",
+        "desc": "",
+        "bullets": [
+          "Optimierung der Extrusionsmechanik und der thermischen Stabilität des Hot-Ends des Systems Mycusini 1.0 durch mechanische Entwicklung, experimentelle Prüfung und iterative Prototypenverbesserung.",
+          "Weiterentwicklung der Systemfirmware und Integration elektromechanischer Testrückmeldungen zur Verbesserung von Bewegungssteuerung, thermischem Verhalten und Zuverlässigkeit."
+        ],
+        "tags": [
+          "Extrusion",
+          "Firmware",
+          "Thermische Stabilität"
+        ]
+      },
+      {
+        "role": "Praktikum",
+        "org": "Institut für Prototypen und Modelltechnik (IPM), Deutschland",
+        "period": "Okt 2022 – Mär 2023",
+        "desc": "",
+        "bullets": [
+          "Prototypenbau eines experimentellen FDM-3D-Drucksystems inklusive mechanischer Montage, Hardwareintegration und individueller Firmware-Konfiguration.",
+          "Statistische Auswertung von Materialdehnungsdaten zur experimentellen Validierung von mechanischer Leistung und Wiederholgenauigkeit einer neu entwickelten Nadeleinsatz-Düse."
+        ],
+        "tags": [
+          "Prototyping",
+          "Statistik",
+          "3D-Druck"
+        ]
       },
       {
         "role": "Mechatronik-Ingenieur",
-        "org": "Firmenname (bitte anpassen)",
-        "period": "20XX – 20XX",
-        "desc": "Entwicklung von Sensorik, Aktorik und Regelung für industrielle Produkte. Diesen Text durch deinen echten Werdegang ersetzen.",
-        "tags": ["Sensorik", "Regelung", "Prototyping"]
+        "org": "Atin Co, Iran",
+        "period": "Jan 2018 – Sep 2021",
+        "desc": "",
+        "bullets": [
+          "Konstruktion, Fertigung und Inbetriebnahme eines Transportcontainers für Satelliten – in voller Verantwortung für mechanische Konstruktion, Strukturarchitektur, Fertigung und Integration mechanischer und elektronischer Teilsysteme.",
+          "Konstruktion und Fertigung passiver Drahtseilisolatoren (Wire Rope Isolators, WRI) nach vorgegebenen Leistungsanforderungen sowie MIL-STD-810-Vibrations- und Schockanforderungen; experimentelle Charakterisierung der Schockisolation auf einem magnetischen Schockprüfsystem.",
+          "Konstruktion und Aufbau einer 2-DOF-Hubschrauber-Versuchsanlage zur experimentellen Untersuchung der Gier- und Nickdynamik, inklusive Mechanik, Aktorik, Instrumentierung und elektromechanischer Systemintegration.",
+          "Konstruktion und Fertigung eines aerodynamischen Propeller-Prüfstands zur experimentellen Bewertung von Schubkraft und aerodynamischer Leistung.",
+          "3D-CAD-Konstruktion, präzise mechanische Fertigung, elektromechanische Integration, Rapid Prototyping und experimentelle Validierung spezialisierter technischer Systeme nach geltenden MIL- und Industriestandards.",
+          "Konstruktion und Integration eines Prototyps eines hybriden Solar-Wind-Energiesystems: mechanische Struktur, Komponentenintegration und Entwicklung elektromechanischer Teilsysteme."
+        ],
+        "tags": [
+          "MIL-STD-810",
+          "Schock & Vibration",
+          "Mechatronik",
+          "Prototyping"
+        ]
+      },
+      {
+        "role": "Maschinenbauingenieur",
+        "org": "Spad3D, Iran",
+        "period": "Jun 2013 – Okt 2017",
+        "desc": "",
+        "bullets": [
+          "Montage und Kalibrierung individueller hochpräziser FDM-3D-Drucker; Optimierung von mechanischer Hardware, struktureller Ausrichtung und Mehrachsen-Bewegungsverhalten.",
+          "Programmierung und Fehlersuche an der Open-Source-Firmware Marlin zur Verbesserung von Mehrachsen-Bewegungssteuerung, Temperaturmanagement und Systemzuverlässigkeit."
+        ],
+        "tags": [
+          "FDM-3D-Drucker",
+          "Marlin-Firmware",
+          "Kalibrierung"
+        ]
       }
     ]
   },
@@ -55,74 +163,296 @@
     "title": "Ausbildung",
     "items": [
       {
-        "role": "M.Sc. Messtechnik (Instrumentation)",
-        "org": "Name der Universität (bitte anpassen)",
-        "period": "20XX – 20XX",
-        "desc": "Messsysteme, Sensorik und Signalverarbeitung.",
+        "role": "M.Sc. Eng. Mechatronik und Cyber-Physische Systeme",
+        "org": "Technische Hochschule Deggendorf, Deutschland",
+        "period": "Mär 2026 – Heute",
+        "desc": "",
+        "bullets": [],
         "tags": []
       },
       {
-        "role": "M.Sc. Mechatronik",
-        "org": "Name der Universität (bitte anpassen)",
-        "period": "20XX – 20XX",
-        "desc": "Integration von Mechanik, Elektronik und Software; Regelungstechnik.",
+        "role": "M.Sc. Eng. Analytische Instrumente, Mess- und Sensortechnik",
+        "org": "Hochschule Coburg, Deutschland",
+        "period": "Okt 2021 – Sep 2023",
+        "desc": "",
+        "bullets": [
+          "Abschlussarbeit: Optimierung eines Schokoladen-3D-Druckers",
+          "Betreuer: Prof. Dr. Markus Stark"
+        ],
+        "tags": []
+      },
+      {
+        "role": "B.Sc. Eng. Maschinenbau",
+        "org": "Azad University Karaj, Iran",
+        "period": "Okt 2008 – Feb 2013",
+        "desc": "",
+        "bullets": [
+          "Tutor (Teaching Assistant) für Statik, Festigkeitslehre und Technisches Zeichnen"
+        ],
         "tags": []
       }
     ]
   },
   "projects": {
     "title": "Projekte",
-    "subtitle": "Ausgewählte eigene Projekte: Hardware, Firmware und Software.",
+    "subtitle": "Ingenieur- und Forschungsprojekte sowie eigene Hardware-, Firmware- und Softwareprojekte.",
+    "viewCode": "Code ansehen",
     "items": [
       {
-        "title": "Smart Exercise Motion Tracker",
-        "desc": "Ein tragbares Gerät, das Trainingsbewegungen erfasst und in Leistungsanalysen umsetzt. ESP32-C3 und MPU6050-Bewegungssensor, gekoppelt mit einer Android-App.",
-        "tags": ["ESP32-C3", "MPU6050", "Android", "Embedded"],
+        "title": "Optimierung eines Schokoladen-3D-Druckers (Mycusini 1.0)",
+        "desc": "Masterarbeit am IPM: Optimierung von Extrusionsmechanik und thermischer Stabilität des Hot-Ends, Firmware-Weiterentwicklung und Integration elektromechanischer Testrückmeldungen.",
+        "tags": [
+          "Extrusion",
+          "Firmware",
+          "Thermik",
+          "FDM"
+        ],
         "link": ""
       },
       {
-        "title": "VR-Scooter-Simulator",
-        "desc": "Ein Virtual-Reality-Rollersimulator in Unity mit Python-Launcher und eigener Controller-Schicht für die Fahrphysik.",
-        "tags": ["Unity", "C#", "Python", "VR"],
+        "title": "FDM-Düse mit Nadeleinsatz",
+        "desc": "Experimentelle FDM-Düse mit Nadeleinsatz zur Verbesserung der Schichthaftung; Zug- und Dehnungsanalyse mit statistischer Validierung der Wiederholgenauigkeit.",
+        "tags": [
+          "FDM",
+          "Zugversuch",
+          "Statistik"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Satelliten-Transportcontainer",
+        "desc": "Konstruktion und Bau eines Containers nach MIL-Standard für den Transport kleiner Satelliten, mit struktureller FEA in ANSYS.",
+        "tags": [
+          "ANSYS",
+          "FEA",
+          "MIL-STD",
+          "Konstruktion"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Drahtseilisolatoren (Wire Rope Isolators)",
+        "desc": "Passive Drahtseilisolatoren zur Kontrolle von Schock und Vibration unterhalb der Eigenfrequenz des Satelliten; geprüft auf einem magnetischen Schockprüfsystem.",
+        "tags": [
+          "MIL-STD-810",
+          "Schock",
+          "Vibration"
+        ],
+        "link": ""
+      },
+      {
+        "title": "2-DOF-Hubschrauber-Versuchsanlage",
+        "desc": "Prüfstand für Gier- und Nickdynamik: mechanische Konstruktion, Aktorik, Instrumentierung und elektromechanische Integration.",
+        "tags": [
+          "Regelung",
+          "Aktorik",
+          "Instrumentierung"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Aerodynamischer Propeller-Prüfstand",
+        "desc": "Prüfstand zur experimentellen Bewertung von Schubkraft und aerodynamischer Leistung von Propellern.",
+        "tags": [
+          "Aerodynamik",
+          "Schub",
+          "Prüfstand"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Hybrider Solar-Wind-Generator",
+        "desc": "Prototyp eines hybriden Energieerzeugungssystems: mechanische Struktur, Komponentenintegration und Entwicklung elektromechanischer Teilsysteme.",
+        "tags": [
+          "Erneuerbare Energien",
+          "Prototyp",
+          "Mechatronik"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Beschleunigungs-Datenlogger, 100 g / 100 Hz",
+        "desc": "Vibrations- und Schockmessung mit MEMS-Sensor; Leiterplatte in Altium Designer entworfen, bestückt und programmiert.",
+        "tags": [
+          "MEMS",
+          "Altium Designer",
+          "Firmware"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Temperatur-/Feuchte-Logger mit Funkübertragung",
+        "desc": "Datenlogger mit SHT-10-Sensor, der Messwerte per Bluetooth an eine Android-App sendet; eigene Leiterplatte (Altium) und Firmware.",
+        "tags": [
+          "SHT-10",
+          "Bluetooth",
+          "Android",
+          "Leiterplatte"
+        ],
+        "link": ""
+      },
+      {
+        "title": "Smart Exercise Motion Tracker",
+        "desc": "Ein tragbares Gerät, das Trainingsbewegungen erfasst und in Leistungsanalysen umsetzt. ESP32-C3 und MPU6050-Bewegungssensor, gekoppelt mit einer Android-App.",
+        "tags": [
+          "ESP32-C3",
+          "MPU6050",
+          "Android",
+          "Embedded"
+        ],
+        "link": ""
+      },
+      {
+        "title": "VR-Rollersimulator",
+        "desc": "Ein Virtual-Reality-Rollersimulator in Unity mit Python-Launcher und einer eigenen Controller-Schicht für die Fahrphysik.",
+        "tags": [
+          "Unity",
+          "C#",
+          "Python",
+          "VR"
+        ],
         "link": ""
       },
       {
         "title": "PDF Tablet Annotator",
-        "desc": "Eine Android-App zum Annotieren von PDFs mit Stift auf dem Tablet, entwickelt in Kotlin mit Jetpack Compose.",
-        "tags": ["Kotlin", "Jetpack Compose", "Android"],
+        "desc": "Eine Android-App zum Annotieren von PDFs mit Stift auf dem Tablet, geschrieben in Kotlin mit Jetpack Compose.",
+        "tags": [
+          "Kotlin",
+          "Jetpack Compose",
+          "Android"
+        ],
         "link": ""
       },
       {
         "title": "Handschrift zu CNC",
-        "desc": "Meine eigene Handschrift, digitalisiert zu Vektor-Glyphen und einer Schriftart und per generiertem G-Code von einem CNC-Stiftplotter wiedergegeben.",
-        "tags": ["G-Code", "CNC", "Vektorgrafik", "Python"],
+        "desc": "Meine eigene Handschrift, digitalisiert zu Vektor-Glyphen und einer Schriftart und anschließend von einem CNC-Stiftplotter über generierten G-Code wiedergegeben.",
+        "tags": [
+          "G-Code",
+          "CNC",
+          "Vektorgrafik",
+          "Python"
+        ],
         "link": ""
       }
-    ],
-    "viewCode": "Code ansehen"
+    ]
   },
   "certificates": {
     "title": "Zertifikate",
-    "subtitle": "Kurse, Schulungen und berufliche Zertifizierungen.",
+    "subtitle": "Berufliche Zertifizierungen und Kurse.",
+    "view": "Nachweis ansehen",
     "items": [
-      { "title": "Zertifikatsname (bitte anpassen)", "issuer": "Ausstellende Organisation", "year": "20XX", "link": "" },
-      { "title": "Zertifikatsname (bitte anpassen)", "issuer": "Ausstellende Organisation", "year": "20XX", "link": "" },
-      { "title": "Zertifikatsname (bitte anpassen)", "issuer": "Ausstellende Organisation", "year": "20XX", "link": "" }
-    ],
-    "view": "Nachweis ansehen"
+      {
+        "title": "SolidWorks Associate Zertifizierungen",
+        "issuer": "Dassault Systèmes",
+        "year": "2026",
+        "detail": "CSWA, CSWA-AM, CSWA-xDesign, CSWA-xShape, CSWA-xMold, CSWA-E, CSWA-SD",
+        "link": ""
+      },
+      {
+        "title": "CATIA V5 – Fortgeschritten",
+        "issuer": "ParsPajouhan Institute",
+        "year": "2020",
+        "link": ""
+      },
+      {
+        "title": "Ansys – Mittelstufe",
+        "issuer": "Sharif University",
+        "year": "2019",
+        "link": ""
+      },
+      {
+        "title": "Abaqus – Mittelstufe",
+        "issuer": "Sharif University",
+        "year": "2019",
+        "link": ""
+      },
+      {
+        "title": "Python – Mittelstufe",
+        "issuer": "Sematec",
+        "year": "2024",
+        "link": ""
+      },
+      {
+        "title": "Führerschein",
+        "issuer": "Klassen AM, B, L",
+        "year": "2024",
+        "link": ""
+      }
+    ]
   },
   "skills": {
     "title": "Kompetenzen",
     "groups": [
-      { "name": "Mechatronik & Systeme", "items": ["Systemarchitektur", "Sensorik & Aktorik", "Regelungstechnik", "Regulierte Entwicklungsprozesse"] },
-      { "name": "Embedded & Elektronik", "items": ["ESP32", "MPU6050 / IMU", "Platinen & Prototyping", "3D-Druck"] },
-      { "name": "Software", "items": ["Python", "Kotlin / Jetpack Compose", "C# / Unity", "C / C++"] },
-      { "name": "Sprachen", "items": ["Persisch", "Englisch"] }
+      {
+        "name": "CAD / CAM",
+        "items": [
+          "CATIA",
+          "SolidWorks",
+          "AutoCAD",
+          "Cura"
+        ]
+      },
+      {
+        "name": "Simulation & Analyse (CAE)",
+        "items": [
+          "ANSYS (FEA/CFD)",
+          "Abaqus",
+          "Strukturanalyse",
+          "Strömungsmechanik"
+        ]
+      },
+      {
+        "name": "Prototyping & Fertigung",
+        "items": [
+          "FDM-3D-Druck",
+          "CNC-Laserbearbeitung",
+          "Rapid Prototyping",
+          "GD&T-Zeichnungen"
+        ]
+      },
+      {
+        "name": "Messtechnik",
+        "items": [
+          "Fortgeschrittene Messsysteme",
+          "Sensoranbindung",
+          "Elektromechanischer Prototypenbau",
+          "Maßmesstechnik"
+        ]
+      },
+      {
+        "name": "Prüfung & Zuverlässigkeit",
+        "items": [
+          "FMEA",
+          "Experimentelle Prüfung",
+          "Schadensanalyse",
+          "Systemfehlersuche"
+        ]
+      },
+      {
+        "name": "Embedded & Software",
+        "items": [
+          "Marlin-Firmware",
+          "ESP32",
+          "Altium Designer",
+          "Python",
+          "Kotlin / Jetpack Compose",
+          "C# / Unity"
+        ]
+      },
+      {
+        "name": "Sprachen",
+        "items": [
+          "Persisch (Muttersprache)",
+          "Aserbaidschanisch (fließend)",
+          "Englisch (fließend)",
+          "Deutsch (A2)"
+        ]
+      }
     ]
   },
   "contact": {
     "title": "Lass uns sprechen",
-    "text": "Interesse an einer Zusammenarbeit oder einfach Lust, Hallo zu sagen? Schreib mir eine Nachricht.",
+    "text": "Interesse an einer Zusammenarbeit oder einfach Hallo sagen? Schreib mir eine Nachricht.",
     "email": "E-Mail senden",
     "linkedin": "LinkedIn",
     "github": "GitHub"
@@ -131,5 +461,7 @@
     "rights": "Alle Rechte vorbehalten.",
     "legal": "Impressum & Datenschutz: folgt in Kürze"
   },
-  "lang": { "label": "Sprache" }
+  "lang": {
+    "label": "Sprache"
+  }
 }

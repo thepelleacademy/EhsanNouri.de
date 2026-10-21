@@ -714,3 +714,61 @@ html[dir='rtl'] .link {
     transform: none !important;
   }
 }
+
+
+/* ---------- portrait + bullets (CV content) ---------- */
+.about-side {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+.portrait {
+  margin: 0;
+  padding: 10px;
+  max-width: 260px; /* portrait width – adjust here */
+  justify-self: center;
+}
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  filter: saturate(1.05) contrast(1.03);
+}
+.bullets {
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.bullets li {
+  position: relative;
+  padding-inline-start: 20px;
+  color: var(--text-dim);
+  line-height: 1.55;
+}
+.bullets li::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--cyan);
+  box-shadow: var(--glow-cyan);
+  transform: rotate(45deg);
+}
+.loc {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.card .detail {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  direction: ltr;
+  text-align: start;
+}

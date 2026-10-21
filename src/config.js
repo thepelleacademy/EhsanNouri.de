@@ -6,9 +6,13 @@
 export const SITE = {
   name: 'Ehsan Nouri',
   domain: 'ehsannouri.de',
-  email: 'your-email@example.com', // TODO: put your public contact e-mail here
-  linkedin: '', // e.g. 'https://www.linkedin.com/in/...'
+  email: 'e.nouri.e@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/ehsannri/',
   github: 'https://github.com/thepelleacademy',
+  location: 'Deggendorf, Germany',
+  photo: './img/ehsan.jpg', // profile photo (public/img/ehsan.jpg)
+  // Phone is NOT shown by default (spam protection). Set a number to show it as a contact button.
+  phone: '', // e.g. '+49 ...'
 };
 
 // ---------- Languages ----------

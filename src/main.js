@@ -37,7 +37,8 @@ function renderTimeline(targetId, items) {
           <span class="period">${esc(it.period)}</span>
         </div>
         <p class="org">${esc(it.org)}</p>
-        <p>${esc(it.desc)}</p>
+        ${it.desc ? `<p>${esc(it.desc)}</p>` : ''}
+        ${it.bullets && it.bullets.length ? `<ul class="bullets">${it.bullets.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
         ${it.tags && it.tags.length ? `<ul class="tags">${it.tags.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
       </article>`
     )
@@ -50,7 +51,7 @@ function renderProjects() {
     .map(
       (p, i) => `
       <article class="card panel reveal tilt" style="--i:${i}">
-        <span class="card-index">0${i + 1}</span>
+        <span class="card-index">${String(i + 1).padStart(2, '0')}</span>
         <h3>${esc(p.title)}</h3>
         <p>${esc(p.desc)}</p>
         <ul class="tags">${(p.tags || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
@@ -69,6 +70,7 @@ function renderCertificates() {
         <span class="card-index">${esc(c.year)}</span>
         <h3>${esc(c.title)}</h3>
         <p class="org">${esc(c.issuer)}</p>
+        ${c.detail ? `<p class="detail">${esc(c.detail)}</p>` : ''}
         ${c.link ? `<a class="link" href="${esc(c.link)}" target="_blank" rel="noopener noreferrer">${esc(label)} →</a>` : ''}
       </article>`
     )
@@ -92,6 +94,8 @@ function renderContact() {
   if (SITE.email) links.push(`<a class="btn btn-primary" href="mailto:${esc(SITE.email)}">${esc(t('contact.email'))}</a>`);
   if (SITE.linkedin)
     links.push(`<a class="btn btn-ghost" href="${esc(SITE.linkedin)}" target="_blank" rel="noopener noreferrer">${esc(t('contact.linkedin'))}</a>`);
+  if (SITE.phone)
+    links.push(`<a class="btn btn-ghost" href="tel:${esc(SITE.phone.replace(/\s+/g, ''))}">${esc(SITE.phone)}</a>`);
   if (SITE.github)
     links.push(`<a class="btn btn-ghost" href="${esc(SITE.github)}" target="_blank" rel="noopener noreferrer">${esc(t('contact.github'))}</a>`);
   $('#contact-links').innerHTML = links.join('');
@@ -190,6 +194,10 @@ function initNav() {
 
 // ---------- boot ----------
 $('#year').textContent = new Date().getFullYear();
+const portrait = $('#portrait');
+if (portrait && SITE.photo) portrait.src = SITE.photo;
+const locEl = $('#contact-location');
+if (locEl) locEl.textContent = SITE.location || '';
 onLangChange(renderAll);
 initNav();
 initScene($('#bg'));
