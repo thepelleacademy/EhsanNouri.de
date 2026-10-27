@@ -3,36 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#02030a" />
-    <title>Ehsan Nouri – Mechanical R&amp;D &amp; Mechatronics Engineer</title>
-    <meta
-      name="description"
-      content="Portfolio of Ehsan Nouri: precision mechanical design, experimental prototyping, scientific instrumentation, projects, work experience, education and certificates."
-    />
-    <meta property="og:title" content="Ehsan Nouri – Mechanical R&amp;D &amp; Mechatronics Engineer" />
+    <meta name="theme-color" content="#03050b" />
+    <title>Ehsan Nouri – Mechanical R&amp;D &amp; Mechatronics</title>
+    <meta name="description" content="Portfolio of Ehsan Nouri: precision mechanical design, experimental prototyping, scientific instrumentation, projects and academic record." />
+    <meta property="og:title" content="Ehsan Nouri – Mechanical R&amp;D &amp; Mechatronics" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   </head>
   <body>
-    <canvas id="bg" aria-hidden="true"></canvas>
-    <div class="vignette" aria-hidden="true"></div>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <a class="skip" href="#main" data-i18n="nav.home">Home</a>
-
-    <header class="nav" id="nav">
-      <a class="brand" href="#home" aria-label="Ehsan Nouri">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">EN<span>.</span>de</span>
+    <header class="topbar" id="nav">
+      <a class="brand" href="#top" aria-label="Ehsan Nouri">
+        <span class="brand-mark" aria-hidden="true">EN</span>
+        <span class="brand-name">Ehsan Nouri</span>
       </a>
 
-      <nav class="nav-links" id="nav-links" aria-label="Main">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#education" data-i18n="nav.education">Education</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <nav class="nav-links" id="nav-links" aria-label="Sections">
+        <a href="#profile"><i>01</i><span data-i18n="nav.profile">Profile</span></a>
+        <a href="#education"><i>02</i><span data-i18n="nav.education">Education</span></a>
+        <a href="#experience"><i>03</i><span data-i18n="nav.experience">Experience</span></a>
+        <a href="#projects"><i>04</i><span data-i18n="nav.projects">Projects</span></a>
+        <a href="#certificates"><i>05</i><span data-i18n="nav.certificates">Certificates</span></a>
+        <a href="#skills"><i>06</i><span data-i18n="nav.skills">Skills</span></a>
+        <a href="#contact"><i>07</i><span data-i18n="nav.contact">Contact</span></a>
       </nav>
 
       <div class="lang" role="group" aria-label="Language">
@@ -47,101 +41,154 @@
     </header>
 
     <main id="main">
-      <!-- HERO -->
-      <section class="hero" id="home">
-        <div class="hero-inner">
-          <p class="eyebrow" data-i18n="hero.hello">Hello, I am</p>
-          <h1 class="glitch" id="hero-name" data-i18n="hero.name">Ehsan Nouri</h1>
-          <p class="role" data-i18n="hero.role">Mechanical R&amp;D Engineer · Mechatronics</p>
-          <p class="tagline" data-i18n="hero.tagline"></p>
-          <div class="cta">
-            <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">View projects</a>
-            <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Get in touch</a>
-          </div>
-        </div>
-        <a class="scroll-hint" href="#about" aria-label="Scroll">
-          <span data-i18n="hero.scroll">Scroll</span>
-          <i aria-hidden="true"></i>
-        </a>
-      </section>
-
-      <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="wrap">
-          <h2 class="section-title reveal" data-i18n="about.title">About me</h2>
-          <div class="about-grid">
-            <div class="panel reveal tilt">
-              <p data-i18n="about.p1"></p>
-              <p data-i18n="about.p2"></p>
-            </div>
-            <div class="about-side">
-              <figure class="portrait panel reveal tilt">
-                <img id="portrait" alt="Ehsan Nouri" width="360" height="493" loading="lazy" decoding="async" />
-              </figure>
-              <div class="stats" id="stats"></div>
+      <!-- 00 · TITLE SHEET (hero) -->
+      <section class="hero" id="top" aria-labelledby="hero-name">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Mechanical R&amp;D · Mechatronics · Bavaria</p>
+            <h1 id="hero-name" data-i18n="hero.name">Ehsan Nouri</h1>
+            <p class="role" data-i18n="hero.role">Mechanical R&amp;D Engineer</p>
+            <p class="lede" data-i18n="hero.lede"></p>
+            <ul class="chips" id="hero-chips"></ul>
+            <div class="cta">
+              <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">Explore projects</a>
+              <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Get in touch</a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- EXPERIENCE -->
-      <section class="section" id="experience">
+          <figure class="viewer" id="viewport">
+            <span class="corner tl" aria-hidden="true"></span><span class="corner tr" aria-hidden="true"></span>
+            <span class="corner bl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+            <canvas id="scene" aria-hidden="true"></canvas>
+            <svg class="annot" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+              <circle cx="200" cy="200" r="176" class="annot-ring" />
+              <path d="M52 92 H118 L150 126" />
+              <path d="M348 84 H288 L252 118" />
+              <path d="M40 318 H96 L132 284" />
+              <path d="M360 326 H300 L266 292" />
+              <text x="52" y="82">Ø 48 H7</text>
+              <text x="348" y="74" text-anchor="end">R 12</text>
+              <text x="40" y="346">t = 8.0</text>
+              <text x="360" y="356" text-anchor="end">6 × M6</text>
+            </svg>
+            <figcaption>
+              <span id="viewer-caption"></span>
+              <span class="hint"><i aria-hidden="true"></i><span data-i18n="ui.viewerHint">Drag to rotate</span></span>
+            </figcaption>
+          </figure>
+        </div>
         <div class="wrap">
-          <h2 class="section-title reveal" data-i18n="experience.title">Work experience</h2>
-          <div class="timeline" id="experience-list"></div>
+          <div class="titleblock" id="titleblock"></div>
         </div>
       </section>
 
-      <!-- EDUCATION -->
+      <!-- 01 · PROFILE -->
+      <section class="section" id="profile">
+        <div class="wrap">
+          <header class="sheet-head reveal">
+            <span class="sheet-no">01</span>
+            <h2 data-i18n="profile.title">Profile</h2>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <div class="profile-grid">
+            <figure class="portrait reveal">
+              <img id="portrait" alt="Ehsan Nouri" width="720" height="986" loading="lazy" decoding="async" />
+              <figcaption class="mono">Fig. 00 — Ehsan Nouri</figcaption>
+            </figure>
+            <div class="profile-body">
+              <div class="profile-text reveal" id="profile-text"></div>
+              <dl class="facts reveal" id="profile-facts"></dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 · EDUCATION -->
       <section class="section" id="education">
         <div class="wrap">
-          <h2 class="section-title reveal" data-i18n="education.title">Education</h2>
-          <div class="timeline" id="education-list"></div>
+          <header class="sheet-head reveal">
+            <span class="sheet-no">02</span>
+            <h2 data-i18n="education.title">Education</h2>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <p class="sheet-sub reveal" data-i18n="education.subtitle"></p>
+          <div class="edu-grid" id="education-list"></div>
         </div>
       </section>
 
-      <!-- PROJECTS -->
+      <!-- 03 · EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="wrap">
+          <header class="sheet-head reveal">
+            <span class="sheet-no">03</span>
+            <h2 data-i18n="experience.title">Experience</h2>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <div class="jobs" id="experience-list"></div>
+        </div>
+      </section>
+
+      <!-- 04 · PROJECTS -->
       <section class="section" id="projects">
         <div class="wrap">
-          <h2 class="section-title reveal" data-i18n="projects.title">Projects</h2>
-          <p class="section-sub reveal" data-i18n="projects.subtitle"></p>
-          <div class="cards" id="projects-list"></div>
+          <header class="sheet-head reveal">
+            <span class="sheet-no">04</span>
+            <h2 data-i18n="projects.title">Projects</h2>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <p class="sheet-sub reveal" data-i18n="projects.subtitle"></p>
+          <div class="toolbar reveal">
+            <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+            <span class="mono count" id="projects-count" aria-live="polite"></span>
+          </div>
+          <div class="project-grid" id="projects-list"></div>
         </div>
       </section>
 
-      <!-- CERTIFICATES -->
+      <!-- 05 · CERTIFICATES -->
       <section class="section" id="certificates">
         <div class="wrap">
-          <h2 class="section-title reveal" data-i18n="certificates.title">Certificates</h2>
-          <p class="section-sub reveal" data-i18n="certificates.subtitle"></p>
-          <div class="cards cards-small" id="certificates-list"></div>
+          <header class="sheet-head reveal">
+            <span class="sheet-no">05</span>
+            <h2 data-i18n="certificates.title">Certificates</h2>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <p class="sheet-sub reveal" data-i18n="certificates.subtitle"></p>
+          <ul class="certs" id="certificates-list"></ul>
         </div>
       </section>
 
-      <!-- SKILLS -->
+      <!-- 06 · SKILLS -->
       <section class="section" id="skills">
         <div class="wrap">
-          <h2 class="section-title reveal" data-i18n="skills.title">Skills</h2>
-          <div class="cards" id="skills-list"></div>
+          <header class="sheet-head reveal">
+            <span class="sheet-no">06</span>
+            <h2 data-i18n="skills.title">Skills</h2>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <div class="skill-grid" id="skills-list"></div>
         </div>
       </section>
 
-      <!-- CONTACT -->
+      <!-- 07 · CONTACT -->
       <section class="section section-contact" id="contact">
-        <div class="wrap">
-          <div class="panel contact-panel reveal tilt">
-            <h2 class="section-title" data-i18n="contact.title">Let's talk</h2>
-            <p data-i18n="contact.text"></p>
-            <p class="loc" id="contact-location"></p>
-            <div class="cta" id="contact-links"></div>
+        <div class="wrap contact">
+          <div class="reveal">
+            <span class="sheet-no">07</span>
+            <h2 class="contact-title" data-i18n="contact.title">Let's talk</h2>
+            <p class="contact-text" data-i18n="contact.text"></p>
+            <p class="mono loc" id="contact-location"></p>
           </div>
+          <div class="cta cta-stack reveal" id="contact-links"></div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>© <span id="year"></span> Ehsan Nouri. <span data-i18n="footer.rights"></span></span>
-      <span class="muted" data-i18n="footer.legal"></span>
+      <div class="wrap footer-inner">
+        <span>© <span id="year"></span> Ehsan Nouri. <span data-i18n="footer.rights"></span></span>
+        <span class="muted" data-i18n="footer.legal"></span>
+      </div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>

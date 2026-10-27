@@ -13,12 +13,15 @@ npm run build    # output in dist/
 ## Where to edit
 | What | File |
 |---|---|
-| Texts, experience, education, projects, certificates (per language) | `src/locales/{fa,en,de}.json` |
-| Contact e-mail, LinkedIn/GitHub, language/country mapping, colours, all 3D parameters | `src/config.js` |
-| Look & layout | `src/styles.css` |
-| 3D scene | `src/scene.js` |
+| Texts per language (profile, education, experience, skills, contact, UI labels) | `src/locales/{fa,en,de}.json` |
+| Projects: status, category, year, tags, images, link | `src/locales/*.json` → `projects.items` (same index in all three files) |
+| Contact, photo, phone, language/country mapping, palette, 3D viewer parameters | `src/config.js` |
+| Look & layout (all values are named tokens at the top of the file) | `src/styles.css` |
+| Hero 3D wireframe part | `src/scene.js` |
 
-Certificate images/PDFs: put them in `public/certs/` and set `"link": "./certs/name.pdf"` in the JSON files.
+Project status values: `completed`, `in_progress`, `prototype`.
+Project photos: put files in `public/projects/` and set `"images": ["./projects/name.jpg"]` in the JSON.
+Certificate PDFs/images: put them in `public/certs/` and set `"link"` in the JSON.
 
 ## Deployment (CI/CD)
 Every push to `main` runs `.github/workflows/deploy.yml` (install, build, deploy to GitHub Pages).

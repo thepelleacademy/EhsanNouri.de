@@ -1,337 +1,491 @@
 {
   "meta": {
-    "title": "Ehsan Nouri – Mechanical R&D & Mechatronics Engineer",
-    "description": "Portfolio of Ehsan Nouri: precision mechanical design, experimental prototyping, scientific instrumentation, projects, work experience, education and certificates."
+    "title": "Ehsan Nouri – Mechanical R&D & Mechatronics",
+    "description": "Portfolio of Ehsan Nouri: precision mechanical design, experimental prototyping, scientific instrumentation, projects and academic record."
   },
   "nav": {
-    "home": "Home",
-    "about": "About",
-    "experience": "Experience",
+    "profile": "Profile",
     "education": "Education",
+    "experience": "Experience",
     "projects": "Projects",
     "certificates": "Certificates",
     "skills": "Skills",
     "contact": "Contact"
   },
+  "ui": {
+    "now": "now",
+    "sheet": "Sheet",
+    "workDone": "Work done",
+    "responsibilities": "Key responsibilities",
+    "all": "All",
+    "statusLabel": {
+      "completed": "Completed",
+      "in_progress": "In progress",
+      "prototype": "Prototype"
+    },
+    "tb": {
+      "drawing": "Document",
+      "owner": "Owner",
+      "scale": "Scale",
+      "sheet": "Sheet",
+      "rev": "Revision",
+      "unit": "Units"
+    },
+    "tbValues": {
+      "drawing": "Portfolio",
+      "owner": "Ehsan Nouri",
+      "scale": "1:1",
+      "sheet": "01 / 07",
+      "rev": "2026-10",
+      "unit": "mm"
+    },
+    "viewCaption": "Fig. 01 — Flanged housing, wireframe model",
+    "viewerHint": "Drag to rotate",
+    "academicStatus": "Academic status",
+    "projectsCount": "projects",
+    "mobileMenu": "Menu",
+    "openDetails": "Show details"
+  },
   "hero": {
-    "hello": "Hello, I am",
+    "eyebrow": "Mechanical R&D · Mechatronics · Bavaria",
     "name": "Ehsan Nouri",
-    "role": "Mechanical R&D Engineer · Mechatronics",
-    "tagline": "Precision mechanical design, experimental prototyping and scientific instrumentation: from CAD and simulation to working laboratory prototypes.",
-    "ctaProjects": "View projects",
-    "ctaContact": "Get in touch",
-    "scroll": "Scroll"
+    "role": "Mechanical R&D Engineer",
+    "lede": "Precision mechanical design, experimental prototyping and scientific instrumentation. From CAD and FEM to a working test rig.",
+    "chips": [
+      "M.Sc. in progress · Deggendorf",
+      "FEM · GD&T · Metrology",
+      "10+ years in mechanical design"
+    ],
+    "ctaProjects": "Explore projects",
+    "ctaContact": "Get in touch"
   },
-  "about": {
-    "title": "About me",
-    "p1": "Mechanical R&D engineer specializing in precision mechanical design, experimental prototyping and scientific instrumentation. I work with CAD-based mechanical development, additive manufacturing, FEA/CFD and hands-on fabrication, with a strong focus on rapid prototyping, experimental testing and iterative design optimization.",
-    "p2": "I develop and validate mechanical and electromechanical systems, integrate sensors and hardware, and translate engineering concepts into functional laboratory prototypes. Alongside my work I build my own hardware and software projects, from embedded sensors to Android apps and VR simulations.",
-    "stats": [
+  "profile": {
+    "title": "Profile",
+    "paragraphs": [
+      "Mechanical R&D engineer working at the boundary between digital simulation and physical prototyping. I design precision mechanical systems in CATIA, validate them with FEM, and build them into test rigs that produce data.",
+      "Most of my work sits in regulated engineering environments, where traceability and documentation matter as much as the solution. Outside of work I build my own hardware and software projects, from embedded sensors to Android apps and VR simulators."
+    ],
+    "facts": [
       {
-        "value": "10+",
-        "label": "Years in mechanical & mechatronic design"
+        "k": "Based in",
+        "v": "Deggendorf, Bavaria"
       },
       {
-        "value": "2",
-        "label": "MSc programmes: Instrumentation and Mechatronics"
+        "k": "Degrees",
+        "v": "B.Sc. 2013 · M.Sc. 2023 · M.Sc. in progress"
       },
       {
-        "value": "4",
-        "label": "Languages: Persian, Azerbaijani, English, German"
-      }
-    ]
-  },
-  "experience": {
-    "title": "Work experience",
-    "items": [
-      {
-        "role": "Student Assistant",
-        "org": "Deggendorf Institute of Technology, Germany",
-        "period": "Jul 2026 – Present",
-        "desc": "",
-        "bullets": [
-          "Co-authored technical manuscripts by developing experimental test setups, conducting laboratory investigations and acquiring reliable empirical data.",
-          "Characterized mechanical behavior and structural performance through iterative experimental testing and Finite Element Method (FEM) simulations."
-        ],
-        "tags": [
-          "FEM",
-          "Experimental testing",
-          "Research"
-        ]
+        "k": "Languages",
+        "v": "Persian (native) · Azerbaijani (fluent) · English (fluent) · German (A2)"
       },
       {
-        "role": "Mechanical Design Engineer",
-        "org": "Pouyesh Mechatronics, Iran",
-        "period": "Oct 2024 – Feb 2026",
-        "desc": "",
-        "bullets": [
-          "Designed precision mechanical housings for optical gyroscope systems using CATIA, integrating optical components with mechanically stable and manufacturable structures.",
-          "Generated manufacturing-ready technical drawings applying Geometric Dimensioning and Tolerancing (GD&T) principles to ensure dimensional accuracy and functional interfaces.",
-          "Managed external fabrication workflows including CNC machining and additive manufacturing, and validated manufactured components through dimensional metrology and inspection."
-        ],
-        "tags": [
-          "CATIA",
-          "GD&T",
-          "CNC",
-          "Additive manufacturing",
-          "Metrology"
-        ]
-      },
-      {
-        "role": "Research Assistant",
-        "org": "Institut für Prototypen und Modelltechnik (IPM), Germany",
-        "period": "Oct 2023 – Sep 2024",
-        "desc": "",
-        "bullets": [
-          "Investigated critical FDM process parameters in novel needle-insertion 3D printing to improve inter-layer adhesion, dimensional consistency and structural performance.",
-          "Conducted tensile and strain analyses of engineering polymers, combining experimental characterization with quantitative data analysis to evaluate mechanical performance."
-        ],
-        "tags": [
-          "FDM",
-          "Tensile testing",
-          "Data analysis"
-        ]
-      },
-      {
-        "role": "Master Thesis",
-        "org": "Institut für Prototypen und Modelltechnik (IPM), Germany",
-        "period": "Apr 2023 – Sep 2023",
-        "desc": "",
-        "bullets": [
-          "Optimized extrusion mechanics and hot-end thermal stability of the Mycusini 1.0 system through mechanical development, experimental testing and iterative prototype refinement.",
-          "Refined system firmware and integrated electromechanical test feedback to improve motion control, thermal performance and overall system reliability."
-        ],
-        "tags": [
-          "Extrusion",
-          "Firmware",
-          "Thermal stability"
-        ]
-      },
-      {
-        "role": "Internship",
-        "org": "Institut für Prototypen und Modelltechnik (IPM), Germany",
-        "period": "Oct 2022 – Mar 2023",
-        "desc": "",
-        "bullets": [
-          "Prototyped an experimental FDM 3D printer system, performing mechanical assembly, hardware integration and custom firmware configuration.",
-          "Conducted statistical analysis of material strain data to experimentally validate the mechanical performance and repeatability of a newly developed needle-insertion nozzle."
-        ],
-        "tags": [
-          "Prototyping",
-          "Statistics",
-          "3D printing"
-        ]
-      },
-      {
-        "role": "Mechatronics Engineer",
-        "org": "Atin Co, Iran",
-        "period": "Jan 2018 – Sep 2021",
-        "desc": "",
-        "bullets": [
-          "Designed, manufactured and implemented a satellite transportation container for the safe transportation of satellites, with full responsibility for mechanical design, structural architecture, fabrication and integration of mechanical and electronic subsystems.",
-          "Designed and fabricated passive Wire Rope Isolators (WRI) according to specified performance requirements and MIL-STD-810 vibration and shock requirements; experimentally characterized their shock-isolation performance using a magnetic shock testing system.",
-          "Designed and built a 2-DOF helicopter test unit for experimental investigation of yaw and pitch dynamics, including mechanical design, actuation, instrumentation and electromechanical system integration.",
-          "Designed and fabricated an aerodynamic propeller test unit for experimental evaluation of thrust force and aerodynamic performance.",
-          "Performed 3D CAD design, precision mechanical fabrication, electromechanical integration, rapid prototyping and experimental validation of specialized engineering systems in accordance with applicable MIL and industry standards.",
-          "Designed and integrated a prototype hybrid solar–wind power generation system, covering mechanical structure, component integration and electromechanical subsystem development."
-        ],
-        "tags": [
-          "MIL-STD-810",
-          "Shock & vibration",
-          "Mechatronics",
-          "Prototyping"
-        ]
-      },
-      {
-        "role": "Mechanical Engineer",
-        "org": "Spad3D, Iran",
-        "period": "Jun 2013 – Oct 2017",
-        "desc": "",
-        "bullets": [
-          "Assembled and calibrated custom high-precision FDM 3D printers, optimizing mechanical hardware, structural alignment and multi-axis motion performance.",
-          "Programmed and debugged open-source Marlin firmware to improve multi-axis motion control, thermal management and system reliability."
-        ],
-        "tags": [
-          "FDM 3D printers",
-          "Marlin firmware",
-          "Calibration"
-        ]
+        "k": "Driving licence",
+        "v": "AM / B / L"
       }
     ]
   },
   "education": {
     "title": "Education",
+    "subtitle": "Academic record and current status.",
     "items": [
       {
-        "role": "M.Sc. Eng. Mechatronics and Cyber Physical Systems",
-        "org": "Deggendorf Institute of Technology, Germany",
-        "period": "Mar 2026 – Present",
-        "desc": "",
-        "bullets": [],
-        "tags": []
+        "degree": "M.Sc. Mechatronics and Cyber-Physical Systems",
+        "school": "Deggendorf Institute of Technology, Germany",
+        "note": [
+          "Currently enrolled, alongside a student assistant role"
+        ],
+        "period": [
+          "03/2026",
+          "now"
+        ],
+        "status": "in_progress"
       },
       {
-        "role": "M.Sc. Eng. Analytical Instruments, Measurement and Sensor Technology",
-        "org": "Coburg University of Applied Sciences, Germany",
-        "period": "Oct 2021 – Sep 2023",
-        "desc": "",
-        "bullets": [
-          "Thesis: Optimization of Chocolate 3D Printer",
+        "degree": "M.Sc. Analytical Instruments, Measurement and Sensor Technology",
+        "school": "Coburg University of Applied Sciences, Germany",
+        "note": [
+          "Thesis: Optimization of a chocolate 3D printer",
           "Supervisor: Prof. Dr. Markus Stark"
         ],
-        "tags": []
+        "period": [
+          "10/2021",
+          "09/2023"
+        ],
+        "status": "completed"
       },
       {
-        "role": "B.Sc. Eng. Mechanical Engineering",
-        "org": "Azad University of Karaj, Iran",
-        "period": "Oct 2008 – Feb 2013",
-        "desc": "",
-        "bullets": [
-          "Teaching assistant for Statics, Mechanics of Materials and Industrial Drawing"
+        "degree": "B.Sc. Mechanical Engineering",
+        "school": "Azad University of Karaj, Iran",
+        "note": [
+          "Teaching assistant: Statics, Mechanics of Materials, Industrial Drawing"
         ],
-        "tags": []
+        "period": [
+          "10/2008",
+          "02/2013"
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Student Assistant",
+        "org": "Deggendorf Institute of Technology, Germany",
+        "bullets": [
+          "Co-authored technical manuscripts by developing experimental test setups, running laboratory investigations and acquiring reliable empirical data.",
+          "Characterized mechanical behavior and structural performance through iterative testing and finite element (FEM) simulation."
+        ],
+        "period": [
+          "07/2026",
+          "now"
+        ]
+      },
+      {
+        "role": "Mechanical Design Engineer",
+        "org": "Pouyesh Mechatronics, Iran",
+        "bullets": [
+          "Designed precision housings for optical gyroscope systems in CATIA, integrating optical components into stable, manufacturable structures.",
+          "Generated manufacturing-ready drawings applying GD&T principles for dimensional accuracy and functional interfaces.",
+          "Managed external CNC and additive-manufacturing workflows and validated parts through dimensional metrology."
+        ],
+        "period": [
+          "10/2024",
+          "02/2026"
+        ]
+      },
+      {
+        "role": "Research Assistant",
+        "org": "Institut für Prototypen und Modelltechnik (IPM), Germany",
+        "bullets": [
+          "Investigated critical FDM process parameters in needle-insertion 3D printing to improve inter-layer adhesion and structural strength.",
+          "Ran tensile and strain analyses of engineering polymers, combining experimental characterization with quantitative data analysis."
+        ],
+        "period": [
+          "10/2023",
+          "09/2024"
+        ]
+      },
+      {
+        "role": "Master Thesis",
+        "org": "Institut für Prototypen und Modelltechnik (IPM), Germany",
+        "bullets": [
+          "Optimized extrusion mechanics and hot-end thermal stability of the Mycusini 1.0 system through testing and iterative refinement.",
+          "Refined firmware and integrated electromechanical field-test feedback to improve motion control and reliability."
+        ],
+        "period": [
+          "04/2023",
+          "09/2023"
+        ]
+      },
+      {
+        "role": "Internship",
+        "org": "Institut für Prototypen und Modelltechnik (IPM), Germany",
+        "bullets": [
+          "Prototyped an experimental FDM 3D printer, covering mechanical assembly, hardware integration and custom firmware.",
+          "Statistically validated the strain performance and repeatability of a new needle-insertion nozzle."
+        ],
+        "period": [
+          "10/2022",
+          "03/2023"
+        ]
+      },
+      {
+        "role": "Mechatronics Engineer",
+        "org": "Atin Co, Iran",
+        "bullets": [
+          "Designed, built and commissioned a satellite transport container for MIL-standard shipment, with full responsibility for mechanical design, structure and subsystem integration.",
+          "Designed and fabricated passive Wire Rope Isolators to MIL-STD-810 requirements and characterized them on a magnetic shock test machine.",
+          "Designed and built a 2-DOF helicopter test rig for yaw and pitch dynamics, including actuation, instrumentation and integration.",
+          "Designed an aerodynamic propeller test unit for thrust and aerodynamic performance evaluation.",
+          "Carried out 3D CAD design, precision fabrication, rapid prototyping and experimental validation under MIL and industry standards.",
+          "Designed a prototype hybrid solar–wind power generator, covering structure, component integration and electromechanical subsystems."
+        ],
+        "period": [
+          "01/2018",
+          "09/2021"
+        ]
+      },
+      {
+        "role": "Mechanical Engineer",
+        "org": "Spad3D, Iran",
+        "bullets": [
+          "Assembled and calibrated custom high-precision FDM 3D printers, optimizing hardware, structural alignment and multi-axis motion.",
+          "Programmed and debugged open-source Marlin firmware for motion control, thermal management and reliability."
+        ],
+        "period": [
+          "06/2013",
+          "10/2017"
+        ]
       }
     ]
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Engineering and research projects, plus personal hardware, firmware and software work.",
-    "viewCode": "View code",
+    "subtitle": "Engineering work, research and personal builds: hardware, firmware and software.",
+    "filters": {
+      "all": "All",
+      "mechanical": "Mechanical",
+      "electronics": "Electronics",
+      "software": "Software",
+      "research": "Research"
+    },
     "items": [
       {
-        "title": "Chocolate 3D Printer Optimization (Mycusini 1.0)",
-        "desc": "Master thesis at IPM: optimized extrusion mechanics and hot-end thermal stability, refined firmware and integrated electromechanical test feedback.",
+        "id": "satellite-container",
+        "cat": "mechanical",
+        "status": "completed",
+        "year": "2018–2021",
         "tags": [
-          "Extrusion",
-          "Firmware",
-          "Thermal",
-          "FDM"
-        ],
-        "link": ""
-      },
-      {
-        "title": "Needle-Insertion FDM Nozzle",
-        "desc": "Experimental FDM nozzle with needle insertion to improve inter-layer adhesion; tensile and strain analysis with statistical validation of repeatability.",
-        "tags": [
-          "FDM",
-          "Tensile testing",
-          "Statistics"
-        ],
-        "link": ""
-      },
-      {
-        "title": "Satellite Shipment Container",
-        "desc": "Design and construction of a MIL-standard container for shipment of small-scale satellites, with structural FEA in ANSYS.",
-        "tags": [
-          "ANSYS",
-          "FEA",
           "MIL-STD",
-          "Mechanical design"
+          "ANSYS FEA",
+          "CAD",
+          "Integration"
         ],
+        "title": "Satellite Transport Container",
+        "summary": "MIL-standard container for shipping small satellites, from structural design to an integrated, tested system.",
+        "work": [
+          "Full responsibility for mechanical design and structural architecture",
+          "Structural analysis (FEA) in ANSYS",
+          "Fabrication and integration of mechanical and electronic subsystems",
+          "Equipment installation and optimization"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "Wire Rope Isolators",
-        "desc": "Passive wire rope isolators controlling shock and vibration below the satellite's natural frequency; verified on a magnetic shock test machine.",
+        "id": "wire-rope-isolator",
+        "cat": "mechanical",
+        "status": "completed",
+        "year": "2018–2021",
         "tags": [
           "MIL-STD-810",
           "Shock",
           "Vibration"
         ],
+        "title": "Wire Rope Isolator",
+        "summary": "Passive shock and vibration isolator that works below the satellite's natural frequency.",
+        "work": [
+          "Design and fabrication to MIL-STD-810 vibration and shock requirements",
+          "Shock-isolation characterization on a magnetic shock test machine",
+          "Analysis of vibration and shock data to validate isolation efficiency"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "2-DOF Helicopter Test Unit",
-        "desc": "Test rig for yaw and pitch dynamics: mechanical design, actuation, instrumentation and electromechanical integration.",
+        "id": "helicopter-rig",
+        "cat": "mechanical",
+        "status": "completed",
+        "year": "2018–2021",
         "tags": [
-          "Control",
+          "2-DOF",
           "Actuation",
           "Instrumentation"
         ],
+        "title": "2-DOF Helicopter Test Rig",
+        "summary": "Test stand for investigating yaw and pitch dynamics.",
+        "work": [
+          "Mechanical design and actuation",
+          "Instrumentation and electromechanical integration",
+          "Commissioning and experimental runs"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "Aerodynamic Propeller Test Unit",
-        "desc": "Test unit for experimental evaluation of thrust force and aerodynamic performance of propellers.",
+        "id": "propeller-rig",
+        "cat": "mechanical",
+        "status": "completed",
+        "year": "2018–2021",
         "tags": [
           "Aerodynamics",
-          "Thrust",
-          "Test rig"
+          "Thrust"
         ],
+        "title": "Aerodynamic Propeller Test Unit",
+        "summary": "Unit for measuring thrust and aerodynamic performance across blade pitches and diameters.",
+        "work": [
+          "Design and fabrication of the test unit",
+          "Experimental evaluation of thrust and aerodynamic performance"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "Hybrid Solar–Wind Power Generator",
-        "desc": "Prototype hybrid power generation system: mechanical structure, component integration and electromechanical subsystem development.",
+        "id": "hybrid-solar-wind",
+        "cat": "mechanical",
+        "status": "prototype",
+        "year": "2018–2021",
         "tags": [
           "Renewable energy",
-          "Prototype",
-          "Mechatronics"
+          "Prototype"
         ],
+        "title": "Hybrid Solar–Wind Generator",
+        "summary": "Prototype combining solar and wind power with a natural-ventilation concept.",
+        "work": [
+          "Mechanical structure and component integration",
+          "Electromechanical subsystem development"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "Accelerometer Data Logger, 100 g / 100 Hz",
-        "desc": "Vibration and shock measurement with a MEMS sensor; PCB designed in Altium Designer, assembled and programmed.",
+        "id": "needle-nozzle",
+        "cat": "research",
+        "status": "completed",
+        "year": "2022–2023",
+        "tags": [
+          "FDM",
+          "Needle insertion",
+          "Tensile testing"
+        ],
+        "title": "Needle-Insertion FDM Nozzle",
+        "summary": "FDM nozzle with needle insertion to improve inter-layer bonding and part strength.",
+        "work": [
+          "Nozzle design in CATIA V5 and fabrication",
+          "Investigation of critical FDM process parameters",
+          "Statistical analysis of tensile and strain data"
+        ],
+        "images": [],
+        "link": ""
+      },
+      {
+        "id": "mycusini",
+        "cat": "research",
+        "status": "completed",
+        "year": "2023",
+        "tags": [
+          "Extrusion",
+          "Firmware",
+          "Thermal"
+        ],
+        "title": "Mycusini 1.0 Extrusion & Hot-End",
+        "summary": "Master thesis at IPM: optimizing extrusion mechanics and hot-end thermal stability.",
+        "work": [
+          "Experimental testing of hot-end and extrusion mechanics",
+          "Firmware and hardware refinement using field-test feedback"
+        ],
+        "images": [],
+        "link": ""
+      },
+      {
+        "id": "accelerometer-logger",
+        "cat": "electronics",
+        "status": "completed",
+        "year": null,
         "tags": [
           "MEMS",
           "Altium Designer",
           "Firmware"
         ],
+        "title": "Accelerometer Data Logger, 100 g / 100 Hz",
+        "summary": "MEMS-based logger for vibration and shock measurement.",
+        "work": [
+          "Acquisition of vibration and shock data with a MEMS sensor",
+          "PCB design in Altium Designer and assembly",
+          "Firmware programming"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "Temp-Humidity Logger with Wireless Monitoring",
-        "desc": "SHT-10 sensor data logger sending measurements to an Android app via Bluetooth; custom PCB (Altium) and firmware.",
+        "id": "temp-humidity-logger",
+        "cat": "electronics",
+        "status": "completed",
+        "year": null,
         "tags": [
           "SHT-10",
           "Bluetooth",
-          "Android",
-          "PCB"
+          "Altium Designer"
         ],
+        "title": "Temperature & Humidity Logger",
+        "summary": "Wireless data logger that streams readings to an Android app.",
+        "work": [
+          "Measurements with an SHT-10 sensor",
+          "Bluetooth transfer to an Android app",
+          "PCB design in Altium Designer and assembly",
+          "Firmware programming"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "Smart Exercise Motion Tracker",
-        "desc": "A wearable device that tracks exercise motion and turns it into performance analytics. ESP32-C3 and an MPU6050 motion sensor, paired with an Android app.",
+        "id": "motion-tracker",
+        "cat": "electronics",
+        "status": "in_progress",
+        "year": null,
         "tags": [
           "ESP32-C3",
           "MPU6050",
-          "Android",
-          "Embedded"
+          "Android"
         ],
+        "title": "Smart Exercise Motion Tracker",
+        "summary": "Wearable device that turns exercise motion into performance analytics.",
+        "work": [
+          "ESP32-C3 firmware with MPU6050 motion sensing",
+          "Android app for analytics"
+        ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "VR Scooter Simulator",
-        "desc": "A virtual-reality scooter simulator built in Unity, with a Python launcher and a dedicated controller layer for riding physics.",
+        "id": "pdf-annotator",
+        "cat": "software",
+        "status": "in_progress",
+        "year": null,
+        "tags": [
+          "Kotlin",
+          "Jetpack Compose",
+          "Android"
+        ],
+        "title": "PDF Tablet Annotator",
+        "summary": "Android app for stylus annotation of PDF documents on a tablet.",
+        "work": [
+          "Kotlin and Jetpack Compose application",
+          "Stylus-based annotation of PDF pages"
+        ],
+        "images": [],
+        "link": ""
+      },
+      {
+        "id": "vr-scooter",
+        "cat": "software",
+        "status": "in_progress",
+        "year": null,
         "tags": [
           "Unity",
           "C#",
           "Python",
           "VR"
         ],
-        "link": ""
-      },
-      {
-        "title": "PDF Tablet Annotator",
-        "desc": "An Android app for annotating PDFs with a stylus on a tablet, written in Kotlin with Jetpack Compose.",
-        "tags": [
-          "Kotlin",
-          "Jetpack Compose",
-          "Android"
+        "title": "VR Scooter Simulator",
+        "summary": "Virtual-reality scooter simulator with a dedicated riding-physics controller layer.",
+        "work": [
+          "Unity (C#) simulation",
+          "Python launcher",
+          "Controller layer for riding physics"
         ],
+        "images": [],
         "link": ""
       },
       {
-        "title": "Handwriting to CNC",
-        "desc": "My own handwriting digitised into vector glyphs and a font, then reproduced by a CNC pen plotter through generated G-code.",
+        "id": "handwriting-cnc",
+        "cat": "mechanical",
+        "status": "in_progress",
+        "year": null,
         "tags": [
           "G-code",
           "CNC",
-          "Vector graphics",
           "Python"
         ],
+        "title": "Handwriting to CNC",
+        "summary": "Own handwriting digitized into vector glyphs and a font, then plotted by a CNC pen plotter.",
+        "work": [
+          "Vector glyph digitization and font generation",
+          "G-code generation in Python for the pen plotter"
+        ],
+        "images": [],
         "link": ""
       }
     ]
@@ -339,44 +493,36 @@
   "certificates": {
     "title": "Certificates",
     "subtitle": "Professional certifications and courses.",
-    "view": "View credential",
     "items": [
       {
-        "title": "SolidWorks Associate Certifications",
+        "title": "SolidWorks Associate",
         "issuer": "Dassault Systèmes",
-        "year": "2026",
-        "detail": "CSWA, CSWA-AM, CSWA-xDesign, CSWA-xShape, CSWA-xMold, CSWA-E, CSWA-SD",
-        "link": ""
+        "detail": "CSWA · CSWA-AM · CSWA-xDesign · CSWA-xShape · CSWA-xMold · CSWA-E · CSWA-SD",
+        "year": "2026"
       },
       {
-        "title": "CATIA V5 – Advanced",
+        "title": "CATIA V5 — Advanced",
         "issuer": "ParsPajouhan Institute",
-        "year": "2020",
-        "link": ""
+        "detail": "",
+        "year": "2020"
       },
       {
-        "title": "Ansys – Intermediate",
+        "title": "Ansys — Intermediate",
         "issuer": "Sharif University",
-        "year": "2019",
-        "link": ""
+        "detail": "",
+        "year": "2019"
       },
       {
-        "title": "Abaqus – Intermediate",
+        "title": "Abaqus — Intermediate",
         "issuer": "Sharif University",
-        "year": "2019",
-        "link": ""
+        "detail": "",
+        "year": "2019"
       },
       {
-        "title": "Python – Intermediate",
+        "title": "Python — Intermediate",
         "issuer": "Sematec",
-        "year": "2024",
-        "link": ""
-      },
-      {
-        "title": "Driving Licence",
-        "issuer": "Classes AM, B, L",
-        "year": "2024",
-        "link": ""
+        "detail": "",
+        "year": "2024"
       }
     ]
   },
@@ -393,16 +539,16 @@
         ]
       },
       {
-        "name": "Simulation & analysis (CAE)",
+        "name": "Simulation (CAE)",
         "items": [
-          "ANSYS (FEA/CFD)",
-          "Abaqus",
+          "ANSYS FEA / CFD",
           "Structural analysis",
-          "Fluid dynamics"
+          "Fluid dynamics",
+          "Abaqus"
         ]
       },
       {
-        "name": "Prototyping & manufacturing",
+        "name": "Prototyping & fabrication",
         "items": [
           "FDM 3D printing",
           "CNC laser machining",
@@ -438,24 +584,16 @@
           "Kotlin / Jetpack Compose",
           "C# / Unity"
         ]
-      },
-      {
-        "name": "Languages",
-        "items": [
-          "Persian (native)",
-          "Azerbaijani (fluent)",
-          "English (fluent)",
-          "German (A2)"
-        ]
       }
     ]
   },
   "contact": {
     "title": "Let's talk",
-    "text": "Interested in working together or just want to say hello? Write me a message.",
+    "text": "Interested in a collaboration, a test rig, or a technical discussion? Send a message.",
     "email": "Send an e-mail",
     "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "github": "GitHub",
+    "location": "Deggendorf, Germany"
   },
   "footer": {
     "rights": "All rights reserved.",

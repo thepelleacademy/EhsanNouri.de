@@ -1,7 +1,10 @@
-import '@fontsource/orbitron/500.css';
-import '@fontsource/orbitron/700.css';
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/600.css';
+import '@fontsource/barlow-condensed/600.css';
+import '@fontsource/barlow-condensed/700.css';
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/500.css';
+import '@fontsource/ibm-plex-sans/600.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
 import '@fontsource/vazirmatn/arabic-400.css';
 import '@fontsource/vazirmatn/arabic-700.css';
 import '@fontsource/vazirmatn/400.css';
@@ -9,70 +12,138 @@ import '@fontsource/vazirmatn/700.css';
 import './styles.css';
 
 import { initI18n, setLang, getLang, onLangChange, t } from './i18n.js';
-import { initScene } from './scene.js';
+import { initViewer } from './scene.js';
 import { SITE } from './config.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
-
 const esc = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// ---------- dynamic content (re-rendered on every language change) ----------
-function renderStats() {
-  $('#stats').innerHTML = (t('about.stats') || [])
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const STATUS_CLASS = { completed: 's-done', in_progress: 's-active', prototype: 's-proto' };
+const CAT_CODE = { mechanical: 'M', electronics: 'E', software: 'S', research: 'R' };
+const FILTERS = ['all', 'mechanical', 'electronics', 'software', 'research'];
+let activeFilter = 'all';
+
+// ---------- helpers ----------
+const statusLabel = (s) => t(`ui.statusLabel.${s}`) || s;
+const fmtPeriod = ([from, to]) => `${from} – ${to === 'now' ? t('ui.now') : to}`;
+const ticks = (items) => `<ul class="ticks">${items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
+
+// ---------- renderers (re-run on every language change) ----------
+function renderHero() {
+  $('#hero-chips').innerHTML = (t('hero.chips') || []).map((c) => `<li>${esc(c)}</li>`).join('');
+  const labels = t('ui.tb') || {};
+  const values = t('ui.tbValues') || {};
+  $('#titleblock').innerHTML = Object.keys(labels)
+    .map((k) => `<div class="tb-cell"><span>${esc(labels[k])}</span><b>${esc(values[k])}</b></div>`)
+    .join('');
+  $('#viewer-caption').textContent = t('ui.viewCaption') || '';
+}
+
+function renderProfile() {
+  $('#profile-text').innerHTML = (t('profile.paragraphs') || []).map((p) => `<p>${esc(p)}</p>`).join('');
+  $('#profile-facts').innerHTML = (t('profile.facts') || [])
+    .map((f) => `<div><dt class="mono">${esc(f.k)}</dt><dd>${esc(f.v)}</dd></div>`)
+    .join('');
+  const img = $('#portrait');
+  if (img) {
+    img.alt = SITE.name;
+    if (SITE.photo) img.src = SITE.photo;
+  }
+}
+
+function renderEducation() {
+  $('#education-list').innerHTML = (t('education.items') || [])
     .map(
-      (s) => `<div class="stat panel reveal tilt"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`
+      (e) => `
+      <article class="edu reveal ${e.status === 'in_progress' ? 'is-active' : ''}">
+        <header class="edu-head">
+          <span class="status ${STATUS_CLASS[e.status]}">${esc(statusLabel(e.status))}</span>
+          <span class="mono muted-txt">${esc(fmtPeriod(e.period))}</span>
+        </header>
+        <h3>${esc(e.degree)}</h3>
+        <p class="org">${esc(e.school)}</p>
+        ${e.note && e.note.length ? ticks(e.note) : ''}
+      </article>`
     )
     .join('');
 }
 
-function renderTimeline(targetId, items) {
-  $(targetId).innerHTML = (items || [])
+function renderExperience() {
+  $('#experience-list').innerHTML = (t('experience.items') || [])
     .map(
-      (it) => `
-      <article class="tl-item panel reveal tilt">
-        <div class="tl-head">
-          <h3>${esc(it.role)}</h3>
-          <span class="period">${esc(it.period)}</span>
+      (x, i) => `
+      <article class="job reveal">
+        <div class="job-period mono muted-txt">${esc(fmtPeriod(x.period))}</div>
+        <div class="job-body">
+          <h3>${esc(x.role)}</h3>
+          <p class="org">${esc(x.org)}</p>
+          <details ${i === 0 ? 'open' : ''}>
+            <summary>${esc(t('ui.openDetails'))}</summary>
+            ${ticks(x.bullets || [])}
+          </details>
         </div>
-        <p class="org">${esc(it.org)}</p>
-        ${it.desc ? `<p>${esc(it.desc)}</p>` : ''}
-        ${it.bullets && it.bullets.length ? `<ul class="bullets">${it.bullets.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
-        ${it.tags && it.tags.length ? `<ul class="tags">${it.tags.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
       </article>`
     )
     .join('');
+}
+
+function renderFilters() {
+  $('#filters').innerHTML = FILTERS.map(
+    (f) =>
+      `<button type="button" class="chip ${f === activeFilter ? 'is-on' : ''}" data-filter="${f}" aria-pressed="${f === activeFilter}">${esc(
+        t(`projects.filters.${f}`)
+      )}</button>`
+  ).join('');
 }
 
 function renderProjects() {
-  const label = t('projects.viewCode');
-  $('#projects-list').innerHTML = (t('projects.items') || [])
+  const all = t('projects.items') || [];
+  const items = all.map((p, idx) => ({ p, idx })).filter(({ p }) => activeFilter === 'all' || p.cat === activeFilter);
+  $('#projects-list').innerHTML = items
     .map(
-      (p, i) => `
-      <article class="card panel reveal tilt" style="--i:${i}">
-        <span class="card-index">${String(i + 1).padStart(2, '0')}</span>
+      ({ p, idx }) => `
+      <article class="project reveal" data-cat="${esc(p.cat)}">
+        <header class="project-head">
+          <span class="mono code">${CAT_CODE[p.cat] || 'P'}-${String(idx + 1).padStart(2, '0')}</span>
+          <span class="status ${STATUS_CLASS[p.status]}">${esc(statusLabel(p.status))}</span>
+        </header>
+        ${
+          p.images && p.images.length
+            ? `<figure class="project-media"><img src="${esc(p.images[0])}" alt="${esc(p.title)}" loading="lazy" decoding="async" /></figure>`
+            : ''
+        }
         <h3>${esc(p.title)}</h3>
-        <p>${esc(p.desc)}</p>
+        <p class="summary">${esc(p.summary)}</p>
+        <div class="meta-row mono">
+          ${p.year ? `<span>${esc(p.year)}</span>` : ''}
+          <span>${esc(t(`projects.filters.${p.cat}`))}</span>
+        </div>
         <ul class="tags">${(p.tags || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
-        ${p.link ? `<a class="link" href="${esc(p.link)}" target="_blank" rel="noopener noreferrer">${esc(label)} →</a>` : ''}
+        <details class="work">
+          <summary>${esc(t('ui.workDone'))}</summary>
+          ${ticks(p.work || [])}
+        </details>
       </article>`
     )
     .join('');
+  $('#projects-count').textContent = `${items.length} / ${all.length} ${t('ui.projectsCount')}`;
 }
 
 function renderCertificates() {
-  const label = t('certificates.view');
   $('#certificates-list').innerHTML = (t('certificates.items') || [])
     .map(
-      (c, i) => `
-      <article class="card panel reveal tilt" style="--i:${i}">
-        <span class="card-index">${esc(c.year)}</span>
-        <h3>${esc(c.title)}</h3>
-        <p class="org">${esc(c.issuer)}</p>
-        ${c.detail ? `<p class="detail">${esc(c.detail)}</p>` : ''}
-        ${c.link ? `<a class="link" href="${esc(c.link)}" target="_blank" rel="noopener noreferrer">${esc(label)} →</a>` : ''}
-      </article>`
+      (c) => `
+      <li class="cert reveal">
+        <span class="mono year">${esc(c.year)}</span>
+        <div>
+          <h3>${esc(c.title)}</h3>
+          <p class="org">${esc(c.issuer)}</p>
+          ${c.detail ? `<p class="mono small muted-txt">${esc(c.detail)}</p>` : ''}
+        </div>
+      </li>`
     )
     .join('');
 }
@@ -80,10 +151,10 @@ function renderCertificates() {
 function renderSkills() {
   $('#skills-list').innerHTML = (t('skills.groups') || [])
     .map(
-      (g, i) => `
-      <article class="card panel reveal tilt" style="--i:${i}">
-        <h3>${esc(g.name)}</h3>
-        <ul class="tags">${g.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+      (g) => `
+      <article class="skill reveal">
+        <h3 class="mono">${esc(g.name)}</h3>
+        <ul>${g.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
       </article>`
     )
     .join('');
@@ -91,30 +162,35 @@ function renderSkills() {
 
 function renderContact() {
   const links = [];
-  if (SITE.email) links.push(`<a class="btn btn-primary" href="mailto:${esc(SITE.email)}">${esc(t('contact.email'))}</a>`);
+  if (SITE.email)
+    links.push(`<a class="btn btn-primary" href="mailto:${esc(SITE.email)}">${esc(t('contact.email'))}</a>`);
   if (SITE.linkedin)
-    links.push(`<a class="btn btn-ghost" href="${esc(SITE.linkedin)}" target="_blank" rel="noopener noreferrer">${esc(t('contact.linkedin'))}</a>`);
-  if (SITE.phone)
-    links.push(`<a class="btn btn-ghost" href="tel:${esc(SITE.phone.replace(/\s+/g, ''))}">${esc(SITE.phone)}</a>`);
+    links.push(
+      `<a class="btn btn-ghost" href="${esc(SITE.linkedin)}" target="_blank" rel="noopener noreferrer">${esc(t('contact.linkedin'))}</a>`
+    );
   if (SITE.github)
-    links.push(`<a class="btn btn-ghost" href="${esc(SITE.github)}" target="_blank" rel="noopener noreferrer">${esc(t('contact.github'))}</a>`);
+    links.push(
+      `<a class="btn btn-ghost" href="${esc(SITE.github)}" target="_blank" rel="noopener noreferrer">${esc(t('contact.github'))}</a>`
+    );
   $('#contact-links').innerHTML = links.join('');
+  $('#contact-location').textContent = t('contact.location') || '';
 }
 
 function renderAll() {
-  renderStats();
-  renderTimeline('#experience-list', t('experience.items'));
-  renderTimeline('#education-list', t('education.items'));
+  renderHero();
+  renderProfile();
+  renderEducation();
+  renderExperience();
+  renderFilters();
   renderProjects();
   renderCertificates();
   renderSkills();
   renderContact();
   $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === getLang())));
   observeReveals();
-  bindTilt();
 }
 
-// ---------- scroll reveal ----------
+// ---------- scroll reveal (content is visible unless JS runs and the element is still off-screen) ----------
 const io = new IntersectionObserver(
   (entries) => {
     entries.forEach((e) => {
@@ -124,33 +200,12 @@ const io = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12, rootMargin: '0px 0px -6% 0px' }
+  { threshold: 0.08, rootMargin: '0px 0px -4% 0px' }
 );
 function observeReveals() {
-  $$('.reveal:not(.in)').forEach((el) => io.observe(el));
-}
-
-// ---------- 3D card tilt (pointer devices only) ----------
-const canTilt = window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
-  !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const TILT_MAX_DEG = 7; // maximum tilt angle
-function bindTilt() {
-  if (!canTilt) return;
-  $$('.tilt:not([data-tilt])').forEach((el) => {
-    el.dataset.tilt = '1';
-    el.addEventListener('pointermove', (e) => {
-      const r = el.getBoundingClientRect();
-      const px = (e.clientX - r.left) / r.width - 0.5;
-      const py = (e.clientY - r.top) / r.height - 0.5;
-      el.style.setProperty('--ry', `${px * TILT_MAX_DEG * 2}deg`);
-      el.style.setProperty('--rx', `${-py * TILT_MAX_DEG * 2}deg`);
-      el.style.setProperty('--mx', `${(px + 0.5) * 100}%`);
-      el.style.setProperty('--my', `${(py + 0.5) * 100}%`);
-    });
-    el.addEventListener('pointerleave', () => {
-      el.style.setProperty('--ry', '0deg');
-      el.style.setProperty('--rx', '0deg');
-    });
+  $$('.reveal:not(.in)').forEach((el) => {
+    if (reduceMotion) el.classList.add('in');
+    else io.observe(el);
   });
 }
 
@@ -164,21 +219,18 @@ function initNav() {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  const closeMenu = () => {
+    nav.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  };
   burger.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
     burger.setAttribute('aria-expanded', String(open));
   });
-  $$('a', links).forEach((a) =>
-    a.addEventListener('click', () => {
-      nav.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-    })
-  );
+  $$('a', links).forEach((a) => a.addEventListener('click', closeMenu));
 
   $$('.lang button').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang, { persist: true })));
 
-  // highlight current section
-  const sections = $$('main section[id]');
   const spy = new IntersectionObserver(
     (entries) => {
       entries.forEach((e) => {
@@ -189,16 +241,25 @@ function initNav() {
     },
     { rootMargin: '-45% 0px -50% 0px' }
   );
-  sections.forEach((s) => spy.observe(s));
+  $$('main section[id]').forEach((s) => spy.observe(s));
+}
+
+function initFilters() {
+  $('#filters').addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-filter]');
+    if (!btn) return;
+    activeFilter = btn.dataset.filter;
+    renderFilters();
+    renderProjects();
+    observeReveals();
+  });
 }
 
 // ---------- boot ----------
+document.documentElement.classList.add('js');
 $('#year').textContent = new Date().getFullYear();
-const portrait = $('#portrait');
-if (portrait && SITE.photo) portrait.src = SITE.photo;
-const locEl = $('#contact-location');
-if (locEl) locEl.textContent = SITE.location || '';
 onLangChange(renderAll);
 initNav();
-initScene($('#bg'));
+initFilters();
+initViewer($('#scene'), $('#viewport'));
 initI18n();
