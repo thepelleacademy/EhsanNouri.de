@@ -1,195 +1,174 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="cyan">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#03050b" />
-    <title>Ehsan Nouri – Mechanical R&amp;D &amp; Mechatronics</title>
-    <meta name="description" content="Portfolio of Ehsan Nouri: precision mechanical design, experimental prototyping, scientific instrumentation, projects and academic record." />
-    <meta property="og:title" content="Ehsan Nouri – Mechanical R&amp;D &amp; Mechatronics" />
+    <meta name="theme-color" content="#000000" />
+    <title>Ehsan Nouri – Mechanical R&amp;D and Mechatronics</title>
+    <meta name="description" content="Ehsan Nouri, mechanical R&amp;D engineer in Bavaria: precision design, test rigs, scientific instrumentation. Projects, career and certificates." />
+    <meta property="og:title" content="Ehsan Nouri – Mechanical R&amp;D and Mechatronics" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      // Apply the saved (or system) theme before first paint, so there is no flash.
+      (function () {
+        var THEMES = ['cyan', 'amber', 'red', 'drafting', 'anodized', 'scope'];
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (THEMES.indexOf(t) < 0) {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'drafting' : 'cyan';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
   </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#stage" data-i18n="ui.skip">Skip to content</a>
 
-    <header class="topbar" id="nav">
-      <a class="brand" href="#top" aria-label="Ehsan Nouri">
-        <span class="brand-mark" aria-hidden="true">EN</span>
-        <span class="brand-name">Ehsan Nouri</span>
+    <!-- ===================== TOP BAR ===================== -->
+    <header class="bar" id="bar">
+      <a class="brand" href="#/" aria-label="Ehsan Nouri">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="14.5" />
+          <circle cx="16" cy="16" r="5" />
+          <path d="M16 1.5v6M16 24.5v6M1.5 16h6M24.5 16h6" />
+        </svg>
+        <span class="brand-name" data-i18n="hero.name">Ehsan Nouri</span>
       </a>
 
-      <nav class="nav-links" id="nav-links" aria-label="Sections">
-        <a href="#profile"><i>01</i><span data-i18n="nav.profile">Profile</span></a>
-        <a href="#education"><i>02</i><span data-i18n="nav.education">Education</span></a>
-        <a href="#experience"><i>03</i><span data-i18n="nav.experience">Experience</span></a>
-        <a href="#projects"><i>04</i><span data-i18n="nav.projects">Projects</span></a>
-        <a href="#certificates"><i>05</i><span data-i18n="nav.certificates">Certificates</span></a>
-        <a href="#skills"><i>06</i><span data-i18n="nav.skills">Skills</span></a>
-        <a href="#contact"><i>07</i><span data-i18n="nav.contact">Contact</span></a>
-      </nav>
+      <nav class="tabs" id="tabs" aria-label="Sections"></nav>
 
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" data-lang="fa" lang="fa">فا</button>
-        <button type="button" data-lang="en" lang="en">EN</button>
-        <button type="button" data-lang="de" lang="de">DE</button>
+      <div class="bar-tools">
+        <div class="seg" id="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="fa" lang="fa">فا</button>
+          <button type="button" data-lang="en" lang="en">EN</button>
+          <button type="button" data-lang="de" lang="de">DE</button>
+        </div>
+        <div class="theme-pick">
+          <button class="icon-btn" id="theme-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="theme-pop">
+            <span class="swatch-dot" aria-hidden="true"></span>
+            <span class="sr" data-i18n="ui.theme">Theme</span>
+          </button>
+          <div class="pop" id="theme-pop" hidden></div>
+        </div>
       </div>
-
-      <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
     </header>
 
-    <main id="main">
-      <!-- 00 · TITLE SHEET (hero) -->
-      <section class="hero" id="top" aria-labelledby="hero-name">
-        <div class="wrap hero-grid">
+    <!-- ===================== STAGE: one panel visible at a time ===================== -->
+    <main class="stage" id="stage" tabindex="-1">
+      <!-- OVERVIEW -->
+      <section class="panel panel-overview" data-panel="overview" aria-labelledby="hero-name">
+        <div class="hero">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="hero.eyebrow">Mechanical R&amp;D · Mechatronics · Bavaria</p>
-            <h1 id="hero-name" data-i18n="hero.name">Ehsan Nouri</h1>
-            <p class="role" data-i18n="hero.role">Mechanical R&amp;D Engineer</p>
-            <p class="lede" data-i18n="hero.lede"></p>
+            <h1 class="hero-name" id="hero-name" data-i18n="hero.name">Ehsan Nouri</h1>
+            <p class="hero-role" data-i18n="hero.role"></p>
+            <p class="hero-lede" data-i18n="hero.lede"></p>
             <ul class="chips" id="hero-chips"></ul>
-            <div class="cta">
-              <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">Explore projects</a>
-              <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Get in touch</a>
+            <div class="actions">
+              <a class="btn btn-solid" href="#/projects" data-i18n="hero.ctaProjects"></a>
+              <a class="btn btn-line" href="#/contact" data-i18n="hero.ctaContact"></a>
             </div>
           </div>
-
-          <figure class="viewer" id="viewport">
-            <span class="corner tl" aria-hidden="true"></span><span class="corner tr" aria-hidden="true"></span>
-            <span class="corner bl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+          <figure class="viewer" id="viewer">
             <canvas id="scene" aria-hidden="true"></canvas>
-            <svg class="annot" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
-              <circle cx="200" cy="200" r="176" class="annot-ring" />
-              <path d="M52 92 H118 L150 126" />
-              <path d="M348 84 H288 L252 118" />
-              <path d="M40 318 H96 L132 284" />
-              <path d="M360 326 H300 L266 292" />
-              <text x="52" y="82">Ø 48 H7</text>
-              <text x="348" y="74" text-anchor="end">R 12</text>
-              <text x="40" y="346">t = 8.0</text>
-              <text x="360" y="356" text-anchor="end">6 × M6</text>
-            </svg>
             <figcaption>
-              <span id="viewer-caption"></span>
-              <span class="hint"><i aria-hidden="true"></i><span data-i18n="ui.viewerHint">Drag to rotate</span></span>
+              <span data-i18n="ui.viewCaption"></span>
+              <span class="hint" data-i18n="ui.viewerHint"></span>
             </figcaption>
           </figure>
         </div>
-        <div class="wrap">
-          <div class="titleblock" id="titleblock"></div>
-        </div>
+        <nav class="tiles" id="tiles" aria-label="Sections"></nav>
       </section>
 
-      <!-- 01 · PROFILE -->
-      <section class="section" id="profile">
-        <div class="wrap">
-          <header class="sheet-head reveal">
-            <span class="sheet-no">01</span>
-            <h2 data-i18n="profile.title">Profile</h2>
-            <span class="sheet-rule" aria-hidden="true"></span>
-          </header>
-          <div class="profile-grid">
-            <figure class="portrait reveal">
-              <img id="portrait" alt="Ehsan Nouri" width="720" height="986" loading="lazy" decoding="async" />
-              <figcaption class="mono">Fig. 00 — Ehsan Nouri</figcaption>
-            </figure>
-            <div class="profile-body">
-              <div class="profile-text reveal" id="profile-text"></div>
-              <dl class="facts reveal" id="profile-facts"></dl>
-            </div>
+      <!-- ABOUT -->
+      <section class="panel" data-panel="about" aria-labelledby="about-title" hidden>
+        <header class="panel-head">
+          <h2 id="about-title" data-i18n="about.title"></h2>
+        </header>
+        <div class="about">
+          <figure class="portrait"><img id="portrait" alt="" width="720" height="960" decoding="async" /></figure>
+          <div class="about-text">
+            <div id="about-paragraphs"></div>
+            <dl class="facts" id="about-facts"></dl>
+          </div>
+          <div class="about-skills">
+            <h3 data-i18n="about.skillsTitle"></h3>
+            <div id="about-skills"></div>
           </div>
         </div>
       </section>
 
-      <!-- 02 · EDUCATION -->
-      <section class="section" id="education">
-        <div class="wrap">
-          <header class="sheet-head reveal">
-            <span class="sheet-no">02</span>
-            <h2 data-i18n="education.title">Education</h2>
-            <span class="sheet-rule" aria-hidden="true"></span>
-          </header>
-          <p class="sheet-sub reveal" data-i18n="education.subtitle"></p>
-          <div class="edu-grid" id="education-list"></div>
+      <!-- CAREER -->
+      <section class="panel" data-panel="career" aria-labelledby="career-title" hidden>
+        <header class="panel-head">
+          <h2 id="career-title" data-i18n="career.title"></h2>
+        </header>
+        <div class="career">
+          <div class="career-list" id="career-list" role="list"></div>
+          <article class="career-detail" id="career-detail" aria-live="polite"></article>
         </div>
       </section>
 
-      <!-- 03 · EXPERIENCE -->
-      <section class="section" id="experience">
-        <div class="wrap">
-          <header class="sheet-head reveal">
-            <span class="sheet-no">03</span>
-            <h2 data-i18n="experience.title">Experience</h2>
-            <span class="sheet-rule" aria-hidden="true"></span>
-          </header>
-          <div class="jobs" id="experience-list"></div>
-        </div>
-      </section>
-
-      <!-- 04 · PROJECTS -->
-      <section class="section" id="projects">
-        <div class="wrap">
-          <header class="sheet-head reveal">
-            <span class="sheet-no">04</span>
-            <h2 data-i18n="projects.title">Projects</h2>
-            <span class="sheet-rule" aria-hidden="true"></span>
-          </header>
-          <p class="sheet-sub reveal" data-i18n="projects.subtitle"></p>
-          <div class="toolbar reveal">
-            <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
-            <span class="mono count" id="projects-count" aria-live="polite"></span>
+      <!-- PROJECTS -->
+      <section class="panel" data-panel="projects" aria-labelledby="projects-title" hidden>
+        <header class="panel-head">
+          <div>
+            <h2 id="projects-title" data-i18n="projects.title"></h2>
+            <p class="panel-sub" data-i18n="projects.subtitle"></p>
           </div>
-          <div class="project-grid" id="projects-list"></div>
-        </div>
+          <div class="filters" id="project-filters" role="group" aria-label="Filter"></div>
+        </header>
+        <div class="projects" id="projects-grid"></div>
       </section>
 
-      <!-- 05 · CERTIFICATES -->
-      <section class="section" id="certificates">
-        <div class="wrap">
-          <header class="sheet-head reveal">
-            <span class="sheet-no">05</span>
-            <h2 data-i18n="certificates.title">Certificates</h2>
-            <span class="sheet-rule" aria-hidden="true"></span>
-          </header>
-          <p class="sheet-sub reveal" data-i18n="certificates.subtitle"></p>
-          <ul class="certs" id="certificates-list"></ul>
-        </div>
-      </section>
-
-      <!-- 06 · SKILLS -->
-      <section class="section" id="skills">
-        <div class="wrap">
-          <header class="sheet-head reveal">
-            <span class="sheet-no">06</span>
-            <h2 data-i18n="skills.title">Skills</h2>
-            <span class="sheet-rule" aria-hidden="true"></span>
-          </header>
-          <div class="skill-grid" id="skills-list"></div>
-        </div>
-      </section>
-
-      <!-- 07 · CONTACT -->
-      <section class="section section-contact" id="contact">
-        <div class="wrap contact">
-          <div class="reveal">
-            <span class="sheet-no">07</span>
-            <h2 class="contact-title" data-i18n="contact.title">Let's talk</h2>
-            <p class="contact-text" data-i18n="contact.text"></p>
-            <p class="mono loc" id="contact-location"></p>
+      <!-- CERTIFICATES -->
+      <section class="panel panel-certs" data-panel="certificates" aria-labelledby="certs-title" hidden>
+        <header class="panel-head">
+          <div>
+            <h2 id="certs-title" data-i18n="certificates.title"></h2>
+            <p class="panel-sub" data-i18n="certificates.subtitle"></p>
           </div>
-          <div class="cta cta-stack reveal" id="contact-links"></div>
+          <div class="filters" id="cert-filters" role="group" aria-label="Filter"></div>
+        </header>
+        <div class="ring-stage" id="ring-stage">
+          <div class="ring" id="ring" role="listbox" tabindex="0" aria-roledescription="carousel"></div>
+        </div>
+        <div class="ring-caption">
+          <button class="icon-btn" type="button" id="ring-prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg><span class="sr" data-i18n="ui.prev"></span></button>
+          <div class="ring-info" id="ring-info" aria-live="polite"></div>
+          <button class="icon-btn" type="button" id="ring-next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg><span class="sr" data-i18n="ui.next"></span></button>
+        </div>
+        <p class="ring-hint" data-i18n="ui.ringHint"></p>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="panel panel-contact" data-panel="contact" aria-labelledby="contact-title" hidden>
+        <div class="contact">
+          <h2 id="contact-title" data-i18n="contact.title"></h2>
+          <p class="contact-text" data-i18n="contact.text"></p>
+          <a class="contact-mail" id="contact-mail" href="#"></a>
+          <div class="actions" id="contact-links"></div>
+          <p class="contact-loc" data-i18n="contact.location"></p>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="wrap footer-inner">
-        <span>© <span id="year"></span> Ehsan Nouri. <span data-i18n="footer.rights"></span></span>
-        <span class="muted" data-i18n="footer.legal"></span>
-      </div>
+    <!-- ===================== MOBILE TAB BAR ===================== -->
+    <nav class="dock" id="dock" aria-label="Sections"></nav>
+
+    <footer class="foot">
+      <span>© <span id="year"></span> Ehsan Nouri. <span data-i18n="footer.rights"></span></span>
+      <a href="#/legal" id="legal-link" data-i18n="ui.legal"></a>
     </footer>
+
+    <!-- ===================== SHEET (project detail, certificate viewer, legal) ===================== -->
+    <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+      <div class="sheet-body" id="sheet-body"></div>
+      <button class="icon-btn sheet-close" type="button" id="sheet-close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        <span class="sr" data-i18n="ui.close"></span>
+      </button>
+    </dialog>
 
     <script type="module" src="/src/main.js"></script>
   </body>

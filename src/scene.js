@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import { COLORS, VIEWER } from './config.js';
+import { VIEWER } from './config.js';
+import { cssVar, themeMode } from './theme.js';
 
 const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -19,10 +20,8 @@ function flangeShape(f) {
     const a = (i / f.segments) * Math.PI * 2;
     const lug = Math.pow(Math.max(0, Math.cos(f.bolts * a)), f.lugSharpness) * f.lugHeight;
     const r = f.radius + lug;
-    const x = r * Math.cos(a);
-    const y = r * Math.sin(a);
-    if (i === 0) shape.moveTo(x, y);
-    else shape.lineTo(x, y);
+    if (i === 0) shape.moveTo(r * Math.cos(a), r * Math.sin(a));
+    else shape.lineTo(r * Math.cos(a), r * Math.sin(a));
   }
   for (let k = 0; k < f.bolts; k++) {
     const a = (k / f.bolts) * Math.PI * 2;
@@ -36,10 +35,7 @@ function flangeShape(f) {
   return shape;
 }
 
-/**
- * Mount the viewer into `host` (a container) using `canvas`.
- * Returns a small controller; falls back to the static grid when WebGL is missing.
- */
+/** Mount the wireframe viewer into `host` using `canvas`. Colours follow the active theme. */
 export function initViewer(canvas, host) {
   if (!webglAvailable()) {
     host.classList.add('no-webgl');
@@ -52,8 +48,18 @@ export function initViewer(canvas, host) {
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(VIEWER.fov, 1, 0.1, 100);
-  camera.position.set(0, 0.35, VIEWER.cameraZ);
+  camera.position.set(0, VIEWER.cameraY, VIEWER.cameraZ);
   camera.lookAt(0, 0, 0);
+
+  // ----- materials (recoloured on theme change) -----
+  const M = {
+    edge: new THREE.LineBasicMaterial({ transparent: true, opacity: 0.95 }),
+    fill: new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false }),
+    bore: new THREE.MeshBasicMaterial({}),
+    ring: new THREE.MeshBasicMaterial({ transparent: true, opacity: 0.85 }),
+    node: new THREE.MeshBasicMaterial({}),
+    dust: new THREE.PointsMaterial({ size: 0.03, transparent: true, depthWrite: false }),
+  };
 
   // ----- the part -----
   const part = new THREE.Group();
@@ -63,61 +69,66 @@ export function initViewer(canvas, host) {
     curveSegments: 24,
   });
   geo.center();
-  const edges = new THREE.EdgesGeometry(geo, 18);
-  part.add(new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: COLORS.cyan, transparent: true, opacity: 0.95 })));
-  part.add(
-    new THREE.Mesh(
-      geo,
-      new THREE.MeshBasicMaterial({ color: COLORS.blue, transparent: true, opacity: 0.06, depthWrite: false })
-    )
-  );
-  // Red highlight on the bore: the one "critical" tolerance feature
-  const boreRing = new THREE.Mesh(
-    new THREE.TorusGeometry(VIEWER.flange.boreRadius, 0.012, 8, 120),
-    new THREE.MeshBasicMaterial({ color: COLORS.red })
-  );
+  part.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo, 18), M.edge));
+  part.add(new THREE.Mesh(geo, M.fill));
+  const boreRing = new THREE.Mesh(new THREE.TorusGeometry(VIEWER.flange.boreRadius, 0.012, 8, 120), M.bore);
   boreRing.position.z = VIEWER.thickness / 2 + 0.01;
   part.add(boreRing);
-  part.rotation.set(0.25, 0, 0);
+  part.rotation.set(VIEWER.tiltX, 0, 0);
   scene.add(part);
 
   // ----- orbiting ring with a node -----
   const orbit = new THREE.Group();
-  orbit.rotation.x = Math.PI / 2 - VIEWER.tiltX;
+  orbit.rotation.x = Math.PI / 2 - VIEWER.ringTilt;
   orbit.rotation.z = 0.2;
-  const ring = new THREE.Mesh(
-    new THREE.TorusGeometry(VIEWER.ringRadius, VIEWER.ringTube, 6, 220),
-    new THREE.MeshBasicMaterial({ color: COLORS.blue, transparent: true, opacity: 0.85 })
-  );
-  orbit.add(ring);
-  const node = new THREE.Mesh(
-    new THREE.SphereGeometry(0.05, 16, 12),
-    new THREE.MeshBasicMaterial({ color: COLORS.red })
-  );
+  orbit.add(new THREE.Mesh(new THREE.TorusGeometry(VIEWER.ringRadius, VIEWER.ringTube, 6, 220), M.ring));
+  const node = new THREE.Mesh(new THREE.SphereGeometry(0.05, 16, 12), M.node);
+  node.position.x = VIEWER.ringRadius;
   orbit.add(node);
   scene.add(orbit);
 
   // ----- floor grid -----
-  const grid = new THREE.GridHelper(VIEWER.gridSize, VIEWER.gridDivisions, COLORS.cyan, COLORS.blue);
-  grid.position.y = VIEWER.gridY;
-  grid.material.transparent = true;
-  grid.material.opacity = 0.12;
-  scene.add(grid);
+  let grid = null;
+  const buildGrid = (c1, c2, opacity) => {
+    if (grid) {
+      scene.remove(grid);
+      grid.geometry.dispose();
+      grid.material.dispose();
+    }
+    grid = new THREE.GridHelper(VIEWER.gridSize, VIEWER.gridDivisions, c1, c2);
+    grid.position.y = VIEWER.gridY;
+    grid.material.transparent = true;
+    grid.material.opacity = opacity;
+    scene.add(grid);
+  };
 
   // ----- particles -----
   const pos = new Float32Array(VIEWER.particles * 3);
-  for (let i = 0; i < VIEWER.particles; i++) {
-    pos[i * 3] = (Math.random() - 0.5) * VIEWER.particleSpread;
-    pos[i * 3 + 1] = (Math.random() - 0.5) * VIEWER.particleSpread;
-    pos[i * 3 + 2] = (Math.random() - 0.5) * VIEWER.particleSpread;
-  }
+  for (let i = 0; i < pos.length; i++) pos[i] = (Math.random() - 0.5) * VIEWER.particleSpread;
   const pGeo = new THREE.BufferGeometry();
   pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  const dust = new THREE.Points(
-    pGeo,
-    new THREE.PointsMaterial({ color: COLORS.sky, size: 0.03, transparent: true, opacity: 0.55, depthWrite: false })
-  );
+  const dust = new THREE.Points(pGeo, M.dust);
   scene.add(dust);
+
+  // ----- theme colours -----
+  const applyTheme = () => {
+    const mode = themeMode();
+    const accent = new THREE.Color(cssVar('--accent') || '#29d6ff');
+    const accent2 = new THREE.Color(cssVar('--accent-2') || '#3d7bff');
+    const hot = new THREE.Color(cssVar('--hot') || '#ff2e4f');
+    M.edge.color = accent;
+    M.fill.color = accent2;
+    M.fill.opacity = VIEWER.fillOpacity[mode];
+    M.bore.color = hot;
+    M.ring.color = accent2;
+    M.node.color = hot;
+    M.dust.color = accent;
+    M.dust.opacity = VIEWER.dustOpacity[mode];
+    buildGrid(accent, accent2, VIEWER.gridOpacity[mode]);
+    renderer.render(scene, camera);
+  };
+  applyTheme();
+  window.addEventListener('themechange', applyTheme);
 
   // ----- sizing -----
   const resize = () => {
@@ -126,30 +137,35 @@ export function initViewer(canvas, host) {
     renderer.setSize(w, h, false);
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
+    renderer.render(scene, camera);
   };
   const ro = new ResizeObserver(resize);
   ro.observe(host);
   resize();
 
-  // ----- pointer drag (horizontal rotates the part) -----
+  // ----- pointer drag: the part follows the finger, then keeps its momentum -----
   let dragging = false;
   let lastX = 0;
-  let spinOffset = 0;
-  const onDown = (e) => {
+  let spin = 0;
+  let spinVel = 0;
+  canvas.addEventListener('pointerdown', (e) => {
     dragging = true;
     lastX = e.clientX;
+    spinVel = 0;
     canvas.setPointerCapture?.(e.pointerId);
-  };
-  const onMove = (e) => {
+    kick();
+  });
+  canvas.addEventListener('pointermove', (e) => {
     if (!dragging) return;
-    spinOffset += (e.clientX - lastX) * VIEWER.dragSensitivity;
+    const d = (e.clientX - lastX) * VIEWER.dragSensitivity;
+    spin += d;
+    spinVel = d * 60;
     lastX = e.clientX;
-  };
-  const onUp = () => (dragging = false);
-  canvas.addEventListener('pointerdown', onDown);
-  canvas.addEventListener('pointermove', onMove);
-  canvas.addEventListener('pointerup', onUp);
-  canvas.addEventListener('pointercancel', onUp);
+    kick();
+  });
+  const end = () => (dragging = false);
+  canvas.addEventListener('pointerup', end);
+  canvas.addEventListener('pointercancel', end);
 
   // ----- loop (runs only while the viewer is on screen) -----
   const still = reduceMotion();
@@ -161,32 +177,39 @@ export function initViewer(canvas, host) {
     raf = 0;
     const dt = Math.min(0.05, (now - t0) / 1000);
     t0 = now;
-    if (!still && !dragging) spinOffset += dt * VIEWER.spinSpeed;
-    part.rotation.y = spinOffset;
+    if (!dragging) {
+      spin += spinVel * dt;
+      spinVel *= Math.pow(0.04, dt); // momentum decays
+      if (!still) spin += dt * VIEWER.spinSpeed;
+    }
+    part.rotation.y = spin;
     if (!still) {
-      orbit.rotation.y += dt * VIEWER.orbitSpeed * 2 * Math.PI * 0.2;
+      orbit.rotation.y += dt * VIEWER.orbitSpeed;
       dust.rotation.y += dt * 0.02;
     }
     renderer.render(scene, camera);
-    if (visible && !still) raf = requestAnimationFrame(frame);
+    if (visible && (!still || dragging || Math.abs(spinVel) > 0.01)) raf = requestAnimationFrame(frame);
+  };
+  const kick = () => {
+    if (!raf) {
+      t0 = performance.now();
+      raf = requestAnimationFrame(frame);
+    }
   };
 
   const io = new IntersectionObserver(([e]) => {
     visible = e.isIntersecting;
-    if (visible && !raf && !still) {
-      t0 = performance.now();
-      raf = requestAnimationFrame(frame);
-    }
+    if (visible) kick();
   });
   io.observe(host);
-
-  frame(performance.now());
+  kick();
 
   return {
     destroy() {
       cancelAnimationFrame(raf);
       io.disconnect();
       ro.disconnect();
+      window.removeEventListener('themechange', applyTheme);
       renderer.dispose();
     },
   };

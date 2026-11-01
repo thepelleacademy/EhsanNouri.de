@@ -1,66 +1,78 @@
 {
   "meta": {
-    "title": "احسان نوری – مهندس R&D مکانیک و مکاترونیک",
-    "description": "پورتفولیوی احسان نوری: طراحی مکانیکی دقیق، نمونه‌سازی آزمایشی، ابزار دقیق علمی، پروژه‌ها و سوابق تحصیلی."
+    "title": "احسان نوری – تحقیق و توسعه مکانیک و مکاترونیک",
+    "description": "احسان نوری، مهندس تحقیق و توسعه مکانیک در بایرن: طراحی دقیق، بسترهای آزمون و ابزار دقیق علمی. پروژه‌ها، سوابق و گواهینامه‌ها."
   },
   "nav": {
-    "profile": "معرفی",
-    "education": "تحصیلات",
-    "experience": "سوابق کاری",
+    "overview": "نمای کلی",
+    "about": "درباره من",
+    "career": "سوابق",
     "projects": "پروژه‌ها",
     "certificates": "گواهینامه‌ها",
-    "skills": "مهارت‌ها",
     "contact": "تماس"
   },
   "ui": {
     "now": "اکنون",
-    "sheet": "برگه",
-    "workDone": "انجام‌شده",
-    "responsibilities": "مسئولیت‌های کلیدی",
-    "all": "همه",
+    "close": "بستن",
+    "back": "نمای کلی",
+    "prev": "قبلی",
+    "next": "بعدی",
+    "skip": "رفتن به محتوا",
+    "theme": "تم رنگی",
+    "themeDark": "تیره",
+    "themeLight": "روشن",
+    "language": "زبان",
+    "menu": "بخش‌ها",
     "statusLabel": {
       "completed": "تکمیل‌شده",
       "in_progress": "در حال انجام",
       "prototype": "نمونه اولیه"
     },
-    "tb": {
-      "drawing": "سند",
-      "owner": "مالک",
-      "scale": "مقیاس",
-      "sheet": "برگه",
-      "rev": "ویرایش",
-      "unit": "واحد"
-    },
-    "tbValues": {
-      "drawing": "پورتفولیو",
-      "owner": "احسان نوری",
-      "scale": "1:1",
-      "sheet": "01 / 07",
-      "rev": "2026-10",
-      "unit": "میلی‌متر"
-    },
-    "viewCaption": "شکل ۰۱ — بدنه فلنجی، مدل سیم‌ای",
+    "workDone": "کارهای انجام‌شده",
+    "media": "عکس‌ها و ویدیوها",
+    "noMedia": "عکس‌ها و ویدیوهای این پروژه به‌زودی اینجا قرار می‌گیرد.",
+    "ringHint": "برای چرخاندن حلقه بکشید. روی گواهینامه جلویی کلیک کنید تا باز شود.",
+    "viewCertificate": "مشاهده گواهینامه",
+    "openPdf": "باز کردن PDF",
+    "verify": "بررسی آنلاین",
+    "issued": "تاریخ صدور",
+    "noScan": "تصویر این گواهینامه به‌زودی اضافه می‌شود.",
+    "openProject": "باز کردن پروژه",
     "viewerHint": "برای چرخش بکشید",
-    "academicStatus": "وضعیت تحصیلی",
-    "projectsCount": "پروژه",
-    "mobileMenu": "منو",
-    "openDetails": "نمایش جزئیات"
+    "viewCaption": "بدنه فلنجی، مدل سیمی",
+    "legal": "اطلاعات حقوقی و حریم خصوصی",
+    "of": "از"
+  },
+  "themes": {
+    "cyan": "آبی نئونی",
+    "amber": "نارنجی نئونی",
+    "red": "قرمز نئونی",
+    "drafting": "نقشه‌کشی",
+    "anodized": "آنودایز",
+    "scope": "اسیلوسکوپ"
   },
   "hero": {
-    "eyebrow": "R&D مکانیک · مکاترونیک · بایرن",
     "name": "احسان نوری",
     "role": "مهندس R&D مکانیک",
     "lede": "طراحی مکانیکی دقیق، نمونه‌سازی آزمایشی و ابزار دقیق علمی؛ از CAD و FEM تا یک بستر آزمون کارا.",
     "chips": [
-      "کارشناسی ارشد در حال گذراندن · دگندورف",
-      "FEM · GD&T · متروژی",
+      "کارشناسی ارشد در حال گذراندن، دگندورف",
+      "FEM، GD&T، مترولوژی",
       "بیش از ۱۰ سال تجربه طراحی مکانیکی"
     ],
     "ctaProjects": "مشاهده پروژه‌ها",
     "ctaContact": "ارتباط با من"
   },
-  "profile": {
-    "title": "معرفی",
+  "tiles": {
+    "projects": "{n} پروژه، از سخت‌افزار استاندارد نظامی تا اپ اندروید",
+    "certificates": "{n} گواهینامه در CAD، شبیه‌سازی و برنامه‌نویسی",
+    "career": "سمت فعلی",
+    "about": "پیشینه، مهارت‌ها و زبان‌ها",
+    "contact": "ایمیل، لینکدین و گیت‌هاب"
+  },
+  "about": {
+    "title": "درباره من",
+    "skillsTitle": "مهارت‌ها",
     "paragraphs": [
       "مهندس R&D مکانیک، در مرز میان شبیه‌سازی دیجیتال و نمونه‌سازی فیزیکی. سیستم‌های مکانیکی دقیق را در CATIA طراحی می‌کنم، با FEM اعتبارسنجی می‌کنم و به بسترهای آزمونی تبدیل می‌کنم که داده تولید کنند.",
       "بخش بزرگی از کارم در محیط‌های مهندسی تحت مقررات انجام شده است؛ جایی که ردیابی‌پذیری و مستندسازی به‌اندازه خود راه‌حل فنی اهمیت دارند. در کنار کار، پروژه‌های سخت‌افزاری و نرم‌افزاری شخصی می‌سازم؛ از سنسورهای embedded تا اپ اندروید و شبیه‌ساز واقعیت مجازی."
@@ -72,64 +84,81 @@
       },
       {
         "k": "مدارک تحصیلی",
-        "v": "کارشناسی ۲۰۱۳ · کارشناسی ارشد ۲۰۲۳ · کارشناسی ارشد در حال گذراندن"
+        "v": "کارشناسی ۲۰۱۳، کارشناسی ارشد ۲۰۲۳، کارشناسی ارشد در حال گذراندن"
       },
       {
         "k": "زبان‌ها",
-        "v": "فارسی (مادری) · آذربایجانی (مسلط) · انگلیسی (مسلط) · آلمانی (A2)"
+        "v": "فارسی (مادری)، آذربایجانی (مسلط)، انگلیسی (مسلط)، آلمانی (A2)"
       },
       {
         "k": "گواهینامه رانندگی",
         "v": "AM / B / L"
       }
-    ]
-  },
-  "education": {
-    "title": "تحصیلات",
-    "subtitle": "سوابق دانشگاهی و وضعیت فعلی.",
-    "items": [
+    ],
+    "skills": [
       {
-        "degree": "کارشناسی ارشد مهندسی مکاترونیک و سیستم‌های سایبر-فیزیکی",
-        "school": "مؤسسه فناوری دگندورف، آلمان",
-        "note": [
-          "در حال تحصیل، همزمان با نقش دستیار دانشجویی"
-        ],
-        "period": [
-          "03/2026",
-          "now"
-        ],
-        "status": "in_progress"
+        "name": "CAD / CAM",
+        "items": [
+          "CATIA",
+          "SolidWorks",
+          "AutoCAD",
+          "Cura"
+        ]
       },
       {
-        "degree": "کارشناسی ارشد ابزار دقیق تحلیلی، اندازه‌گیری و فناوری سنسور",
-        "school": "دانشگاه علوم کاربردی کوبورگ، آلمان",
-        "note": [
-          "پایان‌نامه: بهینه‌سازی چاپگر سه‌بعدی شکلات",
-          "استاد راهنما: Prof. Dr. Markus Stark"
-        ],
-        "period": [
-          "10/2021",
-          "09/2023"
-        ],
-        "status": "completed"
+        "name": "شبیه‌سازی (CAE)",
+        "items": [
+          "ANSYS FEA / CFD",
+          "تحلیل سازه",
+          "دینامیک سیالات",
+          "Abaqus"
+        ]
       },
       {
-        "degree": "کارشناسی مهندسی مکانیک",
-        "school": "دانشگاه آزاد کرج، ایران",
-        "note": [
-          "دستیار آموزشی دروس استاتیک، مقاومت مصالح و نقشه‌کشی صنعتی"
-        ],
-        "period": [
-          "10/2008",
-          "02/2013"
-        ],
-        "status": "completed"
+        "name": "نمونه‌سازی و ساخت",
+        "items": [
+          "چاپ سه‌بعدی FDM",
+          "برش لیزری CNC",
+          "نمونه‌سازی سریع",
+          "نقشه‌های GD&T"
+        ]
+      },
+      {
+        "name": "ابزار دقیق",
+        "items": [
+          "سیستم‌های اندازه‌گیری پیشرفته",
+          "اتصال سنسور",
+          "نمونه‌سازی الکترومکانیکی",
+          "متروژی ابعادی"
+        ]
+      },
+      {
+        "name": "آزمون و قابلیت اطمینان",
+        "items": [
+          "FMEA",
+          "آزمون تجربی",
+          "تحلیل خرابی",
+          "عیب‌یابی سیستم"
+        ]
+      },
+      {
+        "name": "Embedded و نرم‌افزار",
+        "items": [
+          "فریم‌ور Marlin",
+          "ESP32",
+          "Altium Designer",
+          "Python",
+          "Kotlin / Jetpack Compose",
+          "C# / Unity"
+        ]
       }
     ]
   },
-  "experience": {
-    "title": "سوابق کاری",
-    "items": [
+  "career": {
+    "title": "سوابق",
+    "workTitle": "سوابق کاری",
+    "eduTitle": "تحصیلات",
+    "experience": [
       {
         "role": "دستیار دانشجویی",
         "org": "مؤسسه فناوری دگندورف، آلمان",
@@ -219,6 +248,45 @@
           "10/2017"
         ]
       }
+    ],
+    "education": [
+      {
+        "degree": "کارشناسی ارشد مهندسی مکاترونیک و سیستم‌های سایبر-فیزیکی",
+        "school": "مؤسسه فناوری دگندورف، آلمان",
+        "note": [
+          "در حال تحصیل، همزمان با نقش دستیار دانشجویی"
+        ],
+        "period": [
+          "03/2026",
+          "now"
+        ],
+        "status": "in_progress"
+      },
+      {
+        "degree": "کارشناسی ارشد ابزار دقیق تحلیلی، اندازه‌گیری و فناوری سنسور",
+        "school": "دانشگاه علوم کاربردی کوبورگ، آلمان",
+        "note": [
+          "پایان‌نامه: بهینه‌سازی چاپگر سه‌بعدی شکلات",
+          "استاد راهنما: Prof. Dr. Markus Stark"
+        ],
+        "period": [
+          "10/2021",
+          "09/2023"
+        ],
+        "status": "completed"
+      },
+      {
+        "degree": "کارشناسی مهندسی مکانیک",
+        "school": "دانشگاه آزاد کرج، ایران",
+        "note": [
+          "دستیار آموزشی دروس استاتیک، مقاومت مصالح و نقشه‌کشی صنعتی"
+        ],
+        "period": [
+          "10/2008",
+          "02/2013"
+        ],
+        "status": "completed"
+      }
     ]
   },
   "projects": {
@@ -231,18 +299,8 @@
       "software": "نرم‌افزار",
       "research": "پژوهش"
     },
-    "items": [
-      {
-        "id": "satellite-container",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "MIL-STD",
-          "ANSYS FEA",
-          "CAD",
-          "Integration"
-        ],
+    "items": {
+      "satellite-container": {
         "title": "کانتینر حمل ماهواره",
         "summary": "کانتینر مطابق استاندارد MIL برای حمل ماهواره‌های کوچک، از طراحی سازه تا یک سیستم یکپارچه و آزمون‌شده.",
         "work": [
@@ -250,155 +308,69 @@
           "تحلیل سازه‌ای (FEA) در ANSYS",
           "ساخت و یکپارچه‌سازی زیرسیستم‌های مکانیکی و الکترونیکی",
           "نصب تجهیزات و بهینه‌سازی"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "wire-rope-isolator",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "MIL-STD-810",
-          "Shock",
-          "Vibration"
-        ],
+      "wire-rope-isolator": {
         "title": "ایزولاتور سیم‌بکسل (Wire Rope Isolator)",
         "summary": "ایزولاتور غیرفعال شوک و ارتعاش که زیر فرکانس طبیعی ماهواره کار می‌کند.",
         "work": [
           "طراحی و ساخت مطابق MIL-STD-810",
           "مشخصه‌یابی جداسازی شوک روی دستگاه آزمون شوک مغناطیسی",
           "تحلیل داده‌های ارتعاش و شوک برای اعتبارسنجی"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "helicopter-rig",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "2-DOF",
-          "Actuation",
-          "Instrumentation"
-        ],
+      "helicopter-rig": {
         "title": "بستر آزمون هلیکوپتر 2-DOF",
         "summary": "پایه آزمون برای بررسی دینامیک yaw و pitch.",
         "work": [
           "طراحی مکانیکی و عملگر",
           "ابزار دقیق و یکپارچه‌سازی الکترومکانیکی",
           "راه‌اندازی و اجرای آزمایش‌ها"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "propeller-rig",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "Aerodynamics",
-          "Thrust"
-        ],
+      "propeller-rig": {
         "title": "واحد آزمون پروانه آیرودینامیکی",
         "summary": "واحدی برای اندازه‌گیری تراست و عملکرد آیرودینامیکی در زوایای گام و قطرهای مختلف.",
         "work": [
           "طراحی و ساخت واحد آزمون",
           "ارزیابی تجربی تراست و عملکرد آیرودینامیکی"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "hybrid-solar-wind",
-        "cat": "mechanical",
-        "status": "prototype",
-        "year": "2018–2021",
-        "tags": [
-          "Renewable energy",
-          "Prototype"
-        ],
+      "hybrid-solar-wind": {
         "title": "مولد ترکیبی خورشیدی–بادی",
         "summary": "نمونه اولیه‌ای که تولید برق خورشیدی و بادی را با مفهوم تهویه طبیعی ترکیب می‌کند.",
         "work": [
           "سازه مکانیکی و یکپارچه‌سازی قطعات",
           "توسعه زیرسیستم‌های الکترومکانیکی"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "needle-nozzle",
-        "cat": "research",
-        "status": "completed",
-        "year": "2022–2023",
-        "tags": [
-          "FDM",
-          "Needle insertion",
-          "Tensile testing"
-        ],
+      "needle-nozzle": {
         "title": "نازل FDM با درج سوزن",
         "summary": "نازل FDM با درج سوزن برای بهبود چسبندگی لایه‌ها و استحکام قطعه.",
         "work": [
           "طراحی نازل در CATIA V5 و ساخت",
           "بررسی پارامترهای حیاتی فرایند FDM",
           "تحلیل آماری داده‌های کشش و کرنش"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "mycusini",
-        "cat": "research",
-        "status": "completed",
-        "year": "2023",
-        "tags": [
-          "Extrusion",
-          "Firmware",
-          "Thermal"
-        ],
+      "mycusini": {
         "title": "Mycusini 1.0: اکسترود و هات‌اند",
         "summary": "پایان‌نامه کارشناسی ارشد در IPM: بهینه‌سازی مکانیک اکسترود و پایداری حرارتی.",
         "work": [
           "آزمون تجربی هات‌اند و مکانیک اکسترود",
           "بهبود فریم‌ور و سخت‌افزار بر اساس بازخورد آزمون میدانی"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "accelerometer-logger",
-        "cat": "electronics",
-        "status": "completed",
-        "year": null,
-        "tags": [
-          "MEMS",
-          "Altium Designer",
-          "Firmware"
-        ],
+      "accelerometer-logger": {
         "title": "دیتالاگر شتاب‌سنج، 100 g / 100 Hz",
         "summary": "دیتالاگر مبتنی بر MEMS برای اندازه‌گیری ارتعاش و شوک.",
         "work": [
           "ثبت داده‌های ارتعاش و شوک با سنسور MEMS",
           "طراحی PCB در Altium Designer و مونتاژ",
           "برنامه‌نویسی فریم‌ور"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "temp-humidity-logger",
-        "cat": "electronics",
-        "status": "completed",
-        "year": null,
-        "tags": [
-          "SHT-10",
-          "Bluetooth",
-          "Altium Designer"
-        ],
+      "temp-humidity-logger": {
         "title": "دیتالاگر دما و رطوبت",
         "summary": "دیتالاگر بی‌سیم که داده‌ها را به اپ اندروید می‌فرستد.",
         "work": [
@@ -406,186 +378,104 @@
           "انتقال از طریق بلوتوث به اپ اندروید",
           "طراحی PCB در Altium Designer و مونتاژ",
           "برنامه‌نویسی فریم‌ور"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "motion-tracker",
-        "cat": "electronics",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "ESP32-C3",
-          "MPU6050",
-          "Android"
-        ],
+      "motion-tracker": {
         "title": "ردیاب هوشمند حرکات ورزشی",
         "summary": "دستگاه پوشیدنی که حرکات ورزشی را به تحلیل عملکرد تبدیل می‌کند.",
         "work": [
           "فریم‌ور ESP32-C3 با سنسور حرکتی MPU6050",
           "اپ اندروید برای تحلیل"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "pdf-annotator",
-        "cat": "software",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "Kotlin",
-          "Jetpack Compose",
-          "Android"
-        ],
+      "pdf-annotator": {
         "title": "PDF Tablet Annotator",
         "summary": "اپ اندروید برای یادداشت‌گذاری روی PDF با قلم روی تبلت.",
         "work": [
           "اپلیکیشن با Kotlin و Jetpack Compose",
           "یادداشت‌گذاری با قلم روی صفحات PDF"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "vr-scooter",
-        "cat": "software",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "Unity",
-          "C#",
-          "Python",
-          "VR"
-        ],
+      "vr-scooter": {
         "title": "شبیه‌ساز واقعیت مجازی اسکوتر",
         "summary": "شبیه‌ساز اسکوتر در واقعیت مجازی با لایه کنترلر اختصاصی برای فیزیک رانندگی.",
         "work": [
           "شبیه‌سازی با Unity (C#)",
           "لانچر پایتون",
           "لایه کنترلر برای فیزیک رانندگی"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "handwriting-cnc",
-        "cat": "mechanical",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "G-code",
-          "CNC",
-          "Python"
-        ],
+      "handwriting-cnc": {
         "title": "دست‌خط به CNC",
         "summary": "دست‌خط شخصی که به گلیف‌های برداری و یک فونت تبدیل و با پلاتر قلمی CNC ترسیم شده است.",
         "work": [
           "دیجیتال‌سازی گلیف‌ها و ساخت فونت",
           "تولید G-code با پایتون برای پلاتر قلمی"
-        ],
-        "images": [],
-        "link": ""
+        ]
       }
-    ]
+    }
   },
   "certificates": {
     "title": "گواهینامه‌ها",
-    "subtitle": "گواهینامه‌ها و دوره‌های حرفه‌ای.",
-    "items": [
-      {
-        "title": "SolidWorks Associate",
-        "issuer": "Dassault Systèmes",
-        "detail": "CSWA · CSWA-AM · CSWA-xDesign · CSWA-xShape · CSWA-xMold · CSWA-E · CSWA-SD",
-        "year": "2026"
+    "subtitle": "همه گواهینامه‌ها، روی حلقه‌ای که می‌چرخد.",
+    "filters": {
+      "all": "همه",
+      "solidworks": "SolidWorks",
+      "cae": "CAD و شبیه‌سازی",
+      "software": "برنامه‌نویسی"
+    },
+    "issuers": {
+      "dassault": "Dassault Systèmes",
+      "parspajouhan": "مؤسسه پارس‌پژوهان",
+      "sharif": "دانشگاه صنعتی شریف",
+      "sematec": "سماتک"
+    },
+    "items": {
+      "cswa": {
+        "title": "CSWA طراحی مکانیکی",
+        "detail": "Certified SOLIDWORKS Associate"
       },
-      {
-        "title": "CATIA V5 — پیشرفته",
-        "issuer": "مؤسسه پارس‌پژوهان",
-        "detail": "",
-        "year": "2020"
+      "cswa-am": {
+        "title": "CSWA ساخت افزایشی",
+        "detail": "Certified SOLIDWORKS Associate"
       },
-      {
-        "title": "Ansys — متوسط",
-        "issuer": "دانشگاه صنعتی شریف",
-        "detail": "",
-        "year": "2019"
+      "cswa-xdesign": {
+        "title": "CSWA xDesign",
+        "detail": "Certified SOLIDWORKS Associate، پلتفرم 3DEXPERIENCE"
       },
-      {
-        "title": "Abaqus — متوسط",
-        "issuer": "دانشگاه صنعتی شریف",
-        "detail": "",
-        "year": "2019"
+      "cswa-xshape": {
+        "title": "CSWA xShape",
+        "detail": "Certified SOLIDWORKS Associate، پلتفرم 3DEXPERIENCE"
       },
-      {
-        "title": "Python — متوسط",
-        "issuer": "Sematec",
-        "detail": "",
-        "year": "2024"
+      "cswa-xmold": {
+        "title": "CSWA xMold",
+        "detail": "Certified SOLIDWORKS Associate، پلتفرم 3DEXPERIENCE"
+      },
+      "cswa-e": {
+        "title": "CSWA الکتریکال",
+        "detail": "Certified SOLIDWORKS Associate"
+      },
+      "cswa-sd": {
+        "title": "CSWA طراحی پایدار",
+        "detail": "Certified SOLIDWORKS Associate"
+      },
+      "catia-v5": {
+        "title": "CATIA V5 پیشرفته",
+        "detail": "دوره پیشرفته"
+      },
+      "ansys": {
+        "title": "Ansys متوسط",
+        "detail": "دوره سطح متوسط"
+      },
+      "abaqus": {
+        "title": "Abaqus متوسط",
+        "detail": "دوره سطح متوسط"
+      },
+      "python": {
+        "title": "Python متوسط",
+        "detail": "دوره سطح متوسط"
       }
-    ]
-  },
-  "skills": {
-    "title": "مهارت‌ها",
-    "groups": [
-      {
-        "name": "CAD / CAM",
-        "items": [
-          "CATIA",
-          "SolidWorks",
-          "AutoCAD",
-          "Cura"
-        ]
-      },
-      {
-        "name": "شبیه‌سازی (CAE)",
-        "items": [
-          "ANSYS FEA / CFD",
-          "تحلیل سازه",
-          "دینامیک سیالات",
-          "Abaqus"
-        ]
-      },
-      {
-        "name": "نمونه‌سازی و ساخت",
-        "items": [
-          "چاپ سه‌بعدی FDM",
-          "برش لیزری CNC",
-          "نمونه‌سازی سریع",
-          "نقشه‌های GD&T"
-        ]
-      },
-      {
-        "name": "ابزار دقیق",
-        "items": [
-          "سیستم‌های اندازه‌گیری پیشرفته",
-          "اتصال سنسور",
-          "نمونه‌سازی الکترومکانیکی",
-          "متروژی ابعادی"
-        ]
-      },
-      {
-        "name": "آزمون و قابلیت اطمینان",
-        "items": [
-          "FMEA",
-          "آزمون تجربی",
-          "تحلیل خرابی",
-          "عیب‌یابی سیستم"
-        ]
-      },
-      {
-        "name": "Embedded و نرم‌افزار",
-        "items": [
-          "فریم‌ور Marlin",
-          "ESP32",
-          "Altium Designer",
-          "Python",
-          "Kotlin / Jetpack Compose",
-          "C# / Unity"
-        ]
-      }
-    ]
+    }
   },
   "contact": {
     "title": "بیایید صحبت کنیم",
@@ -595,11 +485,19 @@
     "github": "گیت‌هاب",
     "location": "دگندورف، آلمان"
   },
-  "footer": {
-    "rights": "تمامی حقوق محفوظ است.",
-    "legal": "اطلاعات حقوقی و حریم خصوصی: به‌زودی"
+  "legal": {
+    "title": "اطلاعات حقوقی و حریم خصوصی",
+    "imprintTitle": "اطلاعات صاحب سایت",
+    "imprintLaw": "طبق بند ۵ قانون DDG آلمان",
+    "privacyTitle": "حریم خصوصی",
+    "privacy": [
+      "این وبسایت یک صفحه ایستا است. هیچ کوکی‌ای ذخیره نمی‌کند و از ابزار ردیابی یا آمارگیری استفاده نمی‌کند.",
+      "سایت روی سروری از شرکت Hetzner Online GmbH در آلمان اجرا می‌شود و از طریق Cloudflare, Inc. ارائه می‌شود. این شرکت‌ها برای ارائه و محافظت از صفحه، آدرس IP و داده‌های فنی درخواست شما را پردازش می‌کنند.",
+      "برای نمایش صفحه به زبان شما، مرورگرتان کد کشور را از Cloudflare می‌پرسد. انتخاب زبان و تم فقط در مرورگر خودتان ذخیره می‌شود.",
+      "اگر ایمیل بفرستید، پیام شما فقط برای پاسخ دادن به خودتان استفاده می‌شود."
+    ]
   },
-  "lang": {
-    "label": "زبان"
+  "footer": {
+    "rights": "تمامی حقوق محفوظ است."
   }
 }

@@ -1,66 +1,78 @@
 {
   "meta": {
-    "title": "Ehsan Nouri – Mechanical R&D & Mechatronics",
-    "description": "Portfolio of Ehsan Nouri: precision mechanical design, experimental prototyping, scientific instrumentation, projects and academic record."
+    "title": "Ehsan Nouri – Mechanical R&D and Mechatronics",
+    "description": "Ehsan Nouri, mechanical R&D engineer in Bavaria: precision design, test rigs, scientific instrumentation. Projects, career and certificates."
   },
   "nav": {
-    "profile": "Profile",
-    "education": "Education",
-    "experience": "Experience",
+    "overview": "Overview",
+    "about": "About",
+    "career": "Career",
     "projects": "Projects",
     "certificates": "Certificates",
-    "skills": "Skills",
     "contact": "Contact"
   },
   "ui": {
     "now": "now",
-    "sheet": "Sheet",
-    "workDone": "Work done",
-    "responsibilities": "Key responsibilities",
-    "all": "All",
+    "close": "Close",
+    "back": "Overview",
+    "prev": "Previous",
+    "next": "Next",
+    "skip": "Skip to content",
+    "theme": "Theme",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "language": "Language",
+    "menu": "Sections",
     "statusLabel": {
       "completed": "Completed",
       "in_progress": "In progress",
       "prototype": "Prototype"
     },
-    "tb": {
-      "drawing": "Document",
-      "owner": "Owner",
-      "scale": "Scale",
-      "sheet": "Sheet",
-      "rev": "Revision",
-      "unit": "Units"
-    },
-    "tbValues": {
-      "drawing": "Portfolio",
-      "owner": "Ehsan Nouri",
-      "scale": "1:1",
-      "sheet": "01 / 07",
-      "rev": "2026-10",
-      "unit": "mm"
-    },
-    "viewCaption": "Fig. 01 — Flanged housing, wireframe model",
+    "workDone": "What I did",
+    "media": "Photos and videos",
+    "noMedia": "Photos and videos of this project will be added here.",
+    "ringHint": "Drag to turn the ring. Click the front certificate to open it.",
+    "viewCertificate": "View certificate",
+    "openPdf": "Open PDF",
+    "verify": "Verify online",
+    "issued": "Issued",
+    "noScan": "The scan of this certificate will be added soon.",
+    "openProject": "Open project",
     "viewerHint": "Drag to rotate",
-    "academicStatus": "Academic status",
-    "projectsCount": "projects",
-    "mobileMenu": "Menu",
-    "openDetails": "Show details"
+    "viewCaption": "Flanged housing, wireframe",
+    "legal": "Imprint and privacy",
+    "of": "of"
+  },
+  "themes": {
+    "cyan": "Neon blue",
+    "amber": "Neon orange",
+    "red": "Neon red",
+    "drafting": "Drafting",
+    "anodized": "Anodized",
+    "scope": "Oscilloscope"
   },
   "hero": {
-    "eyebrow": "Mechanical R&D · Mechatronics · Bavaria",
     "name": "Ehsan Nouri",
     "role": "Mechanical R&D Engineer",
     "lede": "Precision mechanical design, experimental prototyping and scientific instrumentation. From CAD and FEM to a working test rig.",
     "chips": [
-      "M.Sc. in progress · Deggendorf",
-      "FEM · GD&T · Metrology",
+      "M.Sc. in progress, Deggendorf",
+      "FEM, GD&T, Metrology",
       "10+ years in mechanical design"
     ],
     "ctaProjects": "Explore projects",
     "ctaContact": "Get in touch"
   },
-  "profile": {
-    "title": "Profile",
+  "tiles": {
+    "projects": "{n} projects, from MIL-standard hardware to Android apps",
+    "certificates": "{n} certificates in CAD, simulation and programming",
+    "career": "Current role",
+    "about": "Background, skills and languages",
+    "contact": "E-mail, LinkedIn and GitHub"
+  },
+  "about": {
+    "title": "About",
+    "skillsTitle": "Skills",
     "paragraphs": [
       "Mechanical R&D engineer working at the boundary between digital simulation and physical prototyping. I design precision mechanical systems in CATIA, validate them with FEM, and build them into test rigs that produce data.",
       "Most of my work sits in regulated engineering environments, where traceability and documentation matter as much as the solution. Outside of work I build my own hardware and software projects, from embedded sensors to Android apps and VR simulators."
@@ -72,64 +84,81 @@
       },
       {
         "k": "Degrees",
-        "v": "B.Sc. 2013 · M.Sc. 2023 · M.Sc. in progress"
+        "v": "B.Sc. 2013, M.Sc. 2023, M.Sc. in progress"
       },
       {
         "k": "Languages",
-        "v": "Persian (native) · Azerbaijani (fluent) · English (fluent) · German (A2)"
+        "v": "Persian (native), Azerbaijani (fluent), English (fluent), German (A2)"
       },
       {
         "k": "Driving licence",
         "v": "AM / B / L"
       }
-    ]
-  },
-  "education": {
-    "title": "Education",
-    "subtitle": "Academic record and current status.",
-    "items": [
+    ],
+    "skills": [
       {
-        "degree": "M.Sc. Mechatronics and Cyber-Physical Systems",
-        "school": "Deggendorf Institute of Technology, Germany",
-        "note": [
-          "Currently enrolled, alongside a student assistant role"
-        ],
-        "period": [
-          "03/2026",
-          "now"
-        ],
-        "status": "in_progress"
+        "name": "CAD / CAM",
+        "items": [
+          "CATIA",
+          "SolidWorks",
+          "AutoCAD",
+          "Cura"
+        ]
       },
       {
-        "degree": "M.Sc. Analytical Instruments, Measurement and Sensor Technology",
-        "school": "Coburg University of Applied Sciences, Germany",
-        "note": [
-          "Thesis: Optimization of a chocolate 3D printer",
-          "Supervisor: Prof. Dr. Markus Stark"
-        ],
-        "period": [
-          "10/2021",
-          "09/2023"
-        ],
-        "status": "completed"
+        "name": "Simulation (CAE)",
+        "items": [
+          "ANSYS FEA / CFD",
+          "Structural analysis",
+          "Fluid dynamics",
+          "Abaqus"
+        ]
       },
       {
-        "degree": "B.Sc. Mechanical Engineering",
-        "school": "Azad University of Karaj, Iran",
-        "note": [
-          "Teaching assistant: Statics, Mechanics of Materials, Industrial Drawing"
-        ],
-        "period": [
-          "10/2008",
-          "02/2013"
-        ],
-        "status": "completed"
+        "name": "Prototyping & fabrication",
+        "items": [
+          "FDM 3D printing",
+          "CNC laser machining",
+          "Rapid prototyping",
+          "GD&T drawings"
+        ]
+      },
+      {
+        "name": "Instrumentation",
+        "items": [
+          "Advanced measurement systems",
+          "Sensor interfacing",
+          "Electromechanical prototyping",
+          "Dimensional metrology"
+        ]
+      },
+      {
+        "name": "Testing & reliability",
+        "items": [
+          "FMEA",
+          "Experimental testing",
+          "Failure analysis",
+          "System troubleshooting"
+        ]
+      },
+      {
+        "name": "Embedded & software",
+        "items": [
+          "Marlin firmware",
+          "ESP32",
+          "Altium Designer",
+          "Python",
+          "Kotlin / Jetpack Compose",
+          "C# / Unity"
+        ]
       }
     ]
   },
-  "experience": {
-    "title": "Experience",
-    "items": [
+  "career": {
+    "title": "Career",
+    "workTitle": "Work",
+    "eduTitle": "Education",
+    "experience": [
       {
         "role": "Student Assistant",
         "org": "Deggendorf Institute of Technology, Germany",
@@ -219,6 +248,45 @@
           "10/2017"
         ]
       }
+    ],
+    "education": [
+      {
+        "degree": "M.Sc. Mechatronics and Cyber-Physical Systems",
+        "school": "Deggendorf Institute of Technology, Germany",
+        "note": [
+          "Currently enrolled, alongside a student assistant role"
+        ],
+        "period": [
+          "03/2026",
+          "now"
+        ],
+        "status": "in_progress"
+      },
+      {
+        "degree": "M.Sc. Analytical Instruments, Measurement and Sensor Technology",
+        "school": "Coburg University of Applied Sciences, Germany",
+        "note": [
+          "Thesis: Optimization of a chocolate 3D printer",
+          "Supervisor: Prof. Dr. Markus Stark"
+        ],
+        "period": [
+          "10/2021",
+          "09/2023"
+        ],
+        "status": "completed"
+      },
+      {
+        "degree": "B.Sc. Mechanical Engineering",
+        "school": "Azad University of Karaj, Iran",
+        "note": [
+          "Teaching assistant: Statics, Mechanics of Materials, Industrial Drawing"
+        ],
+        "period": [
+          "10/2008",
+          "02/2013"
+        ],
+        "status": "completed"
+      }
     ]
   },
   "projects": {
@@ -231,18 +299,8 @@
       "software": "Software",
       "research": "Research"
     },
-    "items": [
-      {
-        "id": "satellite-container",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "MIL-STD",
-          "ANSYS FEA",
-          "CAD",
-          "Integration"
-        ],
+    "items": {
+      "satellite-container": {
         "title": "Satellite Transport Container",
         "summary": "MIL-standard container for shipping small satellites, from structural design to an integrated, tested system.",
         "work": [
@@ -250,155 +308,69 @@
           "Structural analysis (FEA) in ANSYS",
           "Fabrication and integration of mechanical and electronic subsystems",
           "Equipment installation and optimization"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "wire-rope-isolator",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "MIL-STD-810",
-          "Shock",
-          "Vibration"
-        ],
+      "wire-rope-isolator": {
         "title": "Wire Rope Isolator",
         "summary": "Passive shock and vibration isolator that works below the satellite's natural frequency.",
         "work": [
           "Design and fabrication to MIL-STD-810 vibration and shock requirements",
           "Shock-isolation characterization on a magnetic shock test machine",
           "Analysis of vibration and shock data to validate isolation efficiency"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "helicopter-rig",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "2-DOF",
-          "Actuation",
-          "Instrumentation"
-        ],
+      "helicopter-rig": {
         "title": "2-DOF Helicopter Test Rig",
         "summary": "Test stand for investigating yaw and pitch dynamics.",
         "work": [
           "Mechanical design and actuation",
           "Instrumentation and electromechanical integration",
           "Commissioning and experimental runs"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "propeller-rig",
-        "cat": "mechanical",
-        "status": "completed",
-        "year": "2018–2021",
-        "tags": [
-          "Aerodynamics",
-          "Thrust"
-        ],
+      "propeller-rig": {
         "title": "Aerodynamic Propeller Test Unit",
         "summary": "Unit for measuring thrust and aerodynamic performance across blade pitches and diameters.",
         "work": [
           "Design and fabrication of the test unit",
           "Experimental evaluation of thrust and aerodynamic performance"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "hybrid-solar-wind",
-        "cat": "mechanical",
-        "status": "prototype",
-        "year": "2018–2021",
-        "tags": [
-          "Renewable energy",
-          "Prototype"
-        ],
+      "hybrid-solar-wind": {
         "title": "Hybrid Solar–Wind Generator",
         "summary": "Prototype combining solar and wind power with a natural-ventilation concept.",
         "work": [
           "Mechanical structure and component integration",
           "Electromechanical subsystem development"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "needle-nozzle",
-        "cat": "research",
-        "status": "completed",
-        "year": "2022–2023",
-        "tags": [
-          "FDM",
-          "Needle insertion",
-          "Tensile testing"
-        ],
+      "needle-nozzle": {
         "title": "Needle-Insertion FDM Nozzle",
         "summary": "FDM nozzle with needle insertion to improve inter-layer bonding and part strength.",
         "work": [
           "Nozzle design in CATIA V5 and fabrication",
           "Investigation of critical FDM process parameters",
           "Statistical analysis of tensile and strain data"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "mycusini",
-        "cat": "research",
-        "status": "completed",
-        "year": "2023",
-        "tags": [
-          "Extrusion",
-          "Firmware",
-          "Thermal"
-        ],
+      "mycusini": {
         "title": "Mycusini 1.0 Extrusion & Hot-End",
         "summary": "Master thesis at IPM: optimizing extrusion mechanics and hot-end thermal stability.",
         "work": [
           "Experimental testing of hot-end and extrusion mechanics",
           "Firmware and hardware refinement using field-test feedback"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "accelerometer-logger",
-        "cat": "electronics",
-        "status": "completed",
-        "year": null,
-        "tags": [
-          "MEMS",
-          "Altium Designer",
-          "Firmware"
-        ],
+      "accelerometer-logger": {
         "title": "Accelerometer Data Logger, 100 g / 100 Hz",
         "summary": "MEMS-based logger for vibration and shock measurement.",
         "work": [
           "Acquisition of vibration and shock data with a MEMS sensor",
           "PCB design in Altium Designer and assembly",
           "Firmware programming"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "temp-humidity-logger",
-        "cat": "electronics",
-        "status": "completed",
-        "year": null,
-        "tags": [
-          "SHT-10",
-          "Bluetooth",
-          "Altium Designer"
-        ],
+      "temp-humidity-logger": {
         "title": "Temperature & Humidity Logger",
         "summary": "Wireless data logger that streams readings to an Android app.",
         "work": [
@@ -406,186 +378,104 @@
           "Bluetooth transfer to an Android app",
           "PCB design in Altium Designer and assembly",
           "Firmware programming"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "motion-tracker",
-        "cat": "electronics",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "ESP32-C3",
-          "MPU6050",
-          "Android"
-        ],
+      "motion-tracker": {
         "title": "Smart Exercise Motion Tracker",
         "summary": "Wearable device that turns exercise motion into performance analytics.",
         "work": [
           "ESP32-C3 firmware with MPU6050 motion sensing",
           "Android app for analytics"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "pdf-annotator",
-        "cat": "software",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "Kotlin",
-          "Jetpack Compose",
-          "Android"
-        ],
+      "pdf-annotator": {
         "title": "PDF Tablet Annotator",
         "summary": "Android app for stylus annotation of PDF documents on a tablet.",
         "work": [
           "Kotlin and Jetpack Compose application",
           "Stylus-based annotation of PDF pages"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "vr-scooter",
-        "cat": "software",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "Unity",
-          "C#",
-          "Python",
-          "VR"
-        ],
+      "vr-scooter": {
         "title": "VR Scooter Simulator",
         "summary": "Virtual-reality scooter simulator with a dedicated riding-physics controller layer.",
         "work": [
           "Unity (C#) simulation",
           "Python launcher",
           "Controller layer for riding physics"
-        ],
-        "images": [],
-        "link": ""
+        ]
       },
-      {
-        "id": "handwriting-cnc",
-        "cat": "mechanical",
-        "status": "in_progress",
-        "year": null,
-        "tags": [
-          "G-code",
-          "CNC",
-          "Python"
-        ],
+      "handwriting-cnc": {
         "title": "Handwriting to CNC",
         "summary": "Own handwriting digitized into vector glyphs and a font, then plotted by a CNC pen plotter.",
         "work": [
           "Vector glyph digitization and font generation",
           "G-code generation in Python for the pen plotter"
-        ],
-        "images": [],
-        "link": ""
+        ]
       }
-    ]
+    }
   },
   "certificates": {
     "title": "Certificates",
-    "subtitle": "Professional certifications and courses.",
-    "items": [
-      {
-        "title": "SolidWorks Associate",
-        "issuer": "Dassault Systèmes",
-        "detail": "CSWA · CSWA-AM · CSWA-xDesign · CSWA-xShape · CSWA-xMold · CSWA-E · CSWA-SD",
-        "year": "2026"
+    "subtitle": "All certificates, as a ring you can turn.",
+    "filters": {
+      "all": "All",
+      "solidworks": "SolidWorks",
+      "cae": "CAD and simulation",
+      "software": "Programming"
+    },
+    "issuers": {
+      "dassault": "Dassault Systèmes",
+      "parspajouhan": "ParsPajouhan Institute",
+      "sharif": "Sharif University of Technology",
+      "sematec": "Sematec"
+    },
+    "items": {
+      "cswa": {
+        "title": "CSWA Mechanical Design",
+        "detail": "Certified SOLIDWORKS Associate"
       },
-      {
-        "title": "CATIA V5 — Advanced",
-        "issuer": "ParsPajouhan Institute",
-        "detail": "",
-        "year": "2020"
+      "cswa-am": {
+        "title": "CSWA Additive Manufacturing",
+        "detail": "Certified SOLIDWORKS Associate"
       },
-      {
-        "title": "Ansys — Intermediate",
-        "issuer": "Sharif University",
-        "detail": "",
-        "year": "2019"
+      "cswa-xdesign": {
+        "title": "CSWA xDesign",
+        "detail": "Certified SOLIDWORKS Associate, 3DEXPERIENCE"
       },
-      {
-        "title": "Abaqus — Intermediate",
-        "issuer": "Sharif University",
-        "detail": "",
-        "year": "2019"
+      "cswa-xshape": {
+        "title": "CSWA xShape",
+        "detail": "Certified SOLIDWORKS Associate, 3DEXPERIENCE"
       },
-      {
-        "title": "Python — Intermediate",
-        "issuer": "Sematec",
-        "detail": "",
-        "year": "2024"
+      "cswa-xmold": {
+        "title": "CSWA xMold",
+        "detail": "Certified SOLIDWORKS Associate, 3DEXPERIENCE"
+      },
+      "cswa-e": {
+        "title": "CSWA Electrical",
+        "detail": "Certified SOLIDWORKS Associate"
+      },
+      "cswa-sd": {
+        "title": "CSWA Sustainable Design",
+        "detail": "Certified SOLIDWORKS Associate"
+      },
+      "catia-v5": {
+        "title": "CATIA V5 Advanced",
+        "detail": "Advanced course"
+      },
+      "ansys": {
+        "title": "Ansys Intermediate",
+        "detail": "Intermediate course"
+      },
+      "abaqus": {
+        "title": "Abaqus Intermediate",
+        "detail": "Intermediate course"
+      },
+      "python": {
+        "title": "Python Intermediate",
+        "detail": "Intermediate course"
       }
-    ]
-  },
-  "skills": {
-    "title": "Skills",
-    "groups": [
-      {
-        "name": "CAD / CAM",
-        "items": [
-          "CATIA",
-          "SolidWorks",
-          "AutoCAD",
-          "Cura"
-        ]
-      },
-      {
-        "name": "Simulation (CAE)",
-        "items": [
-          "ANSYS FEA / CFD",
-          "Structural analysis",
-          "Fluid dynamics",
-          "Abaqus"
-        ]
-      },
-      {
-        "name": "Prototyping & fabrication",
-        "items": [
-          "FDM 3D printing",
-          "CNC laser machining",
-          "Rapid prototyping",
-          "GD&T drawings"
-        ]
-      },
-      {
-        "name": "Instrumentation",
-        "items": [
-          "Advanced measurement systems",
-          "Sensor interfacing",
-          "Electromechanical prototyping",
-          "Dimensional metrology"
-        ]
-      },
-      {
-        "name": "Testing & reliability",
-        "items": [
-          "FMEA",
-          "Experimental testing",
-          "Failure analysis",
-          "System troubleshooting"
-        ]
-      },
-      {
-        "name": "Embedded & software",
-        "items": [
-          "Marlin firmware",
-          "ESP32",
-          "Altium Designer",
-          "Python",
-          "Kotlin / Jetpack Compose",
-          "C# / Unity"
-        ]
-      }
-    ]
+    }
   },
   "contact": {
     "title": "Let's talk",
@@ -595,11 +485,19 @@
     "github": "GitHub",
     "location": "Deggendorf, Germany"
   },
-  "footer": {
-    "rights": "All rights reserved.",
-    "legal": "Legal notice & privacy: coming soon"
+  "legal": {
+    "title": "Imprint and privacy",
+    "imprintTitle": "Imprint",
+    "imprintLaw": "Information according to § 5 DDG",
+    "privacyTitle": "Privacy",
+    "privacy": [
+      "This website is a static page. It sets no cookies and uses no tracking or analytics.",
+      "The site runs on a server of Hetzner Online GmbH in Germany and is delivered through Cloudflare, Inc. To deliver and protect the page, these providers process your IP address and technical request data.",
+      "To show the page in your language, your browser asks Cloudflare for your country code. Your choice of language and theme is stored only in your own browser.",
+      "If you send an e-mail, your message is used only to reply to you."
+    ]
   },
-  "lang": {
-    "label": "Language"
+  "footer": {
+    "rights": "All rights reserved."
   }
 }
