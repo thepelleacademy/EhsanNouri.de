@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="canonical" href="https://ehsannouri.de/" />
     <meta name="theme-color" content="#000000" />
     <title>Ehsan Nouri – Mechanical R&amp;D and Mechatronics</title>
     <meta name="description" content="Ehsan Nouri, mechanical R&amp;D engineer in Bavaria: precision design, test rigs, scientific instrumentation. Projects, career and certificates." />
@@ -24,6 +25,7 @@
   </head>
   <body>
     <a class="skip" href="#stage" data-i18n="ui.skip">Skip to content</a>
+    <div class="preview-flag" id="preview-flag" hidden>Preview · unsaved changes from /admin</div>
 
     <!-- ===================== TOP BAR ===================== -->
     <header class="bar" id="bar">
@@ -33,12 +35,16 @@
           <circle cx="16" cy="16" r="5" />
           <path d="M16 1.5v6M16 24.5v6M1.5 16h6M24.5 16h6" />
         </svg>
-        <span class="brand-name" data-i18n="hero.name">Ehsan Nouri</span>
+        <span class="brand-name" data-c="home.name">Ehsan Nouri</span>
       </a>
 
       <nav class="tabs" id="tabs" aria-label="Sections"></nav>
 
       <div class="bar-tools">
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          <span class="sr" data-i18n="ui.more">More</span>
+        </button>
         <div class="seg" id="lang" role="group" aria-label="Language">
           <button type="button" data-lang="fa" lang="fa">فا</button>
           <button type="button" data-lang="en" lang="en">EN</button>
@@ -60,20 +66,17 @@
       <section class="panel panel-overview" data-panel="overview" aria-labelledby="hero-name">
         <div class="hero">
           <div class="hero-copy">
-            <h1 class="hero-name" id="hero-name" data-i18n="hero.name">Ehsan Nouri</h1>
-            <p class="hero-role" data-i18n="hero.role"></p>
-            <p class="hero-lede" data-i18n="hero.lede"></p>
+            <h1 class="hero-name" id="hero-name" data-c="home.name">Ehsan Nouri</h1>
+            <p class="hero-role" data-c="home.role"></p>
+            <p class="hero-lede" data-c="home.lede"></p>
             <ul class="chips" id="hero-chips"></ul>
-            <div class="actions">
-              <a class="btn btn-solid" href="#/projects" data-i18n="hero.ctaProjects"></a>
-              <a class="btn btn-line" href="#/contact" data-i18n="hero.ctaContact"></a>
-            </div>
+            <div class="actions" id="hero-actions"></div>
           </div>
           <figure class="viewer" id="viewer">
             <canvas id="scene" aria-hidden="true"></canvas>
             <figcaption>
-              <span data-i18n="ui.viewCaption"></span>
-              <span class="hint" data-i18n="ui.viewerHint"></span>
+              <span data-c="home.viewCaption"></span>
+              <span class="hint" data-c="home.viewerHint"></span>
             </figcaption>
           </figure>
         </div>
@@ -83,7 +86,7 @@
       <!-- ABOUT -->
       <section class="panel" data-panel="about" aria-labelledby="about-title" hidden>
         <header class="panel-head">
-          <h2 id="about-title" data-i18n="about.title"></h2>
+          <h2 id="about-title" data-c="about.title"></h2>
         </header>
         <div class="about">
           <figure class="portrait"><img id="portrait" alt="" width="720" height="960" decoding="async" /></figure>
@@ -92,7 +95,7 @@
             <dl class="facts" id="about-facts"></dl>
           </div>
           <div class="about-skills">
-            <h3 data-i18n="about.skillsTitle"></h3>
+            <h3 data-c="about.skillsTitle"></h3>
             <div id="about-skills"></div>
           </div>
         </div>
@@ -101,7 +104,7 @@
       <!-- CAREER -->
       <section class="panel" data-panel="career" aria-labelledby="career-title" hidden>
         <header class="panel-head">
-          <h2 id="career-title" data-i18n="career.title"></h2>
+          <h2 id="career-title" data-c="career.title"></h2>
         </header>
         <div class="career">
           <div class="career-list" id="career-list" role="list"></div>
@@ -113,8 +116,8 @@
       <section class="panel" data-panel="projects" aria-labelledby="projects-title" hidden>
         <header class="panel-head">
           <div>
-            <h2 id="projects-title" data-i18n="projects.title"></h2>
-            <p class="panel-sub" data-i18n="projects.subtitle"></p>
+            <h2 id="projects-title" data-c="projects.title"></h2>
+            <p class="panel-sub" data-c="projects.subtitle"></p>
           </div>
           <div class="filters" id="project-filters" role="group" aria-label="Filter"></div>
         </header>
@@ -125,8 +128,8 @@
       <section class="panel panel-certs" data-panel="certificates" aria-labelledby="certs-title" hidden>
         <header class="panel-head">
           <div>
-            <h2 id="certs-title" data-i18n="certificates.title"></h2>
-            <p class="panel-sub" data-i18n="certificates.subtitle"></p>
+            <h2 id="certs-title" data-c="certificates.title"></h2>
+            <p class="panel-sub" data-c="certificates.subtitle"></p>
           </div>
           <div class="filters" id="cert-filters" role="group" aria-label="Filter"></div>
         </header>
@@ -141,14 +144,19 @@
         <p class="ring-hint" data-i18n="ui.ringHint"></p>
       </section>
 
+      <!-- CUSTOM PAGE (content/pages.json, address #/page/<id>) -->
+      <section class="panel panel-page" data-panel="page" aria-labelledby="page-title" hidden>
+        <article class="page" id="page-body"></article>
+      </section>
+
       <!-- CONTACT -->
       <section class="panel panel-contact" data-panel="contact" aria-labelledby="contact-title" hidden>
         <div class="contact">
-          <h2 id="contact-title" data-i18n="contact.title"></h2>
-          <p class="contact-text" data-i18n="contact.text"></p>
+          <h2 id="contact-title" data-c="contact.title"></h2>
+          <p class="contact-text" data-c="contact.text"></p>
           <a class="contact-mail" id="contact-mail" href="#"></a>
           <div class="actions" id="contact-links"></div>
-          <p class="contact-loc" data-i18n="contact.location"></p>
+          <p class="contact-loc" data-c="contact.location"></p>
         </div>
       </section>
     </main>
@@ -157,7 +165,7 @@
     <nav class="dock" id="dock" aria-label="Sections"></nav>
 
     <footer class="foot">
-      <span>© <span id="year"></span> Ehsan Nouri. <span data-i18n="footer.rights"></span></span>
+      <span>© <span id="year"></span> <span id="foot-name">Ehsan Nouri</span>. <span data-c="contact.footer"></span></span>
       <a href="#/legal" id="legal-link" data-i18n="ui.legal"></a>
     </footer>
 

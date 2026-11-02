@@ -1,0 +1,222 @@
+{
+  "items": [
+    {
+      "id": "overview",
+      "type": "section",
+      "target": "overview",
+      "label": {
+        "fa": "نمای کلی",
+        "en": "Overview",
+        "de": "Übersicht"
+      },
+      "icon": "overview",
+      "visible": true,
+      "tile": false,
+      "tileText": {
+        "fa": "",
+        "en": "",
+        "de": ""
+      },
+      "dock": true,
+      "children": []
+    },
+    {
+      "id": "about",
+      "type": "section",
+      "target": "about",
+      "label": {
+        "fa": "درباره من",
+        "en": "About",
+        "de": "Profil"
+      },
+      "icon": "about",
+      "visible": true,
+      "tile": true,
+      "tileText": {
+        "fa": "پیشینه، مهارت‌ها و زبان‌ها",
+        "en": "Background, skills and languages",
+        "de": "Hintergrund, Kompetenzen und Sprachen"
+      },
+      "dock": true,
+      "children": [
+        {
+          "id": "publications",
+          "type": "page",
+          "target": "publications",
+          "label": {
+            "fa": "مقالات",
+            "en": "Publications",
+            "de": "Publikationen"
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "career",
+      "type": "section",
+      "target": "career",
+      "label": {
+        "fa": "سوابق",
+        "en": "Career",
+        "de": "Werdegang"
+      },
+      "icon": "career",
+      "visible": true,
+      "tile": true,
+      "tileText": {
+        "fa": "سمت فعلی",
+        "en": "Current role",
+        "de": "Aktuelle Position"
+      },
+      "dock": true,
+      "children": []
+    },
+    {
+      "id": "projects",
+      "type": "section",
+      "target": "projects",
+      "label": {
+        "fa": "پروژه‌ها",
+        "en": "Projects",
+        "de": "Projekte"
+      },
+      "icon": "projects",
+      "visible": true,
+      "tile": true,
+      "tileText": {
+        "fa": "{n} پروژه، از سخت‌افزار استاندارد نظامی تا اپ اندروید",
+        "en": "{n} projects, from MIL-standard hardware to Android apps",
+        "de": "{n} Projekte, von MIL-Standard-Hardware bis zu Android-Apps"
+      },
+      "dock": true,
+      "children": [
+        {
+          "id": "projects-mechanical",
+          "type": "section",
+          "target": "projects",
+          "filter": "mechanical",
+          "label": {
+            "fa": "مکانیک",
+            "en": "Mechanical",
+            "de": "Mechanik"
+          },
+          "visible": true
+        },
+        {
+          "id": "projects-electronics",
+          "type": "section",
+          "target": "projects",
+          "filter": "electronics",
+          "label": {
+            "fa": "الکترونیک",
+            "en": "Electronics",
+            "de": "Elektronik"
+          },
+          "visible": true
+        },
+        {
+          "id": "projects-software",
+          "type": "section",
+          "target": "projects",
+          "filter": "software",
+          "label": {
+            "fa": "نرم‌افزار",
+            "en": "Software",
+            "de": "Software"
+          },
+          "visible": true
+        },
+        {
+          "id": "projects-research",
+          "type": "section",
+          "target": "projects",
+          "filter": "research",
+          "label": {
+            "fa": "پژوهش",
+            "en": "Research",
+            "de": "Forschung"
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "certificates",
+      "type": "section",
+      "target": "certificates",
+      "label": {
+        "fa": "گواهینامه‌ها",
+        "en": "Certificates",
+        "de": "Zertifikate"
+      },
+      "icon": "certificates",
+      "visible": true,
+      "tile": true,
+      "tileText": {
+        "fa": "{n} گواهینامه در CAD، شبیه‌سازی و برنامه‌نویسی",
+        "en": "{n} certificates in CAD, simulation and programming",
+        "de": "{n} Zertifikate in CAD, Simulation und Programmierung"
+      },
+      "dock": true,
+      "children": [
+        {
+          "id": "certs-solidworks",
+          "type": "section",
+          "target": "certificates",
+          "filter": "solidworks",
+          "label": {
+            "fa": "SolidWorks",
+            "en": "SolidWorks",
+            "de": "SolidWorks"
+          },
+          "visible": true
+        },
+        {
+          "id": "certs-cae",
+          "type": "section",
+          "target": "certificates",
+          "filter": "cae",
+          "label": {
+            "fa": "CAD و شبیه‌سازی",
+            "en": "CAD and simulation",
+            "de": "CAD und Simulation"
+          },
+          "visible": true
+        },
+        {
+          "id": "certs-software",
+          "type": "section",
+          "target": "certificates",
+          "filter": "software",
+          "label": {
+            "fa": "برنامه‌نویسی",
+            "en": "Programming",
+            "de": "Programmierung"
+          },
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "type": "section",
+      "target": "contact",
+      "label": {
+        "fa": "تماس",
+        "en": "Contact",
+        "de": "Kontakt"
+      },
+      "icon": "contact",
+      "visible": true,
+      "tile": true,
+      "tileText": {
+        "fa": "ایمیل، لینکدین و گیت‌هاب",
+        "en": "E-mail, LinkedIn and GitHub",
+        "de": "E-Mail, LinkedIn und GitHub"
+      },
+      "dock": false,
+      "children": []
+    }
+  ]
+}

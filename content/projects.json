@@ -1,0 +1,654 @@
+{
+  "title": {
+    "fa": "پروژه‌ها",
+    "en": "Projects",
+    "de": "Projekte"
+  },
+  "subtitle": {
+    "fa": "کارهای مهندسی، پژوهشی و پروژه‌های شخصی: سخت‌افزار، فریم‌ور و نرم‌افزار.",
+    "en": "Engineering work, research and personal builds: hardware, firmware and software.",
+    "de": "Ingenieurarbeiten, Forschung und eigene Projekte: Hardware, Firmware und Software."
+  },
+  "allLabel": {
+    "fa": "همه",
+    "en": "All",
+    "de": "Alle"
+  },
+  "categories": [
+    {
+      "id": "mechanical",
+      "label": {
+        "fa": "مکانیک",
+        "en": "Mechanical",
+        "de": "Mechanik"
+      }
+    },
+    {
+      "id": "electronics",
+      "label": {
+        "fa": "الکترونیک",
+        "en": "Electronics",
+        "de": "Elektronik"
+      }
+    },
+    {
+      "id": "software",
+      "label": {
+        "fa": "نرم‌افزار",
+        "en": "Software",
+        "de": "Software"
+      }
+    },
+    {
+      "id": "research",
+      "label": {
+        "fa": "پژوهش",
+        "en": "Research",
+        "de": "Forschung"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "satellite-container",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "completed",
+      "year": "2018–2021",
+      "tags": [
+        "MIL-STD",
+        "ANSYS FEA",
+        "CAD",
+        "Integration"
+      ],
+      "title": {
+        "fa": "کانتینر حمل ماهواره",
+        "en": "Satellite Transport Container",
+        "de": "Satelliten-Transportcontainer"
+      },
+      "summary": {
+        "fa": "کانتینر مطابق استاندارد MIL برای حمل ماهواره‌های کوچک، از طراحی سازه تا یک سیستم یکپارچه و آزمون‌شده.",
+        "en": "MIL-standard container for shipping small satellites, from structural design to an integrated, tested system.",
+        "de": "Container nach MIL-Standard für den Transport kleiner Satelliten, von der Strukturauslegung bis zum integrierten, geprüften System."
+      },
+      "work": {
+        "fa": [
+          "مسئولیت کامل طراحی مکانیکی و معماری سازه",
+          "تحلیل سازه‌ای (FEA) در ANSYS",
+          "ساخت و یکپارچه‌سازی زیرسیستم‌های مکانیکی و الکترونیکی",
+          "نصب تجهیزات و بهینه‌سازی"
+        ],
+        "en": [
+          "Full responsibility for mechanical design and structural architecture",
+          "Structural analysis (FEA) in ANSYS",
+          "Fabrication and integration of mechanical and electronic subsystems",
+          "Equipment installation and optimization"
+        ],
+        "de": [
+          "Volle Verantwortung für Konstruktion und Strukturarchitektur",
+          "Strukturanalyse (FEA) in ANSYS",
+          "Fertigung und Integration mechanischer und elektronischer Teilsysteme",
+          "Installation der Ausrüstung und Optimierung"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "wire-rope-isolator",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "completed",
+      "year": "2018–2021",
+      "tags": [
+        "MIL-STD-810",
+        "Shock",
+        "Vibration"
+      ],
+      "title": {
+        "fa": "ایزولاتور سیم‌بکسل (Wire Rope Isolator)",
+        "en": "Wire Rope Isolator",
+        "de": "Drahtseilisolator (Wire Rope Isolator)"
+      },
+      "summary": {
+        "fa": "ایزولاتور غیرفعال شوک و ارتعاش که زیر فرکانس طبیعی ماهواره کار می‌کند.",
+        "en": "Passive shock and vibration isolator that works below the satellite's natural frequency.",
+        "de": "Passiver Schock- und Vibrationsisolator, der unterhalb der Eigenfrequenz des Satelliten arbeitet."
+      },
+      "work": {
+        "fa": [
+          "طراحی و ساخت مطابق MIL-STD-810",
+          "مشخصه‌یابی جداسازی شوک روی دستگاه آزمون شوک مغناطیسی",
+          "تحلیل داده‌های ارتعاش و شوک برای اعتبارسنجی"
+        ],
+        "en": [
+          "Design and fabrication to MIL-STD-810 vibration and shock requirements",
+          "Shock-isolation characterization on a magnetic shock test machine",
+          "Analysis of vibration and shock data to validate isolation efficiency"
+        ],
+        "de": [
+          "Konstruktion und Fertigung nach MIL-STD-810",
+          "Charakterisierung der Schockisolation auf einer magnetischen Schockprüfanlage",
+          "Auswertung der Vibrations- und Schockdaten zur Validierung"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "helicopter-rig",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "completed",
+      "year": "2018–2021",
+      "tags": [
+        "2-DOF",
+        "Actuation",
+        "Instrumentation"
+      ],
+      "title": {
+        "fa": "بستر آزمون هلیکوپتر 2-DOF",
+        "en": "2-DOF Helicopter Test Rig",
+        "de": "2-DOF-Hubschrauber-Prüfstand"
+      },
+      "summary": {
+        "fa": "پایه آزمون برای بررسی دینامیک yaw و pitch.",
+        "en": "Test stand for investigating yaw and pitch dynamics.",
+        "de": "Prüfstand zur Untersuchung der Gier- und Nickdynamik."
+      },
+      "work": {
+        "fa": [
+          "طراحی مکانیکی و عملگر",
+          "ابزار دقیق و یکپارچه‌سازی الکترومکانیکی",
+          "راه‌اندازی و اجرای آزمایش‌ها"
+        ],
+        "en": [
+          "Mechanical design and actuation",
+          "Instrumentation and electromechanical integration",
+          "Commissioning and experimental runs"
+        ],
+        "de": [
+          "Mechanische Konstruktion und Aktorik",
+          "Messtechnik und elektromechanische Integration",
+          "Inbetriebnahme und Versuchsdurchführung"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "propeller-rig",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "completed",
+      "year": "2018–2021",
+      "tags": [
+        "Aerodynamics",
+        "Thrust"
+      ],
+      "title": {
+        "fa": "واحد آزمون پروانه آیرودینامیکی",
+        "en": "Aerodynamic Propeller Test Unit",
+        "de": "Aerodynamische Propeller-Prüfeinheit"
+      },
+      "summary": {
+        "fa": "واحدی برای اندازه‌گیری تراست و عملکرد آیرودینامیکی در زوایای گام و قطرهای مختلف.",
+        "en": "Unit for measuring thrust and aerodynamic performance across blade pitches and diameters.",
+        "de": "Einheit zur Messung von Schub und Aerodynamik über verschiedene Blattwinkel und Durchmesser."
+      },
+      "work": {
+        "fa": [
+          "طراحی و ساخت واحد آزمون",
+          "ارزیابی تجربی تراست و عملکرد آیرودینامیکی"
+        ],
+        "en": [
+          "Design and fabrication of the test unit",
+          "Experimental evaluation of thrust and aerodynamic performance"
+        ],
+        "de": [
+          "Konstruktion und Fertigung der Prüfeinheit",
+          "Experimentelle Bewertung von Schub und Aerodynamik"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "hybrid-solar-wind",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "prototype",
+      "year": "2018–2021",
+      "tags": [
+        "Renewable energy",
+        "Prototype"
+      ],
+      "title": {
+        "fa": "مولد ترکیبی خورشیدی–بادی",
+        "en": "Hybrid Solar–Wind Generator",
+        "de": "Hybrider Solar-Wind-Generator"
+      },
+      "summary": {
+        "fa": "نمونه اولیه‌ای که تولید برق خورشیدی و بادی را با مفهوم تهویه طبیعی ترکیب می‌کند.",
+        "en": "Prototype combining solar and wind power with a natural-ventilation concept.",
+        "de": "Prototyp, der Solar- und Windenergie mit einem Konzept natürlicher Belüftung kombiniert."
+      },
+      "work": {
+        "fa": [
+          "سازه مکانیکی و یکپارچه‌سازی قطعات",
+          "توسعه زیرسیستم‌های الکترومکانیکی"
+        ],
+        "en": [
+          "Mechanical structure and component integration",
+          "Electromechanical subsystem development"
+        ],
+        "de": [
+          "Mechanische Struktur und Komponentenintegration",
+          "Entwicklung der elektromechanischen Teilsysteme"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "needle-nozzle",
+      "visible": true,
+      "cat": "research",
+      "status": "completed",
+      "year": "2022–2023",
+      "tags": [
+        "FDM",
+        "Needle insertion",
+        "Tensile testing"
+      ],
+      "title": {
+        "fa": "نازل FDM با درج سوزن",
+        "en": "Needle-Insertion FDM Nozzle",
+        "de": "FDM-Düse mit Nadeleinsatz"
+      },
+      "summary": {
+        "fa": "نازل FDM با درج سوزن برای بهبود چسبندگی لایه‌ها و استحکام قطعه.",
+        "en": "FDM nozzle with needle insertion to improve inter-layer bonding and part strength.",
+        "de": "FDM-Düse mit Nadeleinsatz zur Verbesserung der Schichthaftung und Festigkeit."
+      },
+      "work": {
+        "fa": [
+          "طراحی نازل در CATIA V5 و ساخت",
+          "بررسی پارامترهای حیاتی فرایند FDM",
+          "تحلیل آماری داده‌های کشش و کرنش"
+        ],
+        "en": [
+          "Nozzle design in CATIA V5 and fabrication",
+          "Investigation of critical FDM process parameters",
+          "Statistical analysis of tensile and strain data"
+        ],
+        "de": [
+          "Düsenkonstruktion in CATIA V5 und Fertigung",
+          "Untersuchung kritischer FDM-Prozessparameter",
+          "Statistische Auswertung von Zug- und Dehnungsdaten"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "cfd-studies",
+      "visible": true,
+      "cat": "research",
+      "status": "completed",
+      "year": "",
+      "tags": [
+        "Ansys Fluent",
+        "CFD",
+        "Heat transfer"
+      ],
+      "title": {
+        "en": "CFD Studies: Wellhead and Tube Bundle",
+        "de": "CFD-Studien: Bohrlochkopf und Rohrbündel",
+        "fa": "مطالعات CFD: سرچاه و دسته‌لوله"
+      },
+      "summary": {
+        "en": "Flow simulations in Ansys Fluent: pressure and velocity in a wellhead, pressure drop and heat transfer in a heat exchanger.",
+        "de": "Strömungssimulationen in Ansys Fluent: Druck und Geschwindigkeit im Bohrlochkopf, Druckverlust und Wärmeübergang im Wärmetauscher.",
+        "fa": "شبیه‌سازی جریان در Ansys Fluent: فشار و سرعت در سرچاه، افت فشار و انتقال حرارت در مبدل حرارتی."
+      },
+      "work": {
+        "en": [
+          "Pressure reaction and velocity field in a wellhead",
+          "Pressure drop and heat-transfer dynamics in a tube-bundle heat exchanger"
+        ],
+        "de": [
+          "Druckreaktion und Geschwindigkeitsfeld in einem Bohrlochkopf",
+          "Druckverlust und Wärmeübergang in einem Rohrbündel-Wärmetauscher"
+        ],
+        "fa": [
+          "واکنش فشار و میدان سرعت در سرچاه",
+          "افت فشار و دینامیک انتقال حرارت در مبدل حرارتی دسته‌لوله‌ای"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "mycusini",
+      "visible": true,
+      "cat": "research",
+      "status": "completed",
+      "year": "2023",
+      "tags": [
+        "Extrusion",
+        "Firmware",
+        "Thermal"
+      ],
+      "title": {
+        "fa": "Mycusini 1.0: اکسترود و هات‌اند",
+        "en": "Mycusini 1.0 Extrusion & Hot-End",
+        "de": "Mycusini 1.0: Extrusion & Hot-End"
+      },
+      "summary": {
+        "fa": "پایان‌نامه کارشناسی ارشد در IPM: بهینه‌سازی مکانیک اکسترود و پایداری حرارتی.",
+        "en": "Master thesis at IPM: optimizing extrusion mechanics and hot-end thermal stability.",
+        "de": "Masterarbeit am IPM: Optimierung von Extrusionsmechanik und thermischer Stabilität."
+      },
+      "work": {
+        "fa": [
+          "آزمون تجربی هات‌اند و مکانیک اکسترود",
+          "بهبود فریم‌ور و سخت‌افزار بر اساس بازخورد آزمون میدانی"
+        ],
+        "en": [
+          "Experimental testing of hot-end and extrusion mechanics",
+          "Firmware and hardware refinement using field-test feedback"
+        ],
+        "de": [
+          "Experimentelle Prüfung von Hot-End und Extrusion",
+          "Verbesserung von Firmware und Hardware auf Basis von Feldtests"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "fdm-printer",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "completed",
+      "year": "2013–2017",
+      "tags": [
+        "FDM",
+        "Marlin",
+        "Multi-axis motion",
+        "Calibration"
+      ],
+      "title": {
+        "en": "Custom FDM 3D Printers",
+        "de": "Eigene FDM-3D-Drucker",
+        "fa": "چاپگرهای سه‌بعدی FDM سفارشی"
+      },
+      "summary": {
+        "en": "High-precision FDM 3D printers for commercial and educational use, from mechanics to firmware.",
+        "de": "Hochpräzise FDM-3D-Drucker für Gewerbe und Lehre, von der Mechanik bis zur Firmware.",
+        "fa": "چاپگرهای سه‌بعدی FDM دقیق برای مصارف تجاری و آموزشی؛ از مکانیک تا فریم‌ور."
+      },
+      "work": {
+        "en": [
+          "Assembly and calibration of the mechanical hardware and structural alignment",
+          "Optimization of multi-axis motion performance",
+          "Programming and debugging of the open-source Marlin firmware (motion, thermal management)"
+        ],
+        "de": [
+          "Montage und Kalibrierung der Mechanik und der strukturellen Ausrichtung",
+          "Optimierung der Mehrachsen-Bewegung",
+          "Programmierung und Fehlersuche der Open-Source-Firmware Marlin (Bewegung, Temperaturregelung)"
+        ],
+        "fa": [
+          "مونتاژ و کالیبراسیون سخت‌افزار مکانیکی و هم‌راستایی سازه",
+          "بهینه‌سازی عملکرد حرکت چندمحوره",
+          "برنامه‌نویسی و اشکال‌زدایی فریم‌ور متن‌باز Marlin (کنترل حرکت و مدیریت حرارت)"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "accelerometer-logger",
+      "visible": true,
+      "cat": "electronics",
+      "status": "completed",
+      "year": "",
+      "tags": [
+        "MEMS",
+        "Altium Designer",
+        "Firmware"
+      ],
+      "title": {
+        "fa": "دیتالاگر شتاب‌سنج، 100 g / 100 Hz",
+        "en": "Accelerometer Data Logger, 100 g / 100 Hz",
+        "de": "Beschleunigungs-Datenlogger, 100 g / 100 Hz"
+      },
+      "summary": {
+        "fa": "دیتالاگر مبتنی بر MEMS برای اندازه‌گیری ارتعاش و شوک.",
+        "en": "MEMS-based logger for vibration and shock measurement.",
+        "de": "MEMS-basierter Logger für Vibrations- und Schockmessungen."
+      },
+      "work": {
+        "fa": [
+          "ثبت داده‌های ارتعاش و شوک با سنسور MEMS",
+          "طراحی PCB در Altium Designer و مونتاژ",
+          "برنامه‌نویسی فریم‌ور"
+        ],
+        "en": [
+          "Acquisition of vibration and shock data with a MEMS sensor",
+          "PCB design in Altium Designer and assembly",
+          "Firmware programming"
+        ],
+        "de": [
+          "Erfassung von Vibrations- und Schockdaten mit MEMS-Sensor",
+          "Leiterplattenentwurf in Altium Designer und Bestückung",
+          "Firmware-Programmierung"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "temp-humidity-logger",
+      "visible": true,
+      "cat": "electronics",
+      "status": "completed",
+      "year": "",
+      "tags": [
+        "SHT-10",
+        "Bluetooth",
+        "Altium Designer"
+      ],
+      "title": {
+        "fa": "دیتالاگر دما و رطوبت",
+        "en": "Temperature & Humidity Logger",
+        "de": "Temperatur- & Feuchtelogger"
+      },
+      "summary": {
+        "fa": "دیتالاگر بی‌سیم که داده‌ها را به اپ اندروید می‌فرستد.",
+        "en": "Wireless data logger that streams readings to an Android app.",
+        "de": "Drahtloser Datenlogger, der Messwerte an eine Android-App sendet."
+      },
+      "work": {
+        "fa": [
+          "اندازه‌گیری با سنسور SHT-10",
+          "انتقال از طریق بلوتوث به اپ اندروید",
+          "طراحی PCB در Altium Designer و مونتاژ",
+          "برنامه‌نویسی فریم‌ور"
+        ],
+        "en": [
+          "Measurements with an SHT-10 sensor",
+          "Bluetooth transfer to an Android app",
+          "PCB design in Altium Designer and assembly",
+          "Firmware programming"
+        ],
+        "de": [
+          "Messungen mit SHT-10-Sensor",
+          "Übertragung per Bluetooth an eine Android-App",
+          "Leiterplattenentwurf in Altium Designer und Bestückung",
+          "Firmware-Programmierung"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "motion-tracker",
+      "visible": true,
+      "cat": "electronics",
+      "status": "in_progress",
+      "year": "",
+      "tags": [
+        "ESP32-C3",
+        "MPU6050",
+        "Android"
+      ],
+      "title": {
+        "fa": "ردیاب هوشمند حرکات ورزشی",
+        "en": "Smart Exercise Motion Tracker",
+        "de": "Smart Exercise Motion Tracker"
+      },
+      "summary": {
+        "fa": "دستگاه پوشیدنی که حرکات ورزشی را به تحلیل عملکرد تبدیل می‌کند.",
+        "en": "Wearable device that turns exercise motion into performance analytics.",
+        "de": "Tragbares Gerät, das Trainingsbewegungen in Leistungsanalysen umsetzt."
+      },
+      "work": {
+        "fa": [
+          "فریم‌ور ESP32-C3 با سنسور حرکتی MPU6050",
+          "اپ اندروید برای تحلیل"
+        ],
+        "en": [
+          "ESP32-C3 firmware with MPU6050 motion sensing",
+          "Android app for analytics"
+        ],
+        "de": [
+          "ESP32-C3-Firmware mit MPU6050-Bewegungssensorik",
+          "Android-App für die Auswertung"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "pdf-annotator",
+      "visible": true,
+      "cat": "software",
+      "status": "in_progress",
+      "year": "",
+      "tags": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Android"
+      ],
+      "title": {
+        "fa": "PDF Tablet Annotator",
+        "en": "PDF Tablet Annotator",
+        "de": "PDF Tablet Annotator"
+      },
+      "summary": {
+        "fa": "اپ اندروید برای یادداشت‌گذاری روی PDF با قلم روی تبلت.",
+        "en": "Android app for stylus annotation of PDF documents on a tablet.",
+        "de": "Android-App zum Annotieren von PDF-Dokumenten mit Stift auf dem Tablet."
+      },
+      "work": {
+        "fa": [
+          "اپلیکیشن با Kotlin و Jetpack Compose",
+          "یادداشت‌گذاری با قلم روی صفحات PDF"
+        ],
+        "en": [
+          "Kotlin and Jetpack Compose application",
+          "Stylus-based annotation of PDF pages"
+        ],
+        "de": [
+          "Anwendung in Kotlin und Jetpack Compose",
+          "Stiftbasierte Annotation von PDF-Seiten"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "vr-scooter",
+      "visible": true,
+      "cat": "software",
+      "status": "in_progress",
+      "year": "",
+      "tags": [
+        "Unity",
+        "C#",
+        "Python",
+        "VR"
+      ],
+      "title": {
+        "fa": "شبیه‌ساز واقعیت مجازی اسکوتر",
+        "en": "VR Scooter Simulator",
+        "de": "VR-Rollersimulator"
+      },
+      "summary": {
+        "fa": "شبیه‌ساز اسکوتر در واقعیت مجازی با لایه کنترلر اختصاصی برای فیزیک رانندگی.",
+        "en": "Virtual-reality scooter simulator with a dedicated riding-physics controller layer.",
+        "de": "Virtual-Reality-Rollersimulator mit eigener Controller-Schicht für die Fahrphysik."
+      },
+      "work": {
+        "fa": [
+          "شبیه‌سازی با Unity (C#)",
+          "لانچر پایتون",
+          "لایه کنترلر برای فیزیک رانندگی"
+        ],
+        "en": [
+          "Unity (C#) simulation",
+          "Python launcher",
+          "Controller layer for riding physics"
+        ],
+        "de": [
+          "Simulation in Unity (C#)",
+          "Python-Launcher",
+          "Controller-Schicht für die Fahrphysik"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
+      "id": "handwriting-cnc",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "in_progress",
+      "year": "",
+      "tags": [
+        "G-code",
+        "CNC",
+        "Python"
+      ],
+      "title": {
+        "fa": "دست‌خط به CNC",
+        "en": "Handwriting to CNC",
+        "de": "Handschrift zu CNC"
+      },
+      "summary": {
+        "fa": "دست‌خط شخصی که به گلیف‌های برداری و یک فونت تبدیل و با پلاتر قلمی CNC ترسیم شده است.",
+        "en": "Own handwriting digitized into vector glyphs and a font, then plotted by a CNC pen plotter.",
+        "de": "Eigene Handschrift, digitalisiert zu Vektor-Glyphen und einer Schrift, und von einem CNC-Stiftplotter gezeichnet."
+      },
+      "work": {
+        "fa": [
+          "دیجیتال‌سازی گلیف‌ها و ساخت فونت",
+          "تولید G-code با پایتون برای پلاتر قلمی"
+        ],
+        "en": [
+          "Vector glyph digitization and font generation",
+          "G-code generation in Python for the pen plotter"
+        ],
+        "de": [
+          "Digitalisierung der Glyphen und Erzeugung einer Schrift",
+          "G-Code-Erzeugung in Python für den Stiftplotter"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    }
+  ]
+}

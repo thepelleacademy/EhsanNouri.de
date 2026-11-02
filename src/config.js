@@ -3,45 +3,15 @@
 //  (colours of the six themes live at the top of src/styles.css)
 // ============================================================
 
-// ---------- Site / contact ----------
-export const SITE = {
-  name: 'Ehsan Nouri',
-  domain: 'ehsannouri.de',
-  email: 'e.nouri.e@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/ehsannri/',
-  github: 'https://github.com/thepelleacademy',
-  photo: './img/ehsan.jpg', // profile photo (public/img/ehsan.jpg)
-  phone: '', // e.g. '+49 ...' shows a call button; empty = hidden (spam protection)
-};
-
-// ---------- Imprint (Impressum, § 5 DDG) ----------
-// Fill in a postal address you can be reached at; empty lines are not shown.
-export const IMPRINT = {
-  name: 'Ehsan Nouri',
-  street: '', // e.g. 'Musterstraße 1'
-  city: 'Deggendorf', // e.g. '94469 Deggendorf'
-  country: 'Deutschland',
-  email: 'e.nouri.e@gmail.com',
-};
+// Contact data, imprint, languages and texts are content: they live in
+// /content/site.json and are edited in the admin panel (/admin).
 
 // ---------- Languages ----------
 export const LANGS = ['fa', 'en', 'de'];
-export const DEFAULT_LANG = 'en';
-
-// Country code -> language. Everything not listed falls back to DEFAULT_LANG.
-export const COUNTRY_TO_LANG = {
-  IR: 'fa',
-  AF: 'fa',
-  TJ: 'fa',
-  DE: 'de',
-  AT: 'de',
-  CH: 'de',
-  LI: 'de',
-};
+export const RTL_LANGS = ['fa'];
 
 // Country lookup runs on our own domain through Cloudflare (no third-party service).
-// Set to false to use only the browser language.
-export const GEO_DETECTION_ENABLED = true;
+// On/off and the country -> language table: content/site.json -> languages
 export const GEO_TIMEOUT_MS = 1500;
 export const GEO_TRACE_URL = '/cdn-cgi/trace'; // Cloudflare answers with "loc=DE"
 
@@ -55,8 +25,7 @@ export const THEMES = [
   { id: 'anodized', mode: 'light' },
   { id: 'scope', mode: 'light' },
 ];
-export const DEFAULT_DARK_THEME = 'cyan';
-export const DEFAULT_LIGHT_THEME = 'drafting';
+// Default dark/light theme: content/site.json -> themes
 
 // ---------- Hero viewer (3D wireframe part) ----------
 export const VIEWER = {
@@ -119,5 +88,8 @@ export const RING = {
   backOpacity: 0.28,
 };
 
-// ---------- Panels ----------
-export const MOBILE_BREAKPOINT = 760; // px: below this the bottom tab bar is used
+// ---------- Panels and menu ----------
+export const MOBILE_BREAKPOINT = 760; // px: below this the page scrolls to the top on panel change
+export const DOCK_MAX_ITEMS = 5; // mobile tab bar: slots (the last one becomes "More" when needed)
+export const TILE_MAX_COLUMNS = 6; // overview tiles per row on desktop
+export const NAV_MENU_CLOSE_DELAY_MS = 180; // desktop sub menu: delay before it closes

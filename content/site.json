@@ -1,0 +1,54 @@
+{
+  "name": "Ehsan Nouri",
+  "domain": "ehsannouri.de",
+  "email": "e.nouri.e@gmail.com",
+  "phone": "",
+  "linkedin": "https://www.linkedin.com/in/ehsannri/",
+  "github": "https://github.com/thepelleacademy",
+  "photo": "img/ehsan.jpg",
+  "cv": {
+    "enabled": true,
+    "file": "files/Ehsan_Nouri_CV.pdf",
+    "label": {
+      "fa": "دانلود رزومه",
+      "en": "Download CV",
+      "de": "Lebenslauf herunterladen"
+    }
+  },
+  "meta": {
+    "title": {
+      "fa": "احسان نوری – تحقیق و توسعه مکانیک و مکاترونیک",
+      "en": "Ehsan Nouri – Mechanical R&D and Mechatronics",
+      "de": "Ehsan Nouri – Maschinenbau-F&E und Mechatronik"
+    },
+    "description": {
+      "fa": "احسان نوری، مهندس تحقیق و توسعه مکانیک در بایرن: طراحی دقیق، بسترهای آزمون و ابزار دقیق علمی. پروژه‌ها، سوابق و گواهینامه‌ها.",
+      "en": "Ehsan Nouri, mechanical R&D engineer in Bavaria: precision design, test rigs, scientific instrumentation. Projects, career and certificates.",
+      "de": "Ehsan Nouri, Ingenieur für mechanische F&E in Bayern: Präzisionskonstruktion, Prüfstände, wissenschaftliche Messtechnik. Projekte, Werdegang und Zertifikate."
+    }
+  },
+  "imprint": {
+    "name": "Ehsan Nouri",
+    "street": "",
+    "city": "94469 Deggendorf",
+    "country": "Deutschland",
+    "email": "e.nouri.e@gmail.com"
+  },
+  "languages": {
+    "default": "en",
+    "geoDetection": true,
+    "countryToLang": {
+      "IR": "fa",
+      "AF": "fa",
+      "TJ": "fa",
+      "DE": "de",
+      "AT": "de",
+      "CH": "de",
+      "LI": "de"
+    }
+  },
+  "themes": {
+    "defaultDark": "cyan",
+    "defaultLight": "drafting"
+  }
+}

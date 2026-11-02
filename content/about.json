@@ -1,0 +1,261 @@
+{
+  "title": {
+    "fa": "درباره من",
+    "en": "About",
+    "de": "Profil"
+  },
+  "paragraphs": {
+    "en": [
+      "Mechanical R&D engineer specializing in precision mechanical design, experimental prototyping and scientific instrumentation. I work with CAD-based mechanical development, additive manufacturing, FEA/CFD and hands-on fabrication, with a strong focus on rapid prototyping, experimental testing and iterative design optimization.",
+      "I develop and validate mechanical and electromechanical systems, integrate sensors and hardware, and turn engineering concepts into functional laboratory prototypes. Outside of work I build my own hardware and software projects, from embedded sensors to Android apps and VR simulators."
+    ],
+    "de": [
+      "Ingenieur für mechanische Forschung und Entwicklung mit Schwerpunkt auf Präzisionskonstruktion, experimentellem Prototypenbau und wissenschaftlicher Messtechnik. Ich arbeite mit CAD-gestützter Konstruktion, additiver Fertigung, FEM/CFD und praktischer Fertigung, mit klarem Fokus auf Rapid Prototyping, experimentelle Prüfung und iterative Designoptimierung.",
+      "Ich entwickle und validiere mechanische und elektromechanische Systeme, integriere Sensorik und Hardware und mache aus technischen Konzepten funktionsfähige Laborprototypen. Privat entwickle ich eigene Hardware- und Softwareprojekte, von Embedded-Sensoren bis zu Android-Apps und VR-Simulatoren."
+    ],
+    "fa": [
+      "مهندس R&D مکانیک با تمرکز بر طراحی مکانیکی دقیق، نمونه‌سازی آزمایشی و ابزار دقیق علمی. در توسعه مکانیکی مبتنی بر CAD، ساخت افزایشی (Additive Manufacturing)، تحلیل FEA/CFD و ساخت عملی تجربه دارم و تمرکزم بر نمونه‌سازی سریع، آزمون تجربی و بهینه‌سازی تکرارشونده طراحی است.",
+      "سیستم‌های مکانیکی و الکترومکانیکی را توسعه می‌دهم و اعتبارسنجی می‌کنم، سنسورها و سخت‌افزار را یکپارچه می‌کنم و ایده‌های مهندسی را به نمونه‌های آزمایشگاهی کارا تبدیل می‌کنم. در کنار کار، پروژه‌های سخت‌افزاری و نرم‌افزاری شخصی می‌سازم؛ از سنسورهای embedded تا اپ اندروید و شبیه‌ساز واقعیت مجازی."
+    ]
+  },
+  "facts": [
+    {
+      "k": {
+        "fa": "محل اقامت",
+        "en": "Based in",
+        "de": "Wohnort"
+      },
+      "v": {
+        "fa": "دگندورف، بایرن",
+        "en": "Deggendorf, Bavaria",
+        "de": "Deggendorf, Bayern"
+      }
+    },
+    {
+      "k": {
+        "fa": "مدارک تحصیلی",
+        "en": "Degrees",
+        "de": "Abschlüsse"
+      },
+      "v": {
+        "fa": "کارشناسی ۲۰۱۳، کارشناسی ارشد ۲۰۲۳، کارشناسی ارشد در حال گذراندن",
+        "en": "B.Sc. 2013, M.Sc. 2023, M.Sc. in progress",
+        "de": "B.Sc. 2013, M.Sc. 2023, M.Sc. in Arbeit"
+      }
+    },
+    {
+      "k": {
+        "fa": "علایق پژوهشی",
+        "en": "Research interests",
+        "de": "Forschungsinteressen"
+      },
+      "v": {
+        "fa": "ساخت افزایشی، چاپگرهای سه‌بعدی، بهبود اتصال مواد",
+        "en": "Additive manufacturing, 3D printers, improving material bonding",
+        "de": "Additive Fertigung, 3D-Drucker, Verbesserung der Materialhaftung"
+      }
+    },
+    {
+      "k": {
+        "fa": "زبان‌ها",
+        "en": "Languages",
+        "de": "Sprachen"
+      },
+      "v": {
+        "fa": "فارسی (مادری)، آذربایجانی (مسلط)، انگلیسی (مسلط)، آلمانی (A2)",
+        "en": "Persian (native), Azerbaijani (fluent), English (fluent), German (A2)",
+        "de": "Persisch (Muttersprache), Aserbaidschanisch (fließend), Englisch (fließend), Deutsch (A2)"
+      }
+    },
+    {
+      "k": {
+        "fa": "گواهینامه رانندگی",
+        "en": "Driving licence",
+        "de": "Führerschein"
+      },
+      "v": {
+        "fa": "AM / B / L",
+        "en": "AM / B / L",
+        "de": "AM / B / L"
+      }
+    }
+  ],
+  "skillsTitle": {
+    "fa": "مهارت‌ها",
+    "en": "Skills",
+    "de": "Kompetenzen"
+  },
+  "skills": [
+    {
+      "name": {
+        "fa": "CAD / CAM",
+        "en": "CAD / CAM",
+        "de": "CAD / CAM"
+      },
+      "items": {
+        "fa": [
+          "CATIA",
+          "SolidWorks",
+          "AutoCAD",
+          "Cura"
+        ],
+        "en": [
+          "CATIA",
+          "SolidWorks",
+          "AutoCAD",
+          "Cura"
+        ],
+        "de": [
+          "CATIA",
+          "SolidWorks",
+          "AutoCAD",
+          "Cura"
+        ]
+      }
+    },
+    {
+      "name": {
+        "fa": "شبیه‌سازی (CAE)",
+        "en": "Simulation (CAE)",
+        "de": "Simulation (CAE)"
+      },
+      "items": {
+        "en": [
+          "ANSYS (FEA / CFD)",
+          "Ansys Fluent",
+          "Structural analysis",
+          "Fluid dynamics",
+          "Abaqus"
+        ],
+        "de": [
+          "ANSYS (FEM / CFD)",
+          "Ansys Fluent",
+          "Strukturanalyse",
+          "Strömungsmechanik",
+          "Abaqus"
+        ],
+        "fa": [
+          "ANSYS (FEA / CFD)",
+          "Ansys Fluent",
+          "تحلیل سازه",
+          "دینامیک سیالات",
+          "Abaqus"
+        ]
+      }
+    },
+    {
+      "name": {
+        "fa": "نمونه‌سازی و ساخت",
+        "en": "Prototyping & fabrication",
+        "de": "Prototyping & Fertigung"
+      },
+      "items": {
+        "fa": [
+          "چاپ سه‌بعدی FDM",
+          "برش لیزری CNC",
+          "نمونه‌سازی سریع",
+          "نقشه‌های GD&T"
+        ],
+        "en": [
+          "FDM 3D printing",
+          "CNC laser machining",
+          "Rapid prototyping",
+          "GD&T drawings"
+        ],
+        "de": [
+          "FDM-3D-Druck",
+          "CNC-Laserbearbeitung",
+          "Rapid Prototyping",
+          "GD&T-Zeichnungen"
+        ]
+      }
+    },
+    {
+      "name": {
+        "fa": "ابزار دقیق",
+        "en": "Instrumentation",
+        "de": "Messtechnik"
+      },
+      "items": {
+        "fa": [
+          "سیستم‌های اندازه‌گیری پیشرفته",
+          "اتصال سنسور",
+          "نمونه‌سازی الکترومکانیکی",
+          "متروژی ابعادی"
+        ],
+        "en": [
+          "Advanced measurement systems",
+          "Sensor interfacing",
+          "Electromechanical prototyping",
+          "Dimensional metrology"
+        ],
+        "de": [
+          "Fortgeschrittene Messsysteme",
+          "Sensoranbindung",
+          "Elektromechanischer Prototypenbau",
+          "Maßmesstechnik"
+        ]
+      }
+    },
+    {
+      "name": {
+        "fa": "آزمون و قابلیت اطمینان",
+        "en": "Testing & reliability",
+        "de": "Prüfung & Zuverlässigkeit"
+      },
+      "items": {
+        "fa": [
+          "FMEA",
+          "آزمون تجربی",
+          "تحلیل خرابی",
+          "عیب‌یابی سیستم"
+        ],
+        "en": [
+          "FMEA",
+          "Experimental testing",
+          "Failure analysis",
+          "System troubleshooting"
+        ],
+        "de": [
+          "FMEA",
+          "Experimentelle Prüfung",
+          "Schadensanalyse",
+          "Systemfehlersuche"
+        ]
+      }
+    },
+    {
+      "name": {
+        "fa": "Embedded و نرم‌افزار",
+        "en": "Embedded & software",
+        "de": "Embedded & Software"
+      },
+      "items": {
+        "fa": [
+          "فریم‌ور Marlin",
+          "ESP32",
+          "Altium Designer",
+          "Python",
+          "Kotlin / Jetpack Compose",
+          "C# / Unity"
+        ],
+        "en": [
+          "Marlin firmware",
+          "ESP32",
+          "Altium Designer",
+          "Python",
+          "Kotlin / Jetpack Compose",
+          "C# / Unity"
+        ],
+        "de": [
+          "Marlin-Firmware",
+          "ESP32",
+          "Altium Designer",
+          "Python",
+          "Kotlin / Jetpack Compose",
+          "C# / Unity"
+        ]
+      }
+    }
+  ]
+}

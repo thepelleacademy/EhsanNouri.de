@@ -1,0 +1,333 @@
+{
+  "title": {
+    "fa": "سوابق",
+    "en": "Career",
+    "de": "Werdegang"
+  },
+  "workTitle": {
+    "fa": "سوابق کاری",
+    "en": "Work",
+    "de": "Berufserfahrung"
+  },
+  "eduTitle": {
+    "fa": "تحصیلات",
+    "en": "Education",
+    "de": "Ausbildung"
+  },
+  "experience": [
+    {
+      "period": [
+        "07/2026",
+        "now"
+      ],
+      "role": {
+        "fa": "دستیار دانشجویی",
+        "en": "Student Assistant",
+        "de": "Studentische Hilfskraft"
+      },
+      "org": {
+        "fa": "مؤسسه فناوری دگندورف، آلمان",
+        "en": "Deggendorf Institute of Technology, Germany",
+        "de": "Technische Hochschule Deggendorf"
+      },
+      "bullets": {
+        "fa": [
+          "مشارکت در نگارش مقالات فنی از طریق طراحی چیدمان‌های آزمون تجربی، انجام پژوهش‌های آزمایشگاهی و گردآوری داده‌های قابل اعتماد.",
+          "تعیین رفتار مکانیکی و عملکرد سازه‌ای با آزمون‌های تکرارشونده و شبیه‌سازی اجزای محدود (FEM)."
+        ],
+        "en": [
+          "Co-authored technical manuscripts by developing experimental test setups, running laboratory investigations and acquiring reliable empirical data.",
+          "Characterized mechanical behavior and structural performance through iterative testing and finite element (FEM) simulation."
+        ],
+        "de": [
+          "Mitautor technischer Manuskripte: Entwicklung experimenteller Versuchsaufbauten, Laboruntersuchungen und Erfassung verlässlicher Messdaten.",
+          "Bewertung des mechanischen Verhaltens und der Strukturleistung durch iterative Prüfungen und Finite-Elemente-Simulation (FEM)."
+        ]
+      }
+    },
+    {
+      "period": [
+        "10/2024",
+        "02/2026"
+      ],
+      "role": {
+        "fa": "مهندس طراح مکانیک",
+        "en": "Mechanical Design Engineer",
+        "de": "Konstruktionsingenieur Maschinenbau"
+      },
+      "org": {
+        "fa": "Pouyesh Mechatronics، ایران",
+        "en": "Pouyesh Mechatronics, Iran",
+        "de": "Pouyesh Mechatronics, Iran"
+      },
+      "bullets": {
+        "fa": [
+          "طراحی محفظه‌های دقیق برای سیستم‌های ژیروسکوپ نوری در CATIA و یکپارچه‌سازی قطعات نوری در ساختارهای پایدار و قابل ساخت.",
+          "تولید نقشه‌های آماده ساخت با اصول GD&T برای دقت ابعادی و اتصالات عملکردی.",
+          "مدیریت فرایندهای ساخت برون‌سپاری (CNC و ساخت افزایشی) و اعتبارسنجی قطعات با متروژی ابعادی."
+        ],
+        "en": [
+          "Designed precision housings for optical gyroscope systems in CATIA, integrating optical components into stable, manufacturable structures.",
+          "Generated manufacturing-ready drawings applying GD&T principles for dimensional accuracy and functional interfaces.",
+          "Managed external CNC and additive-manufacturing workflows and validated parts through dimensional metrology."
+        ],
+        "de": [
+          "Konstruktion präziser Gehäuse für optische Gyroskope in CATIA, mit Integration optischer Komponenten in stabile, fertigungsgerechte Strukturen.",
+          "Erstellung fertigungsreifer Zeichnungen nach GD&T für Maßhaltigkeit und funktionale Schnittstellen.",
+          "Steuerung externer CNC- und additiver Fertigungsprozesse sowie Validierung der Teile durch Maßmesstechnik."
+        ]
+      }
+    },
+    {
+      "period": [
+        "10/2023",
+        "09/2024"
+      ],
+      "role": {
+        "fa": "دستیار پژوهشی",
+        "en": "Research Assistant",
+        "de": "Wissenschaftlicher Mitarbeiter"
+      },
+      "org": {
+        "fa": "Institut für Prototypen und Modelltechnik (IPM)، آلمان",
+        "en": "Institut für Prototypen und Modelltechnik (IPM), Germany",
+        "de": "Institut für Prototypen und Modelltechnik (IPM), Deutschland"
+      },
+      "bullets": {
+        "fa": [
+          "بررسی پارامترهای حیاتی فرایند FDM در روش نوین چاپ سه‌بعدی با درج سوزن، برای بهبود چسبندگی بین لایه‌ها، دقت ابعادی و عملکرد سازه‌ای.",
+          "انجام تحلیل کشش و کرنش پلیمرهای مهندسی، ترکیبی از مشخصه‌یابی تجربی و تحلیل کمّی داده."
+        ],
+        "en": [
+          "Investigated critical FDM process parameters in novel needle-insertion 3D printing to improve inter-layer adhesion, dimensional consistency and structural performance.",
+          "Ran tensile and strain analyses of engineering polymers, combining experimental characterization with quantitative data analysis."
+        ],
+        "de": [
+          "Untersuchung kritischer FDM-Prozessparameter beim neuartigen 3D-Druck mit Nadeleinsatz zur Verbesserung von Schichthaftung, Maßhaltigkeit und struktureller Leistungsfähigkeit.",
+          "Zug- und Dehnungsanalysen technischer Polymere, kombiniert mit experimenteller Charakterisierung und quantitativer Datenanalyse."
+        ]
+      }
+    },
+    {
+      "period": [
+        "04/2023",
+        "09/2023"
+      ],
+      "role": {
+        "fa": "پایان‌نامه کارشناسی ارشد",
+        "en": "Master Thesis",
+        "de": "Masterarbeit"
+      },
+      "org": {
+        "fa": "Institut für Prototypen und Modelltechnik (IPM)، آلمان",
+        "en": "Institut für Prototypen und Modelltechnik (IPM), Germany",
+        "de": "Institut für Prototypen und Modelltechnik (IPM), Deutschland"
+      },
+      "bullets": {
+        "fa": [
+          "بهینه‌سازی مکانیک اکسترود و پایداری حرارتی هات‌اند سیستم Mycusini 1.0 از طریق آزمون و بهبود تکرارشونده.",
+          "اصلاح فریم‌ور سیستم و یکپارچه‌سازی بازخورد آزمون‌های الکترومکانیکی برای بهبود کنترل حرکت، عملکرد حرارتی و قابلیت اطمینان کلی سیستم."
+        ],
+        "en": [
+          "Optimized extrusion mechanics and hot-end thermal stability of the Mycusini 1.0 system through testing and iterative refinement.",
+          "Refined the system firmware and integrated electromechanical test feedback to improve motion control, thermal performance and overall system reliability."
+        ],
+        "de": [
+          "Optimierung der Extrusionsmechanik und der thermischen Stabilität des Hot-Ends im System Mycusini 1.0 durch Prüfung und iterative Verbesserung.",
+          "Weiterentwicklung der Firmware und Einbindung elektromechanischer Testergebnisse zur Verbesserung von Bewegungssteuerung, thermischem Verhalten und Gesamtzuverlässigkeit."
+        ]
+      }
+    },
+    {
+      "period": [
+        "10/2022",
+        "03/2023"
+      ],
+      "role": {
+        "fa": "کارآموزی",
+        "en": "Internship",
+        "de": "Praktikum"
+      },
+      "org": {
+        "fa": "Institut für Prototypen und Modelltechnik (IPM)، آلمان",
+        "en": "Institut für Prototypen und Modelltechnik (IPM), Germany",
+        "de": "Institut für Prototypen und Modelltechnik (IPM), Deutschland"
+      },
+      "bullets": {
+        "fa": [
+          "ساخت نمونه یک چاپگر سه‌بعدی FDM آزمایشی شامل مونتاژ مکانیکی، یکپارچه‌سازی سخت‌افزار و فریم‌ور سفارشی.",
+          "اعتبارسنجی آماری عملکرد کرنش و تکرارپذیری یک نازل جدید با درج سوزن."
+        ],
+        "en": [
+          "Prototyped an experimental FDM 3D printer, covering mechanical assembly, hardware integration and custom firmware.",
+          "Statistically validated the strain performance and repeatability of a new needle-insertion nozzle."
+        ],
+        "de": [
+          "Prototyp eines experimentellen FDM-3D-Druckers: mechanische Montage, Hardwareintegration und individuelle Firmware.",
+          "Statistische Validierung der Dehnungsleistung und Wiederholgenauigkeit einer neuen Nadeleinsatz-Düse."
+        ]
+      }
+    },
+    {
+      "period": [
+        "01/2018",
+        "09/2021"
+      ],
+      "role": {
+        "fa": "مهندس مکاترونیک",
+        "en": "Mechatronics Engineer",
+        "de": "Mechatronik-Ingenieur"
+      },
+      "org": {
+        "fa": "Atin Co، ایران",
+        "en": "Atin Co, Iran",
+        "de": "Atin Co, Iran"
+      },
+      "bullets": {
+        "fa": [
+          "طراحی، ساخت و پیاده‌سازی کانتینر حمل ایمن ماهواره، با مسئولیت کامل طراحی مکانیکی، معماری سازه، ساخت و یکپارچه‌سازی زیرسیستم‌های مکانیکی و الکترونیکی.",
+          "طراحی و ساخت ایزولاتورهای غیرفعال سیم‌بکسل مطابق MIL-STD-810 و مشخصه‌یابی آن‌ها روی دستگاه آزمون شوک مغناطیسی.",
+          "طراحی و ساخت بستر آزمون هلیکوپتر 2-DOF برای بررسی دینامیک yaw و pitch، شامل عملگر، ابزار دقیق و یکپارچه‌سازی.",
+          "طراحی یک واحد آزمون پروانه آیرودینامیکی برای ارزیابی نیروی تراست و عملکرد آیرودینامیکی.",
+          "طراحی CAD سه‌بعدی، ساخت دقیق، نمونه‌سازی سریع و اعتبارسنجی تجربی بر اساس استانداردهای MIL و صنعتی.",
+          "طراحی نمونه اولیه مولد ترکیبی خورشیدی–بادی، شامل سازه، یکپارچه‌سازی قطعات و زیرسیستم‌های الکترومکانیکی."
+        ],
+        "en": [
+          "Designed, manufactured and implemented a satellite transportation container for the safe transport of satellites, with full responsibility for mechanical design, structural architecture, fabrication and integration of mechanical and electronic subsystems.",
+          "Designed and fabricated passive Wire Rope Isolators to MIL-STD-810 requirements and characterized them on a magnetic shock test machine.",
+          "Designed and built a 2-DOF helicopter test rig for yaw and pitch dynamics, including actuation, instrumentation and integration.",
+          "Designed an aerodynamic propeller test unit for thrust and aerodynamic performance evaluation.",
+          "Carried out 3D CAD design, precision fabrication, rapid prototyping and experimental validation under MIL and industry standards.",
+          "Designed a prototype hybrid solar–wind power generator, covering structure, component integration and electromechanical subsystems."
+        ],
+        "de": [
+          "Konstruktion, Fertigung und Einführung eines Transportcontainers für den sicheren Satellitentransport, mit voller Verantwortung für Konstruktion, Strukturauslegung, Fertigung und Integration der mechanischen und elektronischen Teilsysteme.",
+          "Konstruktion und Fertigung passiver Drahtseilisolatoren nach MIL-STD-810, Charakterisierung auf einer magnetischen Schockprüfanlage.",
+          "Konstruktion und Aufbau eines 2-DOF-Hubschrauber-Prüfstands für Gier- und Nickdynamik, inklusive Aktorik, Messtechnik und Integration.",
+          "Konstruktion einer aerodynamischen Propeller-Prüfeinheit zur Bewertung von Schub und Aerodynamik.",
+          "3D-CAD-Konstruktion, Präzisionsfertigung, Rapid Prototyping und experimentelle Validierung nach MIL- und Industriestandards.",
+          "Konstruktion eines Prototyps für einen hybriden Solar-Wind-Generator: Struktur, Komponentenintegration und elektromechanische Teilsysteme."
+        ]
+      }
+    },
+    {
+      "period": [
+        "06/2013",
+        "10/2017"
+      ],
+      "role": {
+        "fa": "مهندس مکانیک",
+        "en": "Mechanical Engineer",
+        "de": "Maschinenbauingenieur"
+      },
+      "org": {
+        "fa": "Spad3D، ایران",
+        "en": "Spad3D, Iran",
+        "de": "Spad3D, Iran"
+      },
+      "bullets": {
+        "fa": [
+          "مونتاژ و کالیبراسیون چاپگرهای سه‌بعدی FDM سفارشی با دقت بالا و بهینه‌سازی سخت‌افزار، ترازبندی و حرکت چندمحوره.",
+          "برنامه‌نویسی و اشکال‌زدایی فریم‌ور متن‌باز Marlin برای کنترل حرکت، مدیریت حرارتی و قابلیت اطمینان."
+        ],
+        "en": [
+          "Assembled and calibrated custom high-precision FDM 3D printers, optimizing hardware, structural alignment and multi-axis motion.",
+          "Programmed and debugged open-source Marlin firmware for motion control, thermal management and reliability."
+        ],
+        "de": [
+          "Montage und Kalibrierung individueller hochpräziser FDM-3D-Drucker, Optimierung von Hardware, Ausrichtung und Mehrachsenbewegung.",
+          "Programmierung und Fehlersuche an der Open-Source-Firmware Marlin für Bewegungssteuerung, Temperaturmanagement und Zuverlässigkeit."
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "period": [
+        "03/2026",
+        "now"
+      ],
+      "status": "in_progress",
+      "degree": {
+        "fa": "کارشناسی ارشد مهندسی مکاترونیک و سیستم‌های سایبر-فیزیکی",
+        "en": "M.Sc. Mechatronics and Cyber-Physical Systems",
+        "de": "M.Sc. Mechatronik und Cyber-Physische Systeme"
+      },
+      "school": {
+        "fa": "مؤسسه فناوری دگندورف، آلمان",
+        "en": "Deggendorf Institute of Technology, Germany",
+        "de": "Technische Hochschule Deggendorf"
+      },
+      "note": {
+        "fa": [
+          "در حال تحصیل، همزمان با نقش دستیار دانشجویی"
+        ],
+        "en": [
+          "Currently enrolled, alongside a student assistant role"
+        ],
+        "de": [
+          "Derzeit eingeschrieben, parallel als studentische Hilfskraft tätig"
+        ]
+      }
+    },
+    {
+      "period": [
+        "10/2021",
+        "09/2023"
+      ],
+      "status": "completed",
+      "degree": {
+        "fa": "کارشناسی ارشد ابزار دقیق تحلیلی، اندازه‌گیری و فناوری سنسور",
+        "en": "M.Sc. Analytical Instruments, Measurement and Sensor Technology",
+        "de": "M.Sc. Analytische Instrumente, Mess- und Sensortechnik"
+      },
+      "school": {
+        "fa": "دانشگاه علوم کاربردی کوبورگ، آلمان",
+        "en": "Coburg University of Applied Sciences, Germany",
+        "de": "Hochschule Coburg"
+      },
+      "note": {
+        "fa": [
+          "پایان‌نامه: بهینه‌سازی چاپگر سه‌بعدی شکلات",
+          "استاد راهنما: Prof. Dr. Markus Stark"
+        ],
+        "en": [
+          "Thesis: Optimization of a chocolate 3D printer",
+          "Supervisor: Prof. Dr. Markus Stark"
+        ],
+        "de": [
+          "Abschlussarbeit: Optimierung eines Schokoladen-3D-Druckers",
+          "Betreuer: Prof. Dr. Markus Stark"
+        ]
+      }
+    },
+    {
+      "period": [
+        "10/2008",
+        "02/2013"
+      ],
+      "status": "completed",
+      "degree": {
+        "fa": "کارشناسی مهندسی مکانیک",
+        "en": "B.Sc. Mechanical Engineering",
+        "de": "B.Sc. Maschinenbau"
+      },
+      "school": {
+        "fa": "دانشگاه آزاد کرج، ایران",
+        "en": "Azad University of Karaj, Iran",
+        "de": "Azad-Universität Karaj, Iran"
+      },
+      "note": {
+        "fa": [
+          "دستیار آموزشی دروس استاتیک، مقاومت مصالح و نقشه‌کشی صنعتی"
+        ],
+        "en": [
+          "Teaching assistant: Statics, Mechanics of Materials, Industrial Drawing"
+        ],
+        "de": [
+          "Tutor für Statik, Festigkeitslehre und Technisches Zeichnen"
+        ]
+      }
+    }
+  ]
+}

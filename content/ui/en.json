@@ -1,0 +1,42 @@
+{
+  "ui": {
+    "now": "now",
+    "close": "Close",
+    "back": "Overview",
+    "prev": "Previous",
+    "next": "Next",
+    "skip": "Skip to content",
+    "theme": "Theme",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "language": "Language",
+    "menu": "Sections",
+    "statusLabel": {
+      "completed": "Completed",
+      "in_progress": "In progress",
+      "prototype": "Prototype"
+    },
+    "workDone": "What I did",
+    "media": "Photos and videos",
+    "noMedia": "Photos and videos of this project will be added here.",
+    "ringHint": "Drag to turn the ring. Click the front certificate to open it.",
+    "viewCertificate": "View certificate",
+    "openPdf": "Open PDF",
+    "verify": "Verify online",
+    "issued": "Issued",
+    "noScan": "The scan of this certificate will be added soon.",
+    "openProject": "Open project",
+    "legal": "Imprint and privacy",
+    "of": "of",
+    "more": "More",
+    "page404": "This page was not found."
+  },
+  "themes": {
+    "cyan": "Neon blue",
+    "amber": "Neon orange",
+    "red": "Neon red",
+    "drafting": "Drafting",
+    "anodized": "Anodized",
+    "scope": "Oscilloscope"
+  }
+}

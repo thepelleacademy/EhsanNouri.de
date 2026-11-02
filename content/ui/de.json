@@ -1,0 +1,42 @@
+{
+  "ui": {
+    "now": "heute",
+    "close": "Schließen",
+    "back": "Übersicht",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "skip": "Zum Inhalt springen",
+    "theme": "Farbschema",
+    "themeDark": "Dunkel",
+    "themeLight": "Hell",
+    "language": "Sprache",
+    "menu": "Bereiche",
+    "statusLabel": {
+      "completed": "Abgeschlossen",
+      "in_progress": "In Arbeit",
+      "prototype": "Prototyp"
+    },
+    "workDone": "Umgesetzt",
+    "media": "Fotos und Videos",
+    "noMedia": "Fotos und Videos zu diesem Projekt folgen hier.",
+    "ringHint": "Ziehen dreht den Ring. Ein Klick auf das vordere Zertifikat öffnet es.",
+    "viewCertificate": "Zertifikat ansehen",
+    "openPdf": "PDF öffnen",
+    "verify": "Online prüfen",
+    "issued": "Ausgestellt",
+    "noScan": "Der Scan dieses Zertifikats folgt in Kürze.",
+    "openProject": "Projekt öffnen",
+    "legal": "Impressum und Datenschutz",
+    "of": "von",
+    "more": "Mehr",
+    "page404": "Diese Seite wurde nicht gefunden."
+  },
+  "themes": {
+    "cyan": "Neonblau",
+    "amber": "Neonorange",
+    "red": "Neonrot",
+    "drafting": "Zeichnung",
+    "anodized": "Eloxiert",
+    "scope": "Oszilloskop"
+  }
+}

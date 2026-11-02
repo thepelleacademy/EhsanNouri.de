@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "publications",
+      "visible": true,
+      "icon": "book",
+      "title": {
+        "fa": "مقالات و انتشارات",
+        "en": "Publications",
+        "de": "Publikationen"
+      },
+      "summary": {
+        "fa": "مقالات کنفرانسی و کارهای پژوهشی",
+        "en": "Conference papers and research work",
+        "de": "Konferenzbeiträge und Forschungsarbeiten"
+      },
+      "body": {
+        "en": "## Conference papers\n\n- **Construct Solar Windward using a 3D printer as a hybrid electric power generation and air conditioning system.** National Conference on Knowledge and Technology of Electrical, Computer and Mechanical Engineering, Iran, 2017.\n- **Improve lumped model for transient conductive heat transfer in cylindrical shape using polynomial approximation method.** Second National Conference on Applied Research in Electrical, Mechanical and Mechatronics, Iran, 2015.\n\n## In progress\n\n- Enhancement of mechanical material properties in FLM 3D printing through dynamic needle insertion (laboratory tests and manuscript in preparation).",
+        "de": "## Konferenzbeiträge\n\n- **Construct Solar Windward using a 3D printer as a hybrid electric power generation and air conditioning system.** National Conference on Knowledge and Technology of Electrical, Computer and Mechanical Engineering, Iran, 2017.\n- **Improve lumped model for transient conductive heat transfer in cylindrical shape using polynomial approximation method.** Second National Conference on Applied Research in Electrical, Mechanical and Mechatronics, Iran, 2015.\n\n## In Arbeit\n\n- Verbesserung der mechanischen Materialeigenschaften im FLM-3D-Druck durch dynamischen Nadeleinsatz (Laborversuche, Manuskript in Vorbereitung).",
+        "fa": "## مقالات کنفرانسی\n\n- **ساخت بادگیر خورشیدی با چاپگر سه‌بعدی به‌عنوان سیستم ترکیبی تولید برق و تهویه مطبوع** — همایش ملی دانش و فناوری مهندسی برق، کامپیوتر و مکانیک، ایران، ۲۰۱۷ (۱۳۹۶).\n- **بهبود مدل فشرده برای انتقال حرارت هدایتی گذرا در هندسه استوانه‌ای با روش تقریب چندجمله‌ای** — دومین همایش ملی پژوهش‌های کاربردی در برق، مکانیک و مکاترونیک، ایران، ۲۰۱۵ (۱۳۹۴).\n\n## در حال انجام\n\n- بهبود خواص مکانیکی مواد در چاپ سه‌بعدی FLM با درج دینامیکی سوزن (آزمون‌های آزمایشگاهی و نگارش مقاله)."
+      }
+    }
+  ]
+}

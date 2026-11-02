@@ -1,5 +1,10 @@
-import { THEMES, DEFAULT_DARK_THEME, DEFAULT_LIGHT_THEME } from './config.js';
+import { THEMES } from './config.js';
 import { t, safeGet, safeSet } from './i18n.js';
+import { C } from './content.js';
+
+const valid = (id, mode) => THEMES.some((x) => x.id === id && x.mode === mode);
+const DEFAULT_DARK_THEME = valid(C.site.themes?.defaultDark, 'dark') ? C.site.themes.defaultDark : 'cyan';
+const DEFAULT_LIGHT_THEME = valid(C.site.themes?.defaultLight, 'light') ? C.site.themes.defaultLight : 'drafting';
 
 const KEY = 'theme';
 const root = document.documentElement;

@@ -1,0 +1,54 @@
+{
+  "name": {
+    "fa": "احسان نوری",
+    "en": "Ehsan Nouri",
+    "de": "Ehsan Nouri"
+  },
+  "role": {
+    "fa": "مهندس R&D مکانیک",
+    "en": "Mechanical R&D Engineer",
+    "de": "Ingenieur Maschinenbau-F&E"
+  },
+  "lede": {
+    "fa": "طراحی مکانیکی دقیق، نمونه‌سازی آزمایشی و ابزار دقیق علمی؛ از CAD و FEM تا یک بستر آزمون کارا.",
+    "en": "Precision mechanical design, experimental prototyping and scientific instrumentation. From CAD and FEM to a working test rig.",
+    "de": "Präzisionskonstruktion, experimenteller Prototypenbau und wissenschaftliche Messtechnik. Von CAD und FEM bis zum funktionierenden Prüfstand."
+  },
+  "chips": {
+    "fa": [
+      "کارشناسی ارشد در حال گذراندن، دگندورف",
+      "FEM، GD&T، مترولوژی",
+      "بیش از ۱۰ سال تجربه طراحی مکانیکی"
+    ],
+    "en": [
+      "M.Sc. in progress, Deggendorf",
+      "FEM, GD&T, Metrology",
+      "10+ years in mechanical design"
+    ],
+    "de": [
+      "M.Sc. in Arbeit, Deggendorf",
+      "FEM, GD&T, Messtechnik",
+      "10+ Jahre Konstruktionserfahrung"
+    ]
+  },
+  "ctaProjects": {
+    "fa": "مشاهده پروژه‌ها",
+    "en": "Explore projects",
+    "de": "Projekte ansehen"
+  },
+  "ctaContact": {
+    "fa": "ارتباط با من",
+    "en": "Get in touch",
+    "de": "Kontakt aufnehmen"
+  },
+  "viewCaption": {
+    "fa": "بدنه فلنجی، مدل سیمی",
+    "en": "Flanged housing, wireframe",
+    "de": "Flanschgehäuse, Drahtmodell"
+  },
+  "viewerHint": {
+    "fa": "برای چرخش بکشید",
+    "en": "Drag to rotate",
+    "de": "Ziehen zum Drehen"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "title": {
+    "fa": "بیایید صحبت کنیم",
+    "en": "Let's talk",
+    "de": "Lass uns sprechen"
+  },
+  "text": {
+    "fa": "علاقه‌مند به همکاری، ساخت بستر آزمون یا گفت‌وگوی فنی هستید؟ برایم پیام بفرستید.",
+    "en": "Interested in a collaboration, a test rig, or a technical discussion? Send a message.",
+    "de": "Interesse an einer Zusammenarbeit, einem Prüfstand oder einem fachlichen Austausch? Schreib mir."
+  },
+  "linkedin": {
+    "fa": "لینکدین",
+    "en": "LinkedIn",
+    "de": "LinkedIn"
+  },
+  "github": {
+    "fa": "گیت‌هاب",
+    "en": "GitHub",
+    "de": "GitHub"
+  },
+  "location": {
+    "fa": "دگندورف، آلمان",
+    "en": "Deggendorf, Germany",
+    "de": "Deggendorf, Deutschland"
+  },
+  "legal": {
+    "title": {
+      "fa": "اطلاعات حقوقی و حریم خصوصی",
+      "en": "Imprint and privacy",
+      "de": "Impressum und Datenschutz"
+    },
+    "imprintTitle": {
+      "fa": "اطلاعات صاحب سایت",
+      "en": "Imprint",
+      "de": "Impressum"
+    },
+    "imprintLaw": {
+      "fa": "طبق بند ۵ قانون DDG آلمان",
+      "en": "Information according to § 5 DDG",
+      "de": "Angaben gemäß § 5 DDG"
+    },
+    "privacyTitle": {
+      "fa": "حریم خصوصی",
+      "en": "Privacy",
+      "de": "Datenschutz"
+    },
+    "privacy": {
+      "fa": [
+        "این وبسایت یک صفحه ایستا است. هیچ کوکی‌ای ذخیره نمی‌کند و از ابزار ردیابی یا آمارگیری استفاده نمی‌کند.",
+        "سایت روی سروری از شرکت Hetzner Online GmbH در آلمان اجرا می‌شود و از طریق Cloudflare, Inc. ارائه می‌شود. این شرکت‌ها برای ارائه و محافظت از صفحه، آدرس IP و داده‌های فنی درخواست شما را پردازش می‌کنند.",
+        "برای نمایش صفحه به زبان شما، مرورگرتان کد کشور را از Cloudflare می‌پرسد. انتخاب زبان و تم فقط در مرورگر خودتان ذخیره می‌شود.",
+        "اگر ایمیل بفرستید، پیام شما فقط برای پاسخ دادن به خودتان استفاده می‌شود."
+      ],
+      "en": [
+        "This website is a static page. It sets no cookies and uses no tracking or analytics.",
+        "The site runs on a server of Hetzner Online GmbH in Germany and is delivered through Cloudflare, Inc. To deliver and protect the page, these providers process your IP address and technical request data.",
+        "To show the page in your language, your browser asks Cloudflare for your country code. Your choice of language and theme is stored only in your own browser.",
+        "If you send an e-mail, your message is used only to reply to you."
+      ],
+      "de": [
+        "Diese Website ist eine statische Seite. Sie setzt keine Cookies und verwendet weder Tracking noch Analysedienste.",
+        "Die Seite läuft auf einem Server der Hetzner Online GmbH in Deutschland und wird über Cloudflare, Inc. ausgeliefert. Zur Auslieferung und zum Schutz der Seite verarbeiten diese Anbieter Ihre IP-Adresse und technische Anfragedaten.",
+        "Um die Seite in Ihrer Sprache anzuzeigen, fragt Ihr Browser bei Cloudflare Ihr Länderkürzel ab. Ihre Wahl von Sprache und Farbschema wird nur in Ihrem eigenen Browser gespeichert.",
+        "Wenn Sie eine E-Mail senden, wird Ihre Nachricht ausschließlich zur Beantwortung verwendet."
+      ]
+    }
+  },
+  "footer": {
+    "fa": "تمامی حقوق محفوظ است.",
+    "en": "All rights reserved.",
+    "de": "Alle Rechte vorbehalten."
+  }
+}

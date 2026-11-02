@@ -1,15 +1,15 @@
-import en from './locales/en.json';
-import de from './locales/de.json';
-import fa from './locales/fa.json';
-import { LANGS, DEFAULT_LANG, COUNTRY_TO_LANG, GEO_DETECTION_ENABLED, GEO_TIMEOUT_MS, GEO_TRACE_URL } from './config.js';
+import { C } from './content.js';
+import { LANGS, RTL_LANGS, GEO_TIMEOUT_MS, GEO_TRACE_URL } from './config.js';
 
-const DICTS = { en, de, fa };
-const RTL = new Set(['fa']);
+const RTL = new Set(RTL_LANGS);
 const NUMBER_LOCALE = { fa: 'fa-IR', en: 'en-US', de: 'de-DE' };
 const STORAGE_KEY = 'lang';
 const COUNTRY_KEY = 'geoCountry';
 
-let current = DEFAULT_LANG;
+const langCfg = () => C.site.languages || {};
+const defaultLang = () => (LANGS.includes(langCfg().default) ? langCfg().default : 'en');
+
+let current = defaultLang();
 const listeners = new Set();
 
 export function safeGet(store, key) {
@@ -27,40 +27,65 @@ export function safeSet(store, key, value) {
   }
 }
 
-/** Look up a value by dotted path, e.g. t('ui.close'). */
-export function t(path) {
-  let node = DICTS[current];
-  for (const p of path.split('.')) node = node == null ? undefined : node[p];
-  return node;
+const dig = (root, path) => path.split('.').reduce((n, k) => (n == null ? undefined : n[k]), root);
+const isML = (v) => v && typeof v === 'object' && !Array.isArray(v) && LANGS.some((l) => l in v);
+
+/** A multilingual content value { fa, en, de } in the current language (falls back to English, then any). */
+export function L(v) {
+  if (!isML(v)) return v;
+  const own = v[current];
+  const empty = own == null || own === '' || (Array.isArray(own) && !own.length);
+  if (!empty) return own;
+  for (const l of [defaultLang(), 'en', ...LANGS]) {
+    const x = v[l];
+    if (x != null && x !== '' && !(Array.isArray(x) && !x.length)) return x;
+  }
+  return own;
 }
 
-/** Same as t(), with {name} placeholders filled in. Numbers use the language's digits. */
-export function tf(path, vars = {}) {
-  const s = t(path);
+/** Fill {name} placeholders. Numbers use the language's digits. */
+export function fill(s, vars = {}) {
   if (typeof s !== 'string') return '';
   return s.replace(/\{(\w+)\}/g, (_, k) => (typeof vars[k] === 'number' ? num(vars[k]) : vars[k] ?? ''));
 }
+
+/** Interface string by dotted path, e.g. t('ui.close') (content/ui/<lang>.json). */
+export function t(path) {
+  const v = dig(C.ui[current], path);
+  return v === undefined ? dig(C.ui.en, path) : v;
+}
+/** Content value by dotted path, e.g. c('home.role'), resolved to the current language. */
+export const c = (path) => L(dig(C, path));
 
 export const num = (n) => new Intl.NumberFormat(NUMBER_LOCALE[current] || 'en-US').format(n);
 export const getLang = () => current;
 export const isRTL = () => RTL.has(current);
 export const onLangChange = (fn) => listeners.add(fn);
 
+/** Fill elements marked data-i18n (interface strings) and data-c (content) in the current language. */
+export function applyStaticTexts(root = document) {
+  root.querySelectorAll('[data-i18n]').forEach((el) => {
+    const v = t(el.dataset.i18n);
+    if (typeof v === 'string') el.textContent = v;
+  });
+  root.querySelectorAll('[data-c]').forEach((el) => {
+    const v = c(el.dataset.c);
+    el.textContent = typeof v === 'string' ? v : '';
+    el.hidden = !v;
+  });
+}
+
 export function setLang(lang, { persist = false } = {}) {
-  if (!LANGS.includes(lang)) lang = DEFAULT_LANG;
+  if (!LANGS.includes(lang)) lang = defaultLang();
   current = lang;
   if (persist) safeSet(localStorage, STORAGE_KEY, lang);
 
   const root = document.documentElement;
   root.lang = lang;
   root.dir = RTL.has(lang) ? 'rtl' : 'ltr';
-  document.title = t('meta.title');
-  document.querySelector('meta[name="description"]')?.setAttribute('content', t('meta.description'));
-
-  document.querySelectorAll('[data-i18n]').forEach((el) => {
-    const v = t(el.dataset.i18n);
-    if (typeof v === 'string') el.textContent = v;
-  });
+  document.title = L(C.site.meta?.title) || C.site.name;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', L(C.site.meta?.description) || '');
+  applyStaticTexts();
   listeners.forEach((fn) => fn(lang));
 }
 
@@ -70,7 +95,7 @@ function fromBrowser() {
     const base = String(p || '').toLowerCase().split('-')[0];
     if (LANGS.includes(base)) return base;
   }
-  return DEFAULT_LANG;
+  return defaultLang();
 }
 
 /** Country code from Cloudflare's trace endpoint on our own domain (cached per session). */
@@ -107,9 +132,9 @@ export async function initI18n() {
   if (saved && LANGS.includes(saved)) return setLang(saved);
 
   setLang(fromBrowser());
-  if (!GEO_DETECTION_ENABLED) return;
+  if (langCfg().geoDetection === false) return;
   const country = await detectCountry();
   if (!country) return;
-  const geoLang = COUNTRY_TO_LANG[country] || DEFAULT_LANG;
+  const geoLang = (langCfg().countryToLang || {})[country] || defaultLang();
   if (!safeGet(localStorage, STORAGE_KEY) && geoLang !== current) setLang(geoLang);
 }

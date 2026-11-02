@@ -1,0 +1,288 @@
+{
+  "title": {
+    "fa": "گواهینامه‌ها",
+    "en": "Certificates",
+    "de": "Zertifikate"
+  },
+  "subtitle": {
+    "fa": "همه گواهینامه‌ها، روی حلقه‌ای که می‌چرخد.",
+    "en": "All certificates, as a ring you can turn.",
+    "de": "Alle Zertifikate als drehbarer Ring."
+  },
+  "allLabel": {
+    "fa": "همه",
+    "en": "All",
+    "de": "Alle"
+  },
+  "groups": [
+    {
+      "id": "solidworks",
+      "label": {
+        "fa": "SolidWorks",
+        "en": "SolidWorks",
+        "de": "SolidWorks"
+      }
+    },
+    {
+      "id": "cae",
+      "label": {
+        "fa": "CAD و شبیه‌سازی",
+        "en": "CAD and simulation",
+        "de": "CAD und Simulation"
+      }
+    },
+    {
+      "id": "software",
+      "label": {
+        "fa": "برنامه‌نویسی",
+        "en": "Programming",
+        "de": "Programmierung"
+      }
+    }
+  ],
+  "issuers": [
+    {
+      "id": "dassault",
+      "name": {
+        "fa": "Dassault Systèmes",
+        "en": "Dassault Systèmes",
+        "de": "Dassault Systèmes"
+      }
+    },
+    {
+      "id": "parspajouhan",
+      "name": {
+        "fa": "مؤسسه پارس‌پژوهان",
+        "en": "ParsPajouhan Institute",
+        "de": "ParsPajouhan-Institut"
+      }
+    },
+    {
+      "id": "sharif",
+      "name": {
+        "fa": "دانشگاه صنعتی شریف",
+        "en": "Sharif University of Technology",
+        "de": "Technische Universität Sharif"
+      }
+    },
+    {
+      "id": "sematec",
+      "name": {
+        "fa": "سماتک",
+        "en": "Sematec",
+        "de": "Sematec"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "cswa",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "CSWA",
+      "verify": "",
+      "title": {
+        "fa": "CSWA طراحی مکانیکی",
+        "en": "CSWA Mechanical Design",
+        "de": "CSWA Mechanical Design"
+      },
+      "detail": {
+        "fa": "Certified SOLIDWORKS Associate",
+        "en": "Certified SOLIDWORKS Associate",
+        "de": "Certified SOLIDWORKS Associate"
+      }
+    },
+    {
+      "id": "cswa-am",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "CSWA-AM",
+      "verify": "",
+      "title": {
+        "fa": "CSWA ساخت افزایشی",
+        "en": "CSWA Additive Manufacturing",
+        "de": "CSWA Additive Manufacturing"
+      },
+      "detail": {
+        "fa": "Certified SOLIDWORKS Associate",
+        "en": "Certified SOLIDWORKS Associate",
+        "de": "Certified SOLIDWORKS Associate"
+      }
+    },
+    {
+      "id": "cswa-xdesign",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "CSWA-xDesign",
+      "verify": "",
+      "title": {
+        "fa": "CSWA xDesign",
+        "en": "CSWA xDesign",
+        "de": "CSWA xDesign"
+      },
+      "detail": {
+        "fa": "Certified SOLIDWORKS Associate، پلتفرم 3DEXPERIENCE",
+        "en": "Certified SOLIDWORKS Associate, 3DEXPERIENCE",
+        "de": "Certified SOLIDWORKS Associate, 3DEXPERIENCE"
+      }
+    },
+    {
+      "id": "cswa-xshape",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "CSWA-xShape",
+      "verify": "",
+      "title": {
+        "fa": "CSWA xShape",
+        "en": "CSWA xShape",
+        "de": "CSWA xShape"
+      },
+      "detail": {
+        "fa": "Certified SOLIDWORKS Associate، پلتفرم 3DEXPERIENCE",
+        "en": "Certified SOLIDWORKS Associate, 3DEXPERIENCE",
+        "de": "Certified SOLIDWORKS Associate, 3DEXPERIENCE"
+      }
+    },
+    {
+      "id": "cswa-xmold",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "CSWA-xMold",
+      "verify": "",
+      "title": {
+        "fa": "CSWA xMold",
+        "en": "CSWA xMold",
+        "de": "CSWA xMold"
+      },
+      "detail": {
+        "fa": "Certified SOLIDWORKS Associate، پلتفرم 3DEXPERIENCE",
+        "en": "Certified SOLIDWORKS Associate, 3DEXPERIENCE",
+        "de": "Certified SOLIDWORKS Associate, 3DEXPERIENCE"
+      }
+    },
+    {
+      "id": "cswa-e",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "CSWA-E",
+      "verify": "",
+      "title": {
+        "fa": "CSWA الکتریکال",
+        "en": "CSWA Electrical",
+        "de": "CSWA Electrical"
+      },
+      "detail": {
+        "fa": "Certified SOLIDWORKS Associate",
+        "en": "Certified SOLIDWORKS Associate",
+        "de": "Certified SOLIDWORKS Associate"
+      }
+    },
+    {
+      "id": "cswa-sd",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "CSWA-SD",
+      "verify": "",
+      "title": {
+        "fa": "CSWA طراحی پایدار",
+        "en": "CSWA Sustainable Design",
+        "de": "CSWA Sustainable Design"
+      },
+      "detail": {
+        "fa": "Certified SOLIDWORKS Associate",
+        "en": "Certified SOLIDWORKS Associate",
+        "de": "Certified SOLIDWORKS Associate"
+      }
+    },
+    {
+      "id": "catia-v5",
+      "visible": true,
+      "group": "cae",
+      "issuer": "parspajouhan",
+      "year": "2020",
+      "code": "CATIA V5",
+      "verify": "",
+      "title": {
+        "fa": "CATIA V5 پیشرفته",
+        "en": "CATIA V5 Advanced",
+        "de": "CATIA V5 Fortgeschritten"
+      },
+      "detail": {
+        "fa": "دوره پیشرفته",
+        "en": "Advanced course",
+        "de": "Kurs für Fortgeschrittene"
+      }
+    },
+    {
+      "id": "ansys",
+      "visible": true,
+      "group": "cae",
+      "issuer": "sharif",
+      "year": "2019",
+      "code": "ANSYS",
+      "verify": "",
+      "title": {
+        "fa": "Ansys متوسط",
+        "en": "Ansys Intermediate",
+        "de": "Ansys Mittelstufe"
+      },
+      "detail": {
+        "fa": "دوره سطح متوسط",
+        "en": "Intermediate course",
+        "de": "Kurs, Mittelstufe"
+      }
+    },
+    {
+      "id": "abaqus",
+      "visible": true,
+      "group": "cae",
+      "issuer": "sharif",
+      "year": "2019",
+      "code": "ABAQUS",
+      "verify": "",
+      "title": {
+        "fa": "Abaqus متوسط",
+        "en": "Abaqus Intermediate",
+        "de": "Abaqus Mittelstufe"
+      },
+      "detail": {
+        "fa": "دوره سطح متوسط",
+        "en": "Intermediate course",
+        "de": "Kurs, Mittelstufe"
+      }
+    },
+    {
+      "id": "python",
+      "visible": true,
+      "group": "software",
+      "issuer": "sematec",
+      "year": "2024",
+      "code": "PYTHON",
+      "verify": "",
+      "title": {
+        "fa": "Python متوسط",
+        "en": "Python Intermediate",
+        "de": "Python Mittelstufe"
+      },
+      "detail": {
+        "fa": "دوره سطح متوسط",
+        "en": "Intermediate course",
+        "de": "Kurs, Mittelstufe"
+      }
+    }
+  ]
+}
