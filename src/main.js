@@ -626,6 +626,13 @@ function renderContact() {
   mail.href = `mailto:${S.email}`;
   mail.textContent = S.email;
   mail.hidden = !S.email;
+  const mail2 = $('#contact-mail-2');
+  const addr2 = (C.site.imprint || {}).email;
+  if (mail2) {
+    mail2.href = `mailto:${addr2 || ''}`;
+    mail2.textContent = addr2 || '';
+    mail2.hidden = !addr2 || addr2 === S.email;
+  }
   const links = [];
   if (S.phone) links.push(`<a class="btn btn-line" href="tel:${esc(S.phone.replace(/\s/g, ''))}">${esc(S.phone)}</a>`);
   if (S.linkedin)
