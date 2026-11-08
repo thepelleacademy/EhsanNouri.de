@@ -116,21 +116,23 @@ function renderLogin(message = '') {
       ${message ? `<p class="login-msg">${esc(message)}</p>` : ''}
       ${
         vault
-          ? `<form id="unlock" class="stack" autocomplete="off">
-              <label class="lbl" for="pw">رمز عبور پنل</label>
+          ? `<form id="unlock" class="stack" autocomplete="on">
+              <label class="lbl" for="uname">نام کاربری</label>
+              <input id="uname" type="text" dir="ltr" autocomplete="username" required value="${esc(vault.user || '')}" />
+              <label class="lbl" for="pw">رمز عبور</label>
               <input id="pw" type="password" autocomplete="current-password" required />
               <button class="btn btn-primary" type="submit">ورود</button>
               <p class="help">این دستگاه به گیت‌هاب <code>${esc(vault.login || '')}</code> وصل است.
                 <button type="button" class="linkish" id="forget">قطع اتصال این دستگاه</button></p>
             </form>`
-          : `<form id="connect" class="stack" autocomplete="off">
-              <p class="help">اولین ورود در این دستگاه: یک توکن گیت‌هاب بدهید و یک رمز برای پنل انتخاب کنید. دفعه‌های بعد فقط رمز لازم است.</p>
+          : `<form id="connect" class="stack" autocomplete="on">
+              <p class="help">اولین ورود در این دستگاه: نام کاربری و رمز دلخواه بسازید و توکن گیت‌هاب را یک‌بار وارد کنید. دفعه‌های بعد فقط نام کاربری و رمز لازم است.</p>
               <label class="lbl" for="tok">توکن گیت‌هاب (Fine-grained)</label>
               <input id="tok" type="password" dir="ltr" autocomplete="off" spellcheck="false" placeholder="github_pat_…" required />
+              <label class="lbl" for="uname">نام کاربری پنل</label>
+              <input id="uname" type="text" dir="ltr" autocomplete="username" minlength="3" required />
               <label class="lbl" for="pw1">رمز پنل (حداقل ${CFG.PASSWORD_MIN_LENGTH} کاراکتر)</label>
               <input id="pw1" type="password" autocomplete="new-password" minlength="${CFG.PASSWORD_MIN_LENGTH}" required />
-              <label class="lbl" for="pw2">تکرار رمز</label>
-              <input id="pw2" type="password" autocomplete="new-password" required />
               <button class="btn btn-primary" type="submit">اتصال</button>
               <details class="token-help"><summary>توکن را چطور بسازم؟</summary>${TOKEN_HELP}</details>
             </form>`
@@ -143,7 +145,12 @@ function renderLogin(message = '') {
     btn.disabled = true;
     await sleep(failedDelay());
     try {
-      const token = await openVault($('#pw').value);
+      const vaultNow = readVault();
+    if (($('#uname').value.trim().toLowerCase()) !== String(vaultNow?.user || '').toLowerCase()) {
+      btn.disabled = false;
+      return renderLogin('نام کاربری یا رمز اشتباه است.');
+    }
+    const token = await openVault($('#pw').value);
       sessionStorage.removeItem(CFG.STORE.failed);
       await startSession(token);
     } catch (err) {
@@ -162,17 +169,17 @@ function renderLogin(message = '') {
   $('#connect')?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const token = $('#tok').value.trim();
+    const user = $('#uname').value.trim();
     const p1 = $('#pw1').value;
-    const p2 = $('#pw2').value;
+    if (!/^[A-Za-z0-9._-]{3,40}$/.test(user)) return toast('نام کاربری فقط حروف انگلیسی، عدد و . _ - باشد (۳ تا ۴۰ کاراکتر).', 'error');
     if (p1.length < CFG.PASSWORD_MIN_LENGTH) return toast(`رمز باید حداقل ${CFG.PASSWORD_MIN_LENGTH} کاراکتر باشد.`, 'error');
-    if (p1 !== p2) return toast('رمزها یکی نیستند.', 'error');
     const btn = $('button[type=submit]', e.target);
     btn.disabled = true;
     btn.textContent = 'در حال بررسی توکن…';
     try {
       GH.setToken(token);
       const info = await checkAccess();
-      await sealToken(token, p1, { login: info.login });
+      await sealToken(token, p1, { login: info.login, user });
       await startSession(token);
     } catch (err) {
       GH.setToken('');

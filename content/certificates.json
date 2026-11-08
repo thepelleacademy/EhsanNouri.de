@@ -38,6 +38,14 @@
         "en": "Programming",
         "de": "Programmierung"
       }
+    },
+    {
+      "id": "manufacturing",
+      "label": {
+        "fa": "ساخت و کامپوزیت",
+        "en": "Manufacturing and composites",
+        "de": "Fertigung und Verbundwerkstoffe"
+      }
     }
   ],
   "issuers": [
@@ -71,6 +79,14 @@
         "fa": "سماتک",
         "en": "Sematec",
         "de": "Sematec"
+      }
+    },
+    {
+      "id": "linkedin",
+      "name": {
+        "fa": "LinkedIn Learning",
+        "en": "LinkedIn Learning",
+        "de": "LinkedIn Learning"
       }
     }
   ],
@@ -282,6 +298,25 @@
         "fa": "دوره سطح متوسط",
         "en": "Intermediate course",
         "de": "Kurs, Mittelstufe"
+      }
+    },
+    {
+      "id": "composite-manufacturing",
+      "visible": true,
+      "group": "manufacturing",
+      "issuer": "linkedin",
+      "year": "2026",
+      "code": "LinkedIn Learning",
+      "verify": "",
+      "title": {
+        "fa": "مقدمه‌ای بر ساخت کامپوزیت",
+        "en": "Introduction to Composite Manufacturing",
+        "de": "Einführung in die Verbundwerkstofffertigung"
+      },
+      "detail": {
+        "fa": "دوره آنلاین، ۵۷ دقیقه، ID: 93dc7776b2ff8e320f071ce0beda0f371ef6f9178a4c2a7219e383524b20ea5f",
+        "en": "Online course, 57 minutes, ID: 93dc7776b2ff8e320f071ce0beda0f371ef6f9178a4c2a7219e383524b20ea5f",
+        "de": "Online-Kurs, 57 Minuten, ID: 93dc7776b2ff8e320f071ce0beda0f371ef6f9178a4c2a7219e383524b20ea5f"
       }
     }
   ]
