@@ -693,16 +693,7 @@
           "Automatische Bereitstellung mit GitHub Actions und Docker"
         ]
       },
-      "links": [
-        {
-          "label": {
-            "fa": "گیت‌هاب",
-            "en": "GitHub",
-            "de": "GitHub"
-          },
-          "url": "https://github.com/thepelleacademy/PelleLibrary"
-        }
-      ],
+      "links": [],
       "embeds": []
     },
     {
@@ -748,16 +739,7 @@
           "CI für Tests und Firmware-Builds"
         ]
       },
-      "links": [
-        {
-          "label": {
-            "fa": "گیت‌هاب",
-            "en": "GitHub",
-            "de": "GitHub"
-          },
-          "url": "https://github.com/thepelleacademy/BoBo_Project_CaseStudy_THD2026"
-        }
-      ],
+      "links": [],
       "embeds": []
     },
     {
@@ -803,16 +785,7 @@
           "Materialdatenbank mit Quellen und Prüfstatus"
         ]
       },
-      "links": [
-        {
-          "label": {
-            "fa": "گیت‌هاب",
-            "en": "GitHub",
-            "de": "GitHub"
-          },
-          "url": "https://github.com/thepelleacademy/LCA"
-        }
-      ],
+      "links": [],
       "embeds": []
     },
     {
@@ -857,16 +830,7 @@
           "Abbildungen aus Python-Skripten und Excel-Daten"
         ]
       },
-      "links": [
-        {
-          "label": {
-            "fa": "گیت‌هاب",
-            "en": "GitHub",
-            "de": "GitHub"
-          },
-          "url": "https://github.com/thepelleacademy/EPDMProject"
-        }
-      ],
+      "links": [],
       "embeds": []
     }
   ]
