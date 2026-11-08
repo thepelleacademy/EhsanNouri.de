@@ -807,45 +807,46 @@
       "embeds": []
     },
     {
-      "id": "epdm-paper",
+      "id": "latex-editor",
       "visible": true,
-      "cat": "research",
+      "cat": "software",
       "status": "in_progress",
       "year": "2026",
       "tags": [
         "LaTeX",
-        "Hyperelasticity",
-        "FEA",
-        "Collaborative editor"
+        "Yjs",
+        "CodeMirror",
+        "Flask",
+        "Self-hosted"
       ],
       "title": {
-        "fa": "مقاله‌ی EPDM و ویرایشگر LaTeX",
-        "en": "EPDM Paper and Private LaTeX Editor",
-        "de": "EPDM-Artikel und privater LaTeX-Editor"
+        "fa": "ویرایشگر LaTeX خصوصی",
+        "en": "Private LaTeX Editor",
+        "de": "Privater LaTeX-Editor"
       },
       "summary": {
-        "fa": "مقاله‌ی پژوهشی درباره‌ی رفتار ویسکو-هایپرالاستیک EPDM، همراه با یک ویرایشگر LaTeX شخصی و همزمان روی سرور خودم.",
-        "en": "Research paper on the visco-hyperelastic behaviour of EPDM, written in a private, real-time collaborative LaTeX editor on my own server.",
-        "de": "Forschungsartikel zum visko-hyperelastischen Verhalten von EPDM, geschrieben in einem privaten Echtzeit-LaTeX-Editor auf eigenem Server."
+        "fa": "ویرایشگر LaTeX شخصی و همزمان، شبیه Overleaf، روی سرور خودم: ویرایش گروهی، پیش‌نمایش زنده‌ی PDF و همگام‌سازی با GitHub.",
+        "en": "A private, real-time collaborative LaTeX editor similar to Overleaf, self-hosted: shared editing, live PDF preview and GitHub sync.",
+        "de": "Ein privater, kollaborativer LaTeX-Editor ähnlich Overleaf, selbst gehostet: gemeinsames Bearbeiten, Live-PDF-Vorschau und GitHub-Synchronisierung."
       },
       "work": {
         "fa": [
-          "مطالعه‌ی آزمایشگاهی و عددی رفتار EPDM",
-          "ویرایشگر Yjs و CodeMirror با پیش‌نمایش زنده‌ی PDF و SyncTeX",
-          "همگام‌سازی با GitHub و بکاپ خودکار",
-          "مدیریت شکل‌ها با اسکریپت پایتون و داده‌ی Excel"
+          "ویرایش همزمان با Yjs و CodeMirror و نمایش مکان‌نمای همکاران",
+          "کامپایل latexmk، پیش‌نمایش PDF و SyncTeX دوطرفه",
+          "پنل فایل‌ها، آپلود ZIP، جستجو در کل پروژه و مدیریت شکل‌ها با پایتون",
+          "ورود امن با ۲FA، همگام‌سازی با GitHub و بکاپ خودکار"
         ],
         "en": [
-          "Experimental and numerical study of EPDM behaviour",
-          "Real-time editor with Yjs and CodeMirror, live PDF preview and SyncTeX",
-          "GitHub sync and automatic backups",
-          "Figures generated from Python scripts and Excel data"
+          "Real-time editing with Yjs and CodeMirror, showing collaborators' cursors",
+          "latexmk compilation, live PDF preview and two-way SyncTeX",
+          "File panel, ZIP upload, project-wide search and Python-scripted figures",
+          "Secure login with optional 2FA, GitHub sync and automatic backups"
         ],
         "de": [
-          "Experimentelle und numerische Untersuchung des EPDM-Verhaltens",
-          "Echtzeit-Editor mit Yjs und CodeMirror, Live-PDF-Vorschau und SyncTeX",
-          "GitHub-Synchronisierung und automatische Backups",
-          "Abbildungen aus Python-Skripten und Excel-Daten"
+          "Echtzeitbearbeitung mit Yjs und CodeMirror, mit Cursoranzeige der Mitarbeitenden",
+          "latexmk-Kompilierung, Live-PDF-Vorschau und bidirektionales SyncTeX",
+          "Dateiverwaltung, ZIP-Upload, projektweite Suche und Python-Abbildungen",
+          "Sichere Anmeldung mit optionaler 2FA, GitHub-Sync und automatischen Backups"
         ]
       },
       "links": [
