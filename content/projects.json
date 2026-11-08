@@ -739,7 +739,16 @@
           "CI für Tests und Firmware-Builds"
         ]
       },
-      "links": [],
+      "links": [
+        {
+          "label": {
+            "fa": "وبسایت",
+            "en": "Website",
+            "de": "Website"
+          },
+          "url": "https://bobo.ehsannouri.de/"
+        }
+      ],
       "embeds": []
     },
     {
@@ -785,7 +794,16 @@
           "Materialdatenbank mit Quellen und Prüfstatus"
         ]
       },
-      "links": [],
+      "links": [
+        {
+          "label": {
+            "fa": "وبسایت",
+            "en": "Website",
+            "de": "Website"
+          },
+          "url": "https://LCA.ehsannouri.de/"
+        }
+      ],
       "embeds": []
     },
     {
@@ -830,7 +848,16 @@
           "Abbildungen aus Python-Skripten und Excel-Daten"
         ]
       },
-      "links": [],
+      "links": [
+        {
+          "label": {
+            "fa": "وبسایت",
+            "en": "Website",
+            "de": "Website"
+          },
+          "url": "https://latex.ehsannouri.de/"
+        }
+      ],
       "embeds": []
     }
   ]
