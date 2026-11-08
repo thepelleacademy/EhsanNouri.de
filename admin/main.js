@@ -118,7 +118,7 @@ function renderLogin(message = '') {
         vault
           ? `<form id="unlock" class="stack" autocomplete="on">
               <label class="lbl" for="uname">نام کاربری</label>
-              <input id="uname" type="text" dir="ltr" autocomplete="username" required value="${esc(vault.user || '')}" />
+              <input id="uname" type="text" dir="ltr" autocomplete="username" ${vault.user ? 'required' : ''} value="${esc(vault.user || '')}" placeholder="${vault.user ? '' : 'اختیاری برای اتصال‌های قدیمی'}" />
               <label class="lbl" for="pw">رمز عبور</label>
               <input id="pw" type="password" autocomplete="current-password" required />
               <button class="btn btn-primary" type="submit">ورود</button>
@@ -146,7 +146,7 @@ function renderLogin(message = '') {
     await sleep(failedDelay());
     try {
       const vaultNow = readVault();
-    if (($('#uname').value.trim().toLowerCase()) !== String(vaultNow?.user || '').toLowerCase()) {
+    if (vaultNow?.user && ($('#uname').value.trim().toLowerCase()) !== String(vaultNow.user).toLowerCase()) {
       btn.disabled = false;
       return renderLogin('نام کاربری یا رمز اشتباه است.');
     }
