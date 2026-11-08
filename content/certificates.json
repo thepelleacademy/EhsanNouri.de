@@ -318,6 +318,25 @@
         "en": "Online course, 57 minutes, ID: 93dc7776b2ff8e320f071ce0beda0f371ef6f9178a4c2a7219e383524b20ea5f",
         "de": "Online-Kurs, 57 Minuten, ID: 93dc7776b2ff8e320f071ce0beda0f371ef6f9178a4c2a7219e383524b20ea5f"
       }
+    },
+    {
+      "id": "draftsight",
+      "visible": true,
+      "group": "solidworks",
+      "issuer": "dassault",
+      "year": "2026",
+      "code": "DraftSight",
+      "verify": "",
+      "title": {
+        "fa": "DraftSight 2D طراحی و نقشه‌کشی",
+        "en": "DraftSight 2D Design and Drafting",
+        "de": "DraftSight 2D Design and Drafting"
+      },
+      "detail": {
+        "fa": "DraftSight Associate، Dassault Systèmes",
+        "en": "DraftSight Associate, Dassault Systèmes",
+        "de": "DraftSight Associate, Dassault Systèmes"
+      }
     }
   ]
 }
