@@ -649,6 +649,225 @@
       },
       "links": [],
       "embeds": []
+    },
+    {
+      "id": "pellelibrary",
+      "visible": true,
+      "cat": "software",
+      "status": "in_progress",
+      "year": "2026",
+      "tags": [
+        "Telegram Mini App",
+        "FastAPI",
+        "PWA",
+        "Capacitor",
+        "Electron"
+      ],
+      "title": {
+        "fa": "PelleLibrary (جزوه‌دان)",
+        "en": "PelleLibrary",
+        "de": "PelleLibrary"
+      },
+      "summary": {
+        "fa": "ربات تلگرام و Mini App برای دانشجوها: جزوه‌ها (PDF، عکس، متن) را می‌فرستید، درس و ترم خودکار تشخیص داده می‌شود و در دیتابیس شخصی ذخیره می‌شود.",
+        "en": "A Telegram bot and Mini App for students: send lecture notes (PDF, photo, text), the course and term are detected automatically and stored in a personal library.",
+        "de": "Telegram-Bot und Mini App für Studierende: Skripte (PDF, Foto, Text) senden, Kurs und Semester werden automatisch erkannt und in einer persönlichen Bibliothek gespeichert."
+      },
+      "work": {
+        "fa": [
+          "طراحی و پیاده‌سازی ربات تلگرام و API با FastAPI",
+          "نوشتن در اپ با قلم روی صفحه یا روی PDF و خروجی PDF",
+          "اپ‌های وب، اندروید، iOS و ویندوز با یک کتابخانه‌ی مشترک",
+          "دیپلوی خودکار با GitHub Actions و Docker روی سرور"
+        ],
+        "en": [
+          "Design and implementation of the Telegram bot and FastAPI backend",
+          "Handwriting on pages or PDFs, PDF export and an AI assistant",
+          "Web, Android, iOS and Windows apps sharing one library",
+          "Automatic deployment with GitHub Actions and Docker"
+        ],
+        "de": [
+          "Entwurf und Umsetzung des Telegram-Bots und FastAPI-Backends",
+          "Handschrift auf Seiten oder PDFs, PDF-Export und KI-Assistent",
+          "Web-, Android-, iOS- und Windows-Apps mit gemeinsamer Bibliothek",
+          "Automatische Bereitstellung mit GitHub Actions und Docker"
+        ]
+      },
+      "links": [
+        {
+          "label": {
+            "fa": "گیت‌هاب",
+            "en": "GitHub",
+            "de": "GitHub"
+          },
+          "url": "https://github.com/thepelleacademy/PelleLibrary"
+        }
+      ],
+      "embeds": []
+    },
+    {
+      "id": "bobo-case-study",
+      "visible": true,
+      "cat": "electronics",
+      "status": "prototype",
+      "year": "2026",
+      "tags": [
+        "ESP32",
+        "LiDAR",
+        "GPS",
+        "A*",
+        "Autonomous"
+      ],
+      "title": {
+        "fa": "BoBo: ربات خودران کمپوس",
+        "en": "BoBo Autonomous Case Study",
+        "de": "BoBo: autonomer Campusroboter"
+      },
+      "summary": {
+        "fa": "ربات خودران آفلاین که از نقطه A به B در کمپوس دانشگاه می‌رود، با GPS، LiDAR، سنسور فاصله‌ی اولتراسونیک، IMU و دوربین.",
+        "en": "An offline autonomous robot that drives from point A to point B on the campus, using GPS, LiDAR, ultrasonic sensors, IMU and a camera.",
+        "de": "Ein autonomer Offline-Roboter, der mit GPS, LiDAR, Ultraschall, IMU und Kamera von Punkt A zu Punkt B auf dem Campus fährt."
+      },
+      "work": {
+        "fa": [
+          "هسته‌ی ناوبری به زبان C++: پردازش LiDAR، فیوژن موقعیت، نقشه‌ی اشغال و A*",
+          "فریم‌ور سه برد ESP32 و Wi-Fi مستقل بدون اینترنت",
+          "داشبورد زنده روی تلفن و شبیه‌ساز سه‌بعدی",
+          "CI برای تست و ساخت فریم‌ور"
+        ],
+        "en": [
+          "C++ navigation core: LiDAR parsing, pose fusion, occupancy map and A*",
+          "Firmware for three ESP32 boards with an offline Wi-Fi network",
+          "Live dashboard on phone and a 3D simulator",
+          "CI for tests and firmware builds"
+        ],
+        "de": [
+          "C++-Navigationskern: LiDAR-Auswertung, Posenfusion, Belegungskarte und A*",
+          "Firmware für drei ESP32-Boards mit Offline-WLAN",
+          "Live-Dashboard auf dem Smartphone und 3D-Simulator",
+          "CI für Tests und Firmware-Builds"
+        ]
+      },
+      "links": [
+        {
+          "label": {
+            "fa": "گیت‌هاب",
+            "en": "GitHub",
+            "de": "GitHub"
+          },
+          "url": "https://github.com/thepelleacademy/BoBo_Project_CaseStudy_THD2026"
+        }
+      ],
+      "embeds": []
+    },
+    {
+      "id": "lca-platform",
+      "visible": true,
+      "cat": "software",
+      "status": "in_progress",
+      "year": "2026",
+      "tags": [
+        "ISO 14040",
+        "ISO 14044",
+        "Next.js",
+        "SQLite",
+        "Composites"
+      ],
+      "title": {
+        "fa": "پلتفرم LCA (Twill)",
+        "en": "Twill LCA Platform",
+        "de": "Twill LCA-Plattform"
+      },
+      "summary": {
+        "fa": "پلتفرم ارزیابی چرخه‌ی عمر برای کامپوزیت‌ها و محصولات عمومی، مطابق ISO 14040 و 14044، با گزارش PDF به سه زبان.",
+        "en": "Life cycle assessment platform for composites and general products, following ISO 14040 and 14044, with PDF reports in three languages.",
+        "de": "Ökobilanz-Plattform für Verbundwerkstoffe und allgemeine Produkte nach ISO 14040 und 14044, mit PDF-Berichten in drei Sprachen."
+      },
+      "work": {
+        "fa": [
+          "مراحل هدف و دامنه، موجودی، ارزیابی اثر و تفسیر طبق ISO",
+          "ماشین‌حساب لایه‌ی کامپوزیت (Vf، چگالی، مدول)",
+          "تحلیل حساسیت، عدم قطعیت Monte Carlo و مقایسه‌ی گزینه‌ها",
+          "پایگاه داده‌ی مواد با منبع و وضعیت تأیید"
+        ],
+        "en": [
+          "Goal and scope, inventory, impact assessment and interpretation per ISO",
+          "Laminate calculator (Vf, density, stiffness)",
+          "Sensitivity analysis, Monte Carlo uncertainty and option comparison",
+          "Material database with citations and verification status"
+        ],
+        "de": [
+          "Ziel und Untersuchungsrahmen, Sachbilanz, Wirkungsabschätzung und Auswertung nach ISO",
+          "Laminatrechner (Vf, Dichte, Steifigkeit)",
+          "Sensitivitätsanalyse, Monte-Carlo-Unsicherheit und Variantenvergleich",
+          "Materialdatenbank mit Quellen und Prüfstatus"
+        ]
+      },
+      "links": [
+        {
+          "label": {
+            "fa": "گیت‌هاب",
+            "en": "GitHub",
+            "de": "GitHub"
+          },
+          "url": "https://github.com/thepelleacademy/LCA"
+        }
+      ],
+      "embeds": []
+    },
+    {
+      "id": "epdm-paper",
+      "visible": true,
+      "cat": "research",
+      "status": "in_progress",
+      "year": "2026",
+      "tags": [
+        "LaTeX",
+        "Hyperelasticity",
+        "FEA",
+        "Collaborative editor"
+      ],
+      "title": {
+        "fa": "مقاله‌ی EPDM و ویرایشگر LaTeX",
+        "en": "EPDM Paper and Private LaTeX Editor",
+        "de": "EPDM-Artikel und privater LaTeX-Editor"
+      },
+      "summary": {
+        "fa": "مقاله‌ی پژوهشی درباره‌ی رفتار ویسکو-هایپرالاستیک EPDM، همراه با یک ویرایشگر LaTeX شخصی و همزمان روی سرور خودم.",
+        "en": "Research paper on the visco-hyperelastic behaviour of EPDM, written in a private, real-time collaborative LaTeX editor on my own server.",
+        "de": "Forschungsartikel zum visko-hyperelastischen Verhalten von EPDM, geschrieben in einem privaten Echtzeit-LaTeX-Editor auf eigenem Server."
+      },
+      "work": {
+        "fa": [
+          "مطالعه‌ی آزمایشگاهی و عددی رفتار EPDM",
+          "ویرایشگر Yjs و CodeMirror با پیش‌نمایش زنده‌ی PDF و SyncTeX",
+          "همگام‌سازی با GitHub و بکاپ خودکار",
+          "مدیریت شکل‌ها با اسکریپت پایتون و داده‌ی Excel"
+        ],
+        "en": [
+          "Experimental and numerical study of EPDM behaviour",
+          "Real-time editor with Yjs and CodeMirror, live PDF preview and SyncTeX",
+          "GitHub sync and automatic backups",
+          "Figures generated from Python scripts and Excel data"
+        ],
+        "de": [
+          "Experimentelle und numerische Untersuchung des EPDM-Verhaltens",
+          "Echtzeit-Editor mit Yjs und CodeMirror, Live-PDF-Vorschau und SyncTeX",
+          "GitHub-Synchronisierung und automatische Backups",
+          "Abbildungen aus Python-Skripten und Excel-Daten"
+        ]
+      },
+      "links": [
+        {
+          "label": {
+            "fa": "گیت‌هاب",
+            "en": "GitHub",
+            "de": "GitHub"
+          },
+          "url": "https://github.com/thepelleacademy/EPDMProject"
+        }
+      ],
+      "embeds": []
     }
   ]
 }
