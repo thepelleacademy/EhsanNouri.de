@@ -136,47 +136,6 @@
       "embeds": []
     },
     {
-      "id": "helicopter-rig",
-      "visible": true,
-      "cat": "mechanical",
-      "status": "completed",
-      "year": "2018–2021",
-      "tags": [
-        "2-DOF",
-        "Actuation",
-        "Instrumentation"
-      ],
-      "title": {
-        "fa": "بستر آزمون هلیکوپتر 2-DOF",
-        "en": "2-DOF Helicopter Test Rig",
-        "de": "2-DOF-Hubschrauber-Prüfstand"
-      },
-      "summary": {
-        "fa": "پایه آزمون برای بررسی دینامیک yaw و pitch.",
-        "en": "Test stand for investigating yaw and pitch dynamics.",
-        "de": "Prüfstand zur Untersuchung der Gier- und Nickdynamik."
-      },
-      "work": {
-        "fa": [
-          "طراحی مکانیکی و عملگر",
-          "ابزار دقیق و یکپارچه‌سازی الکترومکانیکی",
-          "راه‌اندازی و اجرای آزمایش‌ها"
-        ],
-        "en": [
-          "Mechanical design and actuation",
-          "Instrumentation and electromechanical integration",
-          "Commissioning and experimental runs"
-        ],
-        "de": [
-          "Mechanische Konstruktion und Aktorik",
-          "Messtechnik und elektromechanische Integration",
-          "Inbetriebnahme und Versuchsdurchführung"
-        ]
-      },
-      "links": [],
-      "embeds": []
-    },
-    {
       "id": "propeller-rig",
       "visible": true,
       "cat": "mechanical",
