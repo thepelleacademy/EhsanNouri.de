@@ -136,47 +136,6 @@
       "embeds": []
     },
     {
-      "id": "helicopter-rig",
-      "visible": true,
-      "cat": "mechanical",
-      "status": "completed",
-      "year": "2018–2021",
-      "tags": [
-        "2-DOF",
-        "Actuation",
-        "Instrumentation"
-      ],
-      "title": {
-        "fa": "بستر آزمون هلیکوپتر 2-DOF",
-        "en": "2-DOF Helicopter Test Rig",
-        "de": "2-DOF-Hubschrauber-Prüfstand"
-      },
-      "summary": {
-        "fa": "پایه آزمون برای بررسی دینامیک yaw و pitch.",
-        "en": "Test stand for investigating yaw and pitch dynamics.",
-        "de": "Prüfstand zur Untersuchung der Gier- und Nickdynamik."
-      },
-      "work": {
-        "fa": [
-          "طراحی مکانیکی و عملگر",
-          "ابزار دقیق و یکپارچه‌سازی الکترومکانیکی",
-          "راه‌اندازی و اجرای آزمایش‌ها"
-        ],
-        "en": [
-          "Mechanical design and actuation",
-          "Instrumentation and electromechanical integration",
-          "Commissioning and experimental runs"
-        ],
-        "de": [
-          "Mechanische Konstruktion und Aktorik",
-          "Messtechnik und elektromechanische Integration",
-          "Inbetriebnahme und Versuchsdurchführung"
-        ]
-      },
-      "links": [],
-      "embeds": []
-    },
-    {
       "id": "propeller-rig",
       "visible": true,
       "cat": "mechanical",
@@ -495,44 +454,6 @@
       "embeds": []
     },
     {
-      "id": "motion-tracker",
-      "visible": true,
-      "cat": "electronics",
-      "status": "in_progress",
-      "year": "",
-      "tags": [
-        "ESP32-C3",
-        "MPU6050",
-        "Android"
-      ],
-      "title": {
-        "fa": "ردیاب هوشمند حرکات ورزشی",
-        "en": "Smart Exercise Motion Tracker",
-        "de": "Smart Exercise Motion Tracker"
-      },
-      "summary": {
-        "fa": "دستگاه پوشیدنی که حرکات ورزشی را به تحلیل عملکرد تبدیل می‌کند.",
-        "en": "Wearable device that turns exercise motion into performance analytics.",
-        "de": "Tragbares Gerät, das Trainingsbewegungen in Leistungsanalysen umsetzt."
-      },
-      "work": {
-        "fa": [
-          "فریم‌ور ESP32-C3 با سنسور حرکتی MPU6050",
-          "اپ اندروید برای تحلیل"
-        ],
-        "en": [
-          "ESP32-C3 firmware with MPU6050 motion sensing",
-          "Android app for analytics"
-        ],
-        "de": [
-          "ESP32-C3-Firmware mit MPU6050-Bewegungssensorik",
-          "Android-App für die Auswertung"
-        ]
-      },
-      "links": [],
-      "embeds": []
-    },
-    {
       "id": "pdf-annotator",
       "visible": true,
       "cat": "software",
@@ -607,44 +528,6 @@
           "Simulation in Unity (C#)",
           "Python-Launcher",
           "Controller-Schicht für die Fahrphysik"
-        ]
-      },
-      "links": [],
-      "embeds": []
-    },
-    {
-      "id": "handwriting-cnc",
-      "visible": true,
-      "cat": "mechanical",
-      "status": "in_progress",
-      "year": "",
-      "tags": [
-        "G-code",
-        "CNC",
-        "Python"
-      ],
-      "title": {
-        "fa": "دست‌خط به CNC",
-        "en": "Handwriting to CNC",
-        "de": "Handschrift zu CNC"
-      },
-      "summary": {
-        "fa": "دست‌خط شخصی که به گلیف‌های برداری و یک فونت تبدیل و با پلاتر قلمی CNC ترسیم شده است.",
-        "en": "Own handwriting digitized into vector glyphs and a font, then plotted by a CNC pen plotter.",
-        "de": "Eigene Handschrift, digitalisiert zu Vektor-Glyphen und einer Schrift, und von einem CNC-Stiftplotter gezeichnet."
-      },
-      "work": {
-        "fa": [
-          "دیجیتال‌سازی گلیف‌ها و ساخت فونت",
-          "تولید G-code با پایتون برای پلاتر قلمی"
-        ],
-        "en": [
-          "Vector glyph digitization and font generation",
-          "G-code generation in Python for the pen plotter"
-        ],
-        "de": [
-          "Digitalisierung der Glyphen und Erzeugung einer Schrift",
-          "G-Code-Erzeugung in Python für den Stiftplotter"
         ]
       },
       "links": [],
