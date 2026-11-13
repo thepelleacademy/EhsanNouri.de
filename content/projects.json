@@ -175,7 +175,7 @@
     {
       "id": "hybrid-solar-wind",
       "visible": true,
-      "cat": "mechanical",
+      "cat": "research",
       "status": "prototype",
       "year": "2018–2021",
       "tags": [
@@ -253,7 +253,7 @@
     {
       "id": "cfd-studies",
       "visible": true,
-      "cat": "research",
+      "cat": "mechanical",
       "status": "completed",
       "year": "",
       "tags": [
@@ -448,44 +448,6 @@
           "Übertragung per Bluetooth an eine Android-App",
           "Leiterplattenentwurf in Altium Designer und Bestückung",
           "Firmware-Programmierung"
-        ]
-      },
-      "links": [],
-      "embeds": []
-    },
-    {
-      "id": "pdf-annotator",
-      "visible": true,
-      "cat": "software",
-      "status": "in_progress",
-      "year": "",
-      "tags": [
-        "Kotlin",
-        "Jetpack Compose",
-        "Android"
-      ],
-      "title": {
-        "fa": "PDF Tablet Annotator",
-        "en": "PDF Tablet Annotator",
-        "de": "PDF Tablet Annotator"
-      },
-      "summary": {
-        "fa": "اپ اندروید برای یادداشت‌گذاری روی PDF با قلم روی تبلت.",
-        "en": "Android app for stylus annotation of PDF documents on a tablet.",
-        "de": "Android-App zum Annotieren von PDF-Dokumenten mit Stift auf dem Tablet."
-      },
-      "work": {
-        "fa": [
-          "اپلیکیشن با Kotlin و Jetpack Compose",
-          "یادداشت‌گذاری با قلم روی صفحات PDF"
-        ],
-        "en": [
-          "Kotlin and Jetpack Compose application",
-          "Stylus-based annotation of PDF pages"
-        ],
-        "de": [
-          "Anwendung in Kotlin und Jetpack Compose",
-          "Stiftbasierte Annotation von PDF-Seiten"
         ]
       },
       "links": [],
