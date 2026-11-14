@@ -88,6 +88,14 @@
         "en": "LinkedIn Learning",
         "de": "LinkedIn Learning"
       }
+    },
+    {
+      "id": "alborz",
+      "name": {
+        "fa": "مرکز طراحی صنعتی البرز",
+        "en": "Alborz Industrial Design Complex",
+        "de": "Alborz Industrial Design Complex"
+      }
     }
   ],
   "items": [
@@ -241,6 +249,25 @@
         "fa": "دوره پیشرفته",
         "en": "Advanced course",
         "de": "Kurs für Fortgeschrittene"
+      }
+    },
+    {
+      "id": "catia-v5-alborz",
+      "visible": true,
+      "group": "cae",
+      "issuer": "alborz",
+      "year": "2013",
+      "code": "CATIA V5",
+      "verify": "",
+      "title": {
+        "fa": "CATIA V5 مقدماتی و پیشرفته",
+        "en": "CATIA V5 Basic and Advanced",
+        "de": "CATIA V5 Grundlagen und Fortgeschritten"
+      },
+      "detail": {
+        "fa": "مرکز طراحی صنعتی البرز",
+        "en": "Alborz Industrial Design Complex",
+        "de": "Alborz Industrial Design Complex"
       }
     },
     {
