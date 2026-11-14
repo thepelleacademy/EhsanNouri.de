@@ -271,6 +271,25 @@
       }
     },
     {
+      "id": "ansys-fluent-sharif",
+      "visible": true,
+      "group": "cae",
+      "issuer": "sharif",
+      "year": "2019",
+      "code": "ANSYS FLUENT",
+      "verify": "",
+      "title": {
+        "fa": "Ansys Fluent آموزش",
+        "en": "Ansys Fluent Training",
+        "de": "Ansys Fluent Schulung"
+      },
+      "detail": {
+        "fa": "گواهی حضور، ۲۰ ساعت",
+        "en": "Certificate of attendance, 20 hours",
+        "de": "Teilnahmebescheinigung, 20 Stunden"
+      }
+    },
+    {
       "id": "abaqus",
       "visible": true,
       "group": "cae",
