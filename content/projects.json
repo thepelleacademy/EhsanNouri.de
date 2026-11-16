@@ -753,6 +753,49 @@
         }
       ],
       "embeds": []
+    },
+    {
+      "id": "solar-windward",
+      "visible": true,
+      "cat": "research",
+      "status": "completed",
+      "year": "2016",
+      "tags": [
+        "Hybrid energy",
+        "Natural ventilation",
+        "Solar PV",
+        "Wind",
+        "Prototype"
+      ],
+      "title": {
+        "fa": "Solar Windward – نمونه اولیه سیستم هیبریدی تولید برق و تهویه",
+        "en": "Solar Windward – Hybrid Power and Ventilation Prototype",
+        "de": "Solar Windward – Hybrider Energie- und Lüftungsprototyp"
+      },
+      "summary": {
+        "fa": "پایان‌نامه کارشناسی ارشد: طراحی و ساخت نمونه اولیه یک سیستم هیبریدی تولید برق و تهویه طبیعی.",
+        "en": "Master's thesis: design and construction of a prototype of a hybrid power generation and natural ventilation system.",
+        "de": "Masterarbeit: Entwurf und Bau eines Prototyps für ein hybrides System zur Stromerzeugung und natürlichen Belüftung."
+      },
+      "work": {
+        "fa": [
+          "طراحی و ساخت نمونه اولیه سیستم Solar Windward",
+          "ترکیب یک پنل خورشیدی با یک روتور بادی برای تولید برق و تهویه",
+          "ارائه نتایج در کنفرانس ملی ۲۰۱۷"
+        ],
+        "en": [
+          "Design and construction of the Solar Windward prototype",
+          "Combining a solar panel with a wind-driven rotor for power generation and ventilation",
+          "Results presented at a national conference in 2017"
+        ],
+        "de": [
+          "Entwurf und Bau des Solar-Windward-Prototyps",
+          "Kombination eines Solarmoduls mit einem windgetriebenen Rotor zur Stromerzeugung und Belüftung",
+          "Ergebnisse auf einer nationalen Konferenz 2017 vorgestellt"
+        ]
+      },
+      "links": [],
+      "embeds": []
     }
   ]
 }
