@@ -598,7 +598,7 @@
     },
     {
       "id": "lca-platform",
-      "visible": false,
+      "visible": true,
       "cat": "software",
       "status": "in_progress",
       "year": "2026",
@@ -622,18 +622,21 @@
       "work": {
         "fa": [
           "مراحل هدف و دامنه، موجودی، ارزیابی اثر و تفسیر طبق ISO",
+          "ماژول‌های اثر A1–A3، A4، C و D با باندهای عدم قطعیت P5/P50/P95",
           "ماشین‌حساب لایه‌ی کامپوزیت (Vf، چگالی، مدول)",
           "تحلیل حساسیت، عدم قطعیت Monte Carlo و مقایسه‌ی گزینه‌ها",
           "پایگاه داده‌ی مواد با منبع و وضعیت تأیید"
         ],
         "en": [
           "Goal and scope, inventory, impact assessment and interpretation per ISO",
+          "Impact modules A1–A3, A4, C and D with P5/P50/P95 uncertainty bands",
           "Laminate calculator (Vf, density, stiffness)",
           "Sensitivity analysis, Monte Carlo uncertainty and option comparison",
           "Material database with citations and verification status"
         ],
         "de": [
           "Ziel und Untersuchungsrahmen, Sachbilanz, Wirkungsabschätzung und Auswertung nach ISO",
+          "Wirkungsmodule A1–A3, A4, C und D mit P5/P50/P95-Unsicherheitsbändern",
           "Laminatrechner (Vf, Dichte, Steifigkeit)",
           "Sensitivitätsanalyse, Monte-Carlo-Unsicherheit und Variantenvergleich",
           "Materialdatenbank mit Quellen und Prüfstatus"
