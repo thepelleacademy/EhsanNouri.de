@@ -705,6 +705,54 @@
         }
       ],
       "embeds": []
+    },
+    {
+      "id": "dma-850-platform",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "in_progress",
+      "year": "2026",
+      "tags": [
+        "Static analysis",
+        "Bolted joints",
+        "Clamping force",
+        "DMA 850"
+      ],
+      "title": {
+        "fa": "پلتفرم تحلیل گیره DMA 850",
+        "en": "DMA 850 Clamp Analysis Platform",
+        "de": "Analyseplattform für die DMA-850-Klemme"
+      },
+      "summary": {
+        "fa": "ابزار تحلیل استاتیکی برای نیروهای گیره‌ای گیره تک‌پیچی DMA 850، به‌صورت وب‌اپلیکیشن.",
+        "en": "Static analysis tool for the clamping forces of the DMA 850 single-bolt clamp, delivered as a web application.",
+        "de": "Werkzeug zur statischen Analyse der Klemmkräfte der Einzelschrauben-Klemme DMA 850, als Webanwendung bereitgestellt."
+      },
+      "work": {
+        "fa": [
+          "توسعه ابزار تحلیل استاتیکی برای نیروهای گیره‌ای گیره تک‌پیچی DMA 850",
+          "ارائه نتایج تحلیل در یک رابط وب"
+        ],
+        "en": [
+          "Developed a static analysis tool for the clamping forces of the DMA 850 single-bolt clamp",
+          "Presenting the analysis results in a web interface"
+        ],
+        "de": [
+          "Entwicklung eines Werkzeugs zur statischen Analyse der Klemmkräfte der Einzelschrauben-Klemme DMA 850",
+          "Darstellung der Analyseergebnisse in einer Weboberfläche"
+        ]
+      },
+      "links": [
+        {
+          "label": {
+            "fa": "وبسایت",
+            "en": "Website",
+            "de": "Website"
+          },
+          "url": "https://dma.ehsannouri.de/"
+        }
+      ],
+      "embeds": []
     }
   ]
 }
