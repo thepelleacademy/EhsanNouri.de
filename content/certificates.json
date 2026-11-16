@@ -139,7 +139,7 @@
     },
     {
       "id": "cswa-xdesign",
-      "visible": false,
+      "visible": true,
       "group": "solidworks",
       "issuer": "dassault",
       "year": "2026",
@@ -158,7 +158,7 @@
     },
     {
       "id": "cswa-xshape",
-      "visible": false,
+      "visible": true,
       "group": "solidworks",
       "issuer": "dassault",
       "year": "2026",
@@ -177,7 +177,7 @@
     },
     {
       "id": "cswa-xmold",
-      "visible": false,
+      "visible": true,
       "group": "solidworks",
       "issuer": "dassault",
       "year": "2026",
@@ -196,7 +196,7 @@
     },
     {
       "id": "cswa-e",
-      "visible": false,
+      "visible": true,
       "group": "solidworks",
       "issuer": "dassault",
       "year": "2026",
@@ -215,7 +215,7 @@
     },
     {
       "id": "cswa-sd",
-      "visible": false,
+      "visible": true,
       "group": "solidworks",
       "issuer": "dassault",
       "year": "2026",
@@ -329,7 +329,7 @@
     },
     {
       "id": "draftsight",
-      "visible": false,
+      "visible": true,
       "group": "solidworks",
       "issuer": "dassault",
       "year": "2026",
