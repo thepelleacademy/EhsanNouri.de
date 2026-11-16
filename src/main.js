@@ -38,6 +38,7 @@ const state = {
 const PROJECTS = () => (C.projects.items || []).filter((p) => p.visible !== false);
 const CERTIFICATES = () => (C.certificates.items || []).filter((x) => x.visible !== false);
 const PAGES = () => (C.pages.items || []).filter((p) => p.visible !== false);
+const CAREER_VISIBLE = (list) => (list || []).filter((x) => x.visible !== false);
 const navItems = () => (C.nav.items || []).filter((i) => i.visible !== false && targetExists(i));
 const navChildren = (item) => (item.children || []).filter((i) => i.visible !== false && targetExists(i));
 
@@ -260,7 +261,7 @@ function tileExtra(item) {
 function tileText(item) {
   const own = L(item.tileText) || '';
   if (item.type === 'section' && item.target === 'career') {
-    const now = (C.career.experience || [])[0];
+    const now = CAREER_VISIBLE(C.career.experience)[0];
     return now ? `${own ? `${own}: ` : ''}${L(now.role)}, ${L(now.org)}` : own;
   }
   if (item.type === 'page' && !own) return L(PAGES().find((p) => p.id === item.target)?.summary) || '';
@@ -300,7 +301,7 @@ function renderAbout() {
   img.closest('.portrait').hidden = !src;
   $('#about-paragraphs').innerHTML = (L(C.about.paragraphs) || []).map((p) => `<p>${esc(p)}</p>`).join('') + (cvLink() ? `<div class="actions">${cvLink()}</div>` : '');
   $('#about-facts').innerHTML = (C.about.facts || [])
-    .filter((f) => L(f.v))
+    .filter((f) => f.visible !== false && L(f.v))
     .map((f) => `<div><dt>${esc(L(f.k))}</dt><dd>${esc(L(f.v))}</dd></div>`)
     .join('');
   $('#about-skills').innerHTML = (C.about.skills || [])
@@ -318,8 +319,8 @@ function renderAbout() {
 //  Career: list on one side, details on the other (inline on phones)
 // ============================================================
 function careerItems() {
-  const work = (C.career.experience || []).map((x, i) => ({ key: `w${i}`, title: L(x.role), org: L(x.org), period: x.period, bullets: L(x.bullets) }));
-  const edu = (C.career.education || []).map((x, i) => ({
+  const work = CAREER_VISIBLE(C.career.experience).map((x, i) => ({ key: `w${i}`, title: L(x.role), org: L(x.org), period: x.period, bullets: L(x.bullets) }));
+  const edu = CAREER_VISIBLE(C.career.education).map((x, i) => ({
     key: `e${i}`,
     title: L(x.degree),
     org: L(x.school),

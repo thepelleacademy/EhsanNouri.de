@@ -137,7 +137,7 @@
     },
     {
       "id": "propeller-rig",
-      "visible": true,
+      "visible": false,
       "cat": "mechanical",
       "status": "completed",
       "year": "2018–2021",
@@ -174,7 +174,7 @@
     },
     {
       "id": "hybrid-solar-wind",
-      "visible": true,
+      "visible": false,
       "cat": "research",
       "status": "prototype",
       "year": "2018–2021",
@@ -370,7 +370,7 @@
     },
     {
       "id": "accelerometer-logger",
-      "visible": true,
+      "visible": false,
       "cat": "electronics",
       "status": "completed",
       "year": "",
@@ -411,7 +411,7 @@
     },
     {
       "id": "temp-humidity-logger",
-      "visible": true,
+      "visible": false,
       "cat": "electronics",
       "status": "completed",
       "year": "",
@@ -455,7 +455,7 @@
     },
     {
       "id": "vr-scooter",
-      "visible": true,
+      "visible": false,
       "cat": "software",
       "status": "in_progress",
       "year": "",
@@ -497,7 +497,7 @@
     },
     {
       "id": "pellelibrary",
-      "visible": true,
+      "visible": false,
       "cat": "software",
       "status": "in_progress",
       "year": "2026",
@@ -543,7 +543,7 @@
     },
     {
       "id": "bobo-case-study",
-      "visible": true,
+      "visible": false,
       "cat": "electronics",
       "status": "prototype",
       "year": "2026",
@@ -598,7 +598,7 @@
     },
     {
       "id": "lca-platform",
-      "visible": true,
+      "visible": false,
       "cat": "software",
       "status": "in_progress",
       "year": "2026",

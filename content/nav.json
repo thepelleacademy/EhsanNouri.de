@@ -113,7 +113,7 @@
             "en": "Electronics",
             "de": "Elektronik"
           },
-          "visible": true
+          "visible": false
         },
         {
           "id": "projects-software",

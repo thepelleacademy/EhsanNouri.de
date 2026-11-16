@@ -26,11 +26,31 @@
         "de": "Studentische Hilfskraft"
       },
       "org": {
-        "fa": "مؤسسه فناوری دگندورف، آلمان",
-        "en": "Deggendorf Institute of Technology, Germany",
-        "de": "Technische Hochschule Deggendorf"
+        "fa": "مؤسسه فناوری دگندورف، پردیس هوتورم، آلمان",
+        "en": "Deggendorf Institute of Technology, Hutthurm Campus, Germany",
+        "de": "Technische Hochschule Deggendorf, Campus Hutthurm"
       },
       "bullets": {
+        "en": [
+          "Prepared a journal manuscript from prior thesis research for peer-reviewed publication.",
+          "Abstract accepted for oral presentation at the Landshuter Leichtbau-Colloquium (Feb 2027).",
+          "Developed a static analysis tool for the clamping forces of the DMA 850 single-bolt clamp.",
+          "Built an automated LaTeX document generation web platform that simplifies research paper formatting and compilation for technical users."
+        ],
+        "fa": [
+          "نگارش یک نسخه مقاله ژورنالی بر پایه پژوهش پیشین پایان‌نامه، برای انتشار در مجله داوری‌شده.",
+          "پذیرش چکیده برای ارائه شفاهی در Landshuter Leichtbau-Colloquium (فوریه ۲۰۲۷).",
+          "توسعه ابزار تحلیل استاتیکی نیروهای گیره‌ای گیره تک‌پیچی DMA 850.",
+          "ساخت پلتفرم وب تولید خودکار سند LaTeX که قالب‌بندی و کامپایل مقالات پژوهشی را برای کاربران فنی ساده می‌کند."
+        ],
+        "de": [
+          "Erstellung eines Journal-Manuskripts auf Basis früherer Abschlussarbeiten zur Veröffentlichung in einer begutachteten Zeitschrift.",
+          "Abstract für einen Vortrag beim Landshuter Leichtbau-Colloquium (Feb. 2027) angenommen.",
+          "Entwicklung eines Werkzeugs zur statischen Analyse der Klemmkräfte des Einzelschrauben-Klemmelements DMA 850.",
+          "Aufbau einer webbasierten Plattform zur automatisierten LaTeX-Dokumentenerstellung, die Formatierung und Kompilierung von Forschungsarbeiten für technische Nutzer vereinfacht."
+        ]
+      },
+      "inactiveBullets": {
         "fa": [
           "مشارکت در نگارش مقالات فنی از طریق طراحی چیدمان‌های آزمون تجربی، انجام پژوهش‌های آزمایشگاهی و گردآوری داده‌های قابل اعتماد.",
           "تعیین رفتار مکانیکی و عملکرد سازه‌ای با آزمون‌های تکرارشونده و شبیه‌سازی اجزای محدود (FEM)."
@@ -61,6 +81,23 @@
         "de": "Pouyesh Mechatronics, Iran"
       },
       "bullets": {
+        "en": [
+          "Designed precision housings for optical gyroscope systems.",
+          "Created manufacturing drawings with GD&T.",
+          "Managed CNC and additive manufacturing suppliers; verified parts by dimensional inspection."
+        ],
+        "fa": [
+          "طراحی محفظه‌های دقیق برای سیستم‌های ژیروسکوپ نوری.",
+          "تهیه نقشه‌های آماده ساخت با GD&T.",
+          "مدیریت تأمین‌کنندگان CNC و ساخت افزایشی و تأیید قطعات با متروژی ابعادی."
+        ],
+        "de": [
+          "Konstruktion präziser Gehäuse für optische Gyroskopsysteme.",
+          "Erstellung fertigungsgerechter Zeichnungen mit GD&T.",
+          "Steuerung von CNC- und additiven Fertigungszulieferern sowie Prüfung der Teile durch Maßkontrolle."
+        ]
+      },
+      "inactiveBullets": {
         "fa": [
           "طراحی محفظه‌های دقیق برای سیستم‌های ژیروسکوپ نوری در CATIA و یکپارچه‌سازی قطعات نوری در ساختارهای پایدار و قابل ساخت.",
           "تولید نقشه‌های آماده ساخت با اصول GD&T برای دقت ابعادی و اتصالات عملکردی.",
@@ -80,7 +117,7 @@
     },
     {
       "period": [
-        "10/2023",
+        "10/2022",
         "09/2024"
       ],
       "role": {
@@ -94,6 +131,29 @@
         "de": "Institut für Prototypen und Modelltechnik (IPM), Deutschland"
       },
       "bullets": {
+        "en": [
+          "Optimized FDM parameters in needle-insertion 3D printing to improve inter-layer adhesion.",
+          "Performed tensile and strain testing of engineering polymers, including data analysis.",
+          "Master thesis: improved extruder mechanics and hot-end thermal stability of the Mycusini 1.0 printer.",
+          "Master thesis: refined hardware and firmware for motion control and reliability based on test results.",
+          "Internship: designed and built an experimental FDM 3D printer nozzle with needle insertion."
+        ],
+        "fa": [
+          "بهینه‌سازی پارامترهای FDM در چاپ سه‌بعدی با درج سوزن برای بهبود چسبندگی بین لایه‌ها.",
+          "انجام آزمون کشش و کرنش پلیمرهای مهندسی، همراه با تحلیل داده.",
+          "پایان‌نامه ارشد: بهبود مکانیک اکسترودر و پایداری حرارتی هات‌اند چاپگر Mycusini 1.0.",
+          "پایان‌نامه ارشد: اصلاح سخت‌افزار و فریم‌ور کنترل حرکت و قابلیت اطمینان بر اساس نتایج آزمون.",
+          "کارآموزی: طراحی و ساخت یک نازل آزمایشی چاپگر FDM با درج سوزن."
+        ],
+        "de": [
+          "Optimierung der FDM-Parameter beim 3D-Druck mit Nadeleinsatz zur Verbesserung der Schichthaftung.",
+          "Zug- und Dehnungsprüfung technischer Polymere einschließlich Datenauswertung.",
+          "Masterarbeit: Verbesserung der Extrudermechanik und der thermischen Stabilität des Hot-Ends am Drucker Mycusini 1.0.",
+          "Masterarbeit: Weiterentwicklung von Hardware und Firmware für Bewegungssteuerung und Zuverlässigkeit auf Basis der Prüfergebnisse.",
+          "Praktikum: Konstruktion und Bau einer experimentellen FDM-3D-Druckdüse mit Nadeleinsatz."
+        ]
+      },
+      "inactiveBullets": {
         "fa": [
           "بررسی پارامترهای حیاتی فرایند FDM در روش نوین چاپ سه‌بعدی با درج سوزن، برای بهبود چسبندگی بین لایه‌ها، دقت ابعادی و عملکرد سازه‌ای.",
           "انجام تحلیل کشش و کرنش پلیمرهای مهندسی، ترکیبی از مشخصه‌یابی تجربی و تحلیل کمّی داده."
@@ -136,7 +196,8 @@
           "Optimierung der Extrusionsmechanik und der thermischen Stabilität des Hot-Ends im System Mycusini 1.0 durch Prüfung und iterative Verbesserung.",
           "Weiterentwicklung der Firmware und Einbindung elektromechanischer Testergebnisse zur Verbesserung von Bewegungssteuerung, thermischem Verhalten und Gesamtzuverlässigkeit."
         ]
-      }
+      },
+      "visible": false
     },
     {
       "period": [
@@ -166,7 +227,8 @@
           "Prototyp eines experimentellen FDM-3D-Druckers: mechanische Montage, Hardwareintegration und individuelle Firmware.",
           "Statistische Validierung der Dehnungsleistung und Wiederholgenauigkeit einer neuen Nadeleinsatz-Düse."
         ]
-      }
+      },
+      "visible": false
     },
     {
       "period": [
@@ -179,11 +241,28 @@
         "de": "Mechatronik-Ingenieur"
       },
       "org": {
-        "fa": "Atin Co، ایران",
-        "en": "Atin Co, Iran",
-        "de": "Atin Co, Iran"
+        "fa": "شرکت آتین، ایران",
+        "en": "Atin Company, Iran",
+        "de": "Atin Company, Iran"
       },
       "bullets": {
+        "en": [
+          "Designed and built a satellite transport container, from concept to integration.",
+          "Developed wire rope isolators to MIL-STD-810 and tested their shock isolation.",
+          "Executed reverse engineering, CAD modeling and CFD flow analysis using ANSYS Fluent for an onshore wellhead."
+        ],
+        "fa": [
+          "طراحی و ساخت یک کانتینر حمل ماهواره، از مفهوم تا یکپارچه‌سازی.",
+          "توسعه ایزولاتورهای سیم‌بکسل مطابق MIL-STD-810 و آزمون عملکرد ضدشوک آن‌ها.",
+          "انجام مهندسی معکوس، مدل‌سازی CAD و تحلیل جریان CFD با ANSYS Fluent برای سرچاه خشکی (onshore wellhead)."
+        ],
+        "de": [
+          "Konstruktion und Bau eines Satelliten-Transportcontainers, vom Konzept bis zur Integration.",
+          "Entwicklung von Drahtseilisolatoren nach MIL-STD-810 und Prüfung ihrer Schockisolation.",
+          "Reverse Engineering, CAD-Modellierung und CFD-Strömungsanalyse mit ANSYS Fluent für einen Onshore-Bohrlochkopf (Wellhead)."
+        ]
+      },
+      "inactiveBullets": {
         "fa": [
           "طراحی، ساخت و پیاده‌سازی کانتینر حمل ایمن ماهواره، با مسئولیت کامل طراحی مکانیکی، معماری سازه، ساخت و یکپارچه‌سازی زیرسیستم‌های مکانیکی و الکترونیکی.",
           "طراحی و ساخت ایزولاتورهای غیرفعال سیم‌بکسل مطابق MIL-STD-810 و مشخصه‌یابی آن‌ها روی دستگاه آزمون شوک مغناطیسی.",
@@ -226,6 +305,20 @@
         "de": "Spad3D, Iran"
       },
       "bullets": {
+        "en": [
+          "Designed and built high-precision FDM 3D printers.",
+          "Programmed Marlin firmware for motion control and thermal management."
+        ],
+        "fa": [
+          "طراحی و ساخت چاپگرهای سه‌بعدی FDM با دقت بالا.",
+          "برنامه‌نویسی فریم‌ور Marlin برای کنترل حرکت و مدیریت حرارتی."
+        ],
+        "de": [
+          "Konstruktion und Bau hochpräziser FDM-3D-Drucker.",
+          "Programmierung der Marlin-Firmware für Bewegungssteuerung und Temperaturmanagement."
+        ]
+      },
+      "inactiveBullets": {
         "fa": [
           "مونتاژ و کالیبراسیون چاپگرهای سه‌بعدی FDM سفارشی با دقت بالا و بهینه‌سازی سخت‌افزار، ترازبندی و حرکت چندمحوره.",
           "برنامه‌نویسی و اشکال‌زدایی فریم‌ور متن‌باز Marlin برای کنترل حرکت، مدیریت حرارتی و قابلیت اطمینان."
@@ -259,6 +352,11 @@
         "de": "Technische Hochschule Deggendorf"
       },
       "note": {
+        "en": [],
+        "fa": [],
+        "de": []
+      },
+      "inactiveNote": {
         "fa": [
           "در حال تحصیل، همزمان با نقش دستیار دانشجویی"
         ],
@@ -287,6 +385,11 @@
         "de": "Hochschule Coburg"
       },
       "note": {
+        "en": [],
+        "fa": [],
+        "de": []
+      },
+      "inactiveNote": {
         "fa": [
           "پایان‌نامه: بهینه‌سازی چاپگر سه‌بعدی شکلات",
           "استاد راهنما: Prof. Dr. Markus Stark"
@@ -303,6 +406,28 @@
     },
     {
       "period": [
+        "2013",
+        "2016"
+      ],
+      "status": "completed",
+      "degree": {
+        "fa": "کارشناسی ارشد مهندسی مکانیک – تبدیل انرژی",
+        "en": "M.Sc. Mechanical Engineering – Energy Conversion",
+        "de": "M.Sc. Maschinenbau – Energieumwandlung"
+      },
+      "school": {
+        "fa": "دانشگاه آزاد اسلامی، واحد تهران مرکز، ایران",
+        "en": "Azad University of Central Tehran Branch, Iran",
+        "de": "Azad-Universität Zentral-Teheran, Iran"
+      },
+      "note": {
+        "en": [],
+        "fa": [],
+        "de": []
+      }
+    },
+    {
+      "period": [
         "10/2008",
         "02/2013"
       ],
@@ -314,10 +439,15 @@
       },
       "school": {
         "fa": "دانشگاه آزاد کرج، ایران",
-        "en": "Azad University of Karaj, Iran",
+        "en": "Karaj Azad University, Iran",
         "de": "Azad-Universität Karaj, Iran"
       },
       "note": {
+        "en": [],
+        "fa": [],
+        "de": []
+      },
+      "inactiveNote": {
         "fa": [
           "دستیار آموزشی دروس استاتیک، مقاومت مصالح و نقشه‌کشی صنعتی"
         ],
