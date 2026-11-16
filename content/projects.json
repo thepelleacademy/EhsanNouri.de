@@ -610,9 +610,9 @@
         "Composites"
       ],
       "title": {
-        "fa": "پلتفرم LCA (Twill)",
-        "en": "Twill LCA Platform",
-        "de": "Twill LCA-Plattform"
+        "fa": "پلتفرم LCA",
+        "en": "LCA Platform",
+        "de": "LCA-Plattform"
       },
       "summary": {
         "fa": "پلتفرم ارزیابی چرخه‌ی عمر برای کامپوزیت‌ها و محصولات عمومی، مطابق ISO 14040 و 14044، با گزارش PDF به سه زبان.",
