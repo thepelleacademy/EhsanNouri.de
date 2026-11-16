@@ -709,7 +709,7 @@
     {
       "id": "dma-850-platform",
       "visible": true,
-      "cat": "mechanical",
+      "cat": "software",
       "status": "in_progress",
       "year": "2026",
       "tags": [
