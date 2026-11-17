@@ -289,6 +289,48 @@
       "embeds": []
     },
     {
+      "id": "robot-arm-solidworks",
+      "visible": true,
+      "cat": "mechanical",
+      "status": "completed",
+      "year": "",
+      "tags": [
+        "SolidWorks",
+        "CAD",
+        "Robot arm",
+        "Articulated"
+      ],
+      "title": {
+        "fa": "طراحی بازوی رباتیک مفصلی با سالیدورکس",
+        "en": "Articulated Robot Arm (SolidWorks Design)",
+        "de": "Gelenkarm-Roboter (SolidWorks-Konstruktion)"
+      },
+      "summary": {
+        "fa": "طراحی کامل سه‌بعدی یک بازوی رباتیک مفصلی در سالیدورکس، از پایه نصب‌شده تا گیرنده (گریپر).",
+        "en": "Full 3D design of an articulated robot arm in SolidWorks, from the mounted base through the links to the gripper.",
+        "de": "Vollständige 3D-Konstruktion eines Gelenkarm-Roboters in SolidWorks, von der montierten Basis über die Glieder bis zum Greifer."
+      },
+      "work": {
+        "fa": [
+          "مدل سه‌بعدی CAD کل بازو و گریپر در سالیدورکس",
+          "طراحی ماژولار بازو و مفصل‌ها با بدنه‌ی مجزا برای هر محور",
+          "رندرهای بدنه‌ی مونتاژشده روی میز نصب"
+        ],
+        "en": [
+          "3D CAD model of the complete arm and gripper in SolidWorks",
+          "Modular link and joint design with a separate housing for each axis",
+          "Renders of the assembly on a mounting table"
+        ],
+        "de": [
+          "3D-CAD-Modell des kompletten Arms und Greifers in SolidWorks",
+          "Modularer Aufbau der Glieder und Gelenke mit eigenem Gehäuse je Achse",
+          "Renderings der Baugruppe auf einem Montagetisch"
+        ]
+      },
+      "links": [],
+      "embeds": []
+    },
+    {
       "id": "mycusini",
       "visible": true,
       "cat": "research",
