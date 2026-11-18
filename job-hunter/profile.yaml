@@ -1,0 +1,315 @@
+# ============================================================================
+#  profile.yaml — همه‌ی تنظیمات Job Hunter اینجاست (متغیرهای نام‌دار، دستی قابل تغییر)
+#  Ehsan Nouri — Mechanical R&D / Design Engineer
+# ============================================================================
+
+candidate:
+  name: "Ehsan Nouri"
+  location: "Deggendorf, Bavaria, Germany"
+  german_level: "A2"          # در حال یادگیری
+  english_level: "fluent"
+  summary: >
+    Mechanical R&D engineer (10+ years) specialising in precision mechanical design, experimental
+    prototyping and scientific instrumentation. CAD (CATIA, SolidWorks incl. CSWA/CSWA-AM/xDesign
+    certificates, AutoCAD), FEA/CFD (ANSYS, Abaqus), GD&T technical drawings, Additive Manufacturing
+    (FDM, process optimisation, needle-insertion printing), CNC/fabrication management, dimensional
+    metrology, sensor integration and electromechanical prototyping, firmware (Marlin) and Python.
+    Experience: optical-gyroscope housings (CATIA), MIL-STD-810 shock/vibration isolators (wire-rope
+    isolators), 2-DOF helicopter and propeller test rigs, satellite transport container, hybrid
+    solar-wind prototype, tensile/strain testing of polymers, FMEA and failure analysis.
+    Education: MSc Analytical Instruments, Measurement & Sensor Technology (Coburg), MSc
+    Mechatronics & Cyber-Physical Systems (Deggendorf, ongoing), BSc Mechanical Engineering.
+    Languages: English fluent, German A2 (learning), Persian native, Azerbaijani fluent.
+    Looking for a versatile all-rounder role in a small / young / international company in Germany.
+
+# ----------------------------------------------------------------------------
+#  Run settings
+# ----------------------------------------------------------------------------
+settings:
+  lookback_days_daily: 3            # هر اجرا چند روز اخیر را می‌گیرد (هم‌پوشانی برای اطمینان)
+  backfill_days_first_run: 14       # اولین اجرا چند روز عقب برود
+  max_details_fetch: 60             # حداکثر درخواست جزئیات آگهی (Arbeitsagentur) در هر اجرا
+  request_delay_seconds: 0.4
+  min_rule_score_for_ai: 30         # حداقل امتیاز قانون‌محور برای رفتن به AI
+  ai_max_jobs_per_run: 30
+  ai_batch_size: 6
+  min_publish_score: 40             # حداقل امتیاز نهایی برای نمایش در سایت
+  notify_min_score: 60              # حداقل امتیاز برای آلارم تلگرام
+  notify_max_items: 8
+  notify_even_if_empty: true        # حتی بدون نتیجه‌ی خوب هم یک پیام کوتاه بفرست
+  keep_days: 45                     # آگهی‌ها چند روز در دیتابیس بمانند
+
+ai:
+  provider: "gemini"
+  model: "gemini-2.5-flash"         # با متغیر محیطی GEMINI_MODEL قابل تغییر
+  daily_budget_usd: 0.10            # سقف سخت هزینه‌ی روزانه
+  price_in_per_mtok: 0.30           # قیمت ورودی (دلار به ازای یک میلیون توکن) — اگر تغییر کرد اصلاح کن
+  price_out_per_mtok: 2.50
+  max_output_tokens: 2500
+  desc_chars_per_job: 1400
+
+# ----------------------------------------------------------------------------
+#  جست‌وجو
+# ----------------------------------------------------------------------------
+queries:
+  de:
+    - "Konstrukteur Maschinenbau"
+    - "Entwicklungsingenieur Mechanik"
+    - "Konstruktionsingenieur"
+    - "Produktentwickler Mechanik"
+    - "Mechatronik Ingenieur"
+    - "Versuchsingenieur"
+    - "Prototypenbau Ingenieur"
+    - "Additive Fertigung Ingenieur"
+    - "3D-Druck Ingenieur"
+    - "Messtechnik Ingenieur"
+    - "Sensorik Ingenieur"
+    - "FEM Simulation Ingenieur"
+    - "Testingenieur Prüfstand"
+    - "Feinwerktechnik"
+    - "Gerätekonstrukteur"
+    - "Entwicklungsingenieur Hardware"
+  en:
+    - "Mechanical Design Engineer"
+    - "R&D Engineer mechanical"
+    - "Mechatronics Engineer"
+    - "Prototyping Engineer"
+    - "Test Engineer hardware"
+    - "Additive Manufacturing Engineer"
+    - "Product Development Engineer"
+    - "CAD Engineer"
+    - "Hardware Engineer"
+    - "Systems Engineer mechanical"
+
+# ----------------------------------------------------------------------------
+#  فیلتر ارتباط
+# ----------------------------------------------------------------------------
+title_keywords:                     # اگر یکی در عنوان باشد، آگهی مرتبط حساب می‌شود
+  - konstrukt
+  - entwicklungsingenieur
+  - entwicklungs-ingenieur
+  - produktentwickl
+  - mechatronik
+  - mechatronic
+  - mechanical
+  - maschinenbau
+  - r&d
+  - research and development
+  - forschung
+  - prototyp
+  - versuchs
+  - test engineer
+  - testingenieur
+  - prüfstand
+  - additive
+  - 3d-druck
+  - 3d print
+  - messtechnik
+  - sensor
+  - fem
+  - simulation
+  - cad
+  - hardware engineer
+  - hardware-entwickl
+  - feinwerk
+  - gerätebau
+  - gerätekonstrukt
+  - design engineer
+  - product development
+  - systems engineer
+  - systemingenieur
+  - ingenieur
+  - engineer
+
+skill_keywords:                     # هر مورد در متن آگهی +امتیاز
+  - catia
+  - solidworks
+  - autocad
+  - ansys
+  - abaqus
+  - fea
+  - fem
+  - cfd
+  - gd&t
+  - gdt
+  - technische zeichnung
+  - technical drawing
+  - prototyp
+  - 3d-druck
+  - 3d print
+  - additive
+  - fdm
+  - cnc
+  - messtechnik
+  - metrology
+  - sensor
+  - mechatronic
+  - mechatronik
+  - fmea
+  - python
+  - firmware
+  - versuch
+  - experiment
+  - test rig
+  - prüfstand
+  - optik
+  - optical
+  - instrumentation
+  - vibration
+  - schock
+  - mil-std
+
+exclude_title_patterns:             # اگر در عنوان باشد، کاملاً حذف
+  - "ausbildung"
+  - "azubi"
+  - "duales studium"
+  - "praktikum"
+  - "praktikant"
+  - "intern\\b"
+  - "werkstudent"
+  - "working student"
+  - "pflege"
+  - "verkäufer"
+  - "fahrer"
+  - "lagerist"
+  - "buchhalt"
+  - "steuer"
+  - "vertriebsmitarbeiter"
+  - "softwareentwickler"
+  - "software engineer"
+  - "software developer"
+  - "frontend"
+  - "backend"
+  - "full.?stack"
+  - "devops"
+  - "data scientist"
+  - "elektriker"
+  - "schlosser"
+  - "monteur"
+  - "bauleiter"
+  - "architekt\\b"
+  - "bauingenieur"
+  - "projektleiter bau"
+
+# ----------------------------------------------------------------------------
+#  شرکت‌ها
+# ----------------------------------------------------------------------------
+big_companies:                      # شرکت‌های بزرگ (جریمه‌ی امتیاز، نه حذف)
+  - siemens
+  - bmw
+  - audi
+  - volkswagen
+  - mercedes
+  - daimler
+  - porsche
+  - bosch
+  - zf friedrichshafen
+  - continental
+  - schaeffler
+  - airbus
+  - mtu
+  - sap
+  - infineon
+  - thyssenkrupp
+  - deutsche bahn
+  - lufthansa
+  - basf
+  - bayer
+  - liebherr
+  - mahle
+  - hella
+  - valeo
+  - rheinmetall
+  - fraunhofer
+  - max-planck
+  - helmholtz
+  - dlr
+
+staffing_markers:                   # شرکت‌های کاریابی/Zeitarbeit (جریمه)
+  - randstad
+  - adecco
+  - hays
+  - manpower
+  - gulp
+  - brunel
+  - akkodis
+  - segula
+  - ferchau
+  - bertrandt
+  - expleo
+  - persona service
+  - amadeus fire
+  - personaldienst
+  - zeitarbeit
+  - arbeitnehmerüberlassung
+  - personalberatung
+  - recruiting gmbh
+  - "recruitment"
+  - "headhunter"
+
+preferred_locations:                # امتیاز کوچک مکانی
+  - deggendorf
+  - passau
+  - regensburg
+  - straubing
+  - landshut
+  - münchen
+  - munich
+  - nürnberg
+  - nuremberg
+  - augsburg
+  - ingolstadt
+  - bayern
+  - bavaria
+
+# ----------------------------------------------------------------------------
+#  الگوهای متنی
+# ----------------------------------------------------------------------------
+patterns:
+  german_required_strong:
+    - "verhandlungssicher"
+    - "flie(ß|ss)end(e|es)?\\s+deutsch"
+    - "deutsch(kenntnisse)?[^.\\n]{0,30}(c1|c2|flie(ß|ss)end|verhandlungssicher|muttersprache|ausgezeichnet)"
+    - "sehr gute[n]?\\s+deutschkenntnisse"
+    - "german[^.\\n]{0,25}(fluent|native|c1|c2|proficien|business)"
+    - "deutsch\\s+in\\s+wort\\s+und\\s+schrift"
+  german_required_moderate:
+    - "gute[n]?\\s+deutschkenntnisse"
+    - "deutschkenntnisse"
+    - "german[^.\\n]{0,25}(b2|good|required)"
+  english_friendly:
+    - "english (is|as) (our |the )?(working|company|business) language"
+    - "working language[^.\\n]{0,20}english"
+    - "no german (is )?(required|needed)"
+    - "german (is )?(a plus|nice to have|not required|an advantage)"
+    - "international team"
+    - "international environment"
+    - "englisch (als )?(arbeits|firmen|konzern)sprache"
+    - "englischsprachig"
+  startup_signals:
+    - "start-?up"
+    - "scale-?up"
+    - "junges (team|unternehmen)"
+    - "young (team|company)"
+    - "gründer"
+    - "founder"
+    - "seed"
+    - "series [ab]\\b"
+    - "kleines team"
+    - "small team"
+    - "flache hierarchien"
+    - "flat hierarchies"
+    - "wachsend(es|en)? (team|unternehmen)"
+    - "fast-growing"
+    - "all-?rounder"
+    - "hands-on"
+    - "vielseitig"
+    - "abwechslungsreich"
+  large_signals:
+    - "weltweit führend"
+    - "global player"
+    - "konzern"
+    - "über \\d{2}\\.?\\d{3} mitarbeiter"
+    - "more than \\d{2},?\\d{3} (employees|people)"
+    - "fortune 500"
+    - "dax"

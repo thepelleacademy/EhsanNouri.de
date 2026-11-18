@@ -1,0 +1,117 @@
+# .github/workflows/job-hunter.yml  (lives in the EhsanNouri.de repo; code is in /job-hunter)
+# Every day at 18:00 Europe/Berlin: fetch jobs → score → commit data → Telegram alert → deploy site/ to the server.
+#
+# GitHub cron is UTC only. Berlin is UTC+1 (winter) / UTC+2 (summer), so we trigger at 16:00 AND 17:00 UTC
+# and a guard step lets only the run that is really 18:xx in Berlin continue.
+# (GitHub may delay scheduled runs by some minutes; anything inside the 18:00 hour is fine.)
+
+name: Job Hunter (daily 18:00 Berlin)
+
+on:
+  schedule:
+    - cron: "0 16 * * *"
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+    inputs:
+      no_ai:
+        description: "Skip Gemini (rule scores only)"
+        type: boolean
+        default: false
+      deploy:
+        description: "Deploy site after the run"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: job-hunt
+  cancel-in-progress: false
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: job-hunter
+    steps:
+      - name: Guard — only continue at 18:xx Berlin (manual runs always continue)
+        id: guard
+        run: |
+          hour="$(TZ=Europe/Berlin date +%H)"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$hour" != "18" ]; then
+            echo "Berlin hour is $hour, not 18 — skipping this trigger."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v5
+        if: steps.guard.outputs.go == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.guard.outputs.go == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: job-hunter/requirements.txt
+
+      - name: Install
+        if: steps.guard.outputs.go == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Tests
+        if: steps.guard.outputs.go == 'true'
+        run: python -m pytest -q
+
+      - name: Hunt
+        if: steps.guard.outputs.go == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: |
+          flags=""
+          if [ "${{ github.event.inputs.no_ai }}" = "true" ]; then flags="--no-ai"; fi
+          python -m hunter run $flags
+
+      - name: Commit data
+        if: steps.guard.outputs.go == 'true' && always()
+        run: |
+          git config user.name  "job-hunter-bot"
+          git config user.email "job-hunter-bot@users.noreply.github.com"
+          git add data/state.json site/data/jobs.json
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "data: daily run $(date -u +%F)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Setup SSH
+        if: steps.guard.outputs.go == 'true' && github.event.inputs.deploy != 'false'
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key && chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+
+      - name: Deploy site (rsync)
+        if: steps.guard.outputs.go == 'true' && github.event.inputs.deploy != 'false'
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DEPLOY_PATH: ${{ secrets.JOB_DEPLOY_PATH }}
+        run: |
+          rsync -az --delete-after --delay-updates \
+            -e "ssh -i ~/.ssh/deploy_key -p ${SSH_PORT:-22}" \
+            site/ "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/"

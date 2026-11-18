@@ -1,0 +1,20 @@
+# ============================================================================
+#  companies.yaml — فهرست شرکت‌های کوچک/استارتاپی که خودت دنبال می‌کنی
+#  برای هر شرکت، صفحه‌ی کاریابی‌اش را مستقیم می‌خوانیم (بدون نیاز به لینکدین).
+#
+#  ats: greenhouse | lever | ashby | personio
+#  token:
+#    greenhouse → boards.greenhouse.io/<token>
+#    lever      → jobs.lever.co/<token>
+#    ashby      → jobs.ashbyhq.com/<token>
+#    personio   → <token>.jobs.personio.de   (خیلی از شرکت‌های کوچک آلمانی از Personio استفاده می‌کنند)
+#
+#  ⚠️ هیچ توکنی اینجا از قبل تأیید نشده؛ هر شرکتی که پیدا نشود در لاگ ثبت و رد می‌شود،
+#  چیزی خراب نمی‌شود. وقتی شرکت جالبی دیدی، فقط یک خط اضافه کن.
+# ============================================================================
+
+companies: []
+#  - { name: "Example GmbH", ats: personio,   token: "example" }
+#  - { name: "Example Labs", ats: greenhouse, token: "examplelabs" }
+#  - { name: "Example Inc",  ats: lever,      token: "example" }
+#  - { name: "Example AG",   ats: ashby,      token: "example" }

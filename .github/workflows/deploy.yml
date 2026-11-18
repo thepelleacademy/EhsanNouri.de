@@ -6,6 +6,9 @@ name: Build & Deploy to Server
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "job-hunter/**"          # daily bot commits must not rebuild the main site
+      - ".github/workflows/job-hunter.yml"
   workflow_dispatch:
 
 concurrency:
