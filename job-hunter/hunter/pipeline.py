@@ -117,7 +117,7 @@ def run(profile: dict, companies: list[dict], env: Env, state: State, *, dry: bo
         state.runs.append(summary)
         state.prune(int(cfg["keep_days"]), today)
         state.save()
-        published = export_site(state, SITE_DATA_PATH, int(cfg["min_publish_score"]))
+        published = export_site(state, SITE_DATA_PATH, int(cfg["min_publish_score"]), creds=env.creds)
         summary["published_total"] = published
         if not no_notify and env.telegram_token and env.telegram_chat_id:
             msgs = notify.build_messages(kept, len(kept), int(cfg["notify_min_score"]), int(cfg["notify_max_items"]),

@@ -106,6 +106,25 @@ h1 { margin: 0; font-size: 1.35rem; letter-spacing: .02em; }
 .btn.primary { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #001018; border: 0; font-weight: 600; }
 .btn.on { border-color: var(--green); color: var(--green); }
 
+[hidden] { display: none !important; }
+
+.login { max-width: 400px; margin: 9vh auto 0; padding-inline: var(--pad-x); }
+.login-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px 24px; display: grid; gap: 14px; box-shadow: var(--glow-cyan);
+}
+.login-card h2 { margin: 0; font-size: 1.15rem; }
+.hint { margin: 0; color: var(--muted); font-size: .85rem; }
+.field-block { display: grid; gap: 6px; color: var(--muted); font-size: .82rem; }
+.field-block input {
+  background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 10px;
+  padding: 11px 12px; font: inherit; font-size: 1rem; direction: ltr;
+}
+.field-block input:focus { outline: none; border-color: var(--cyan); box-shadow: var(--glow-cyan); }
+.btn.wide { width: 100%; padding: 11px 12px; font-size: .95rem; }
+.btn:disabled { opacity: .6; cursor: progress; }
+.login-err { margin: 0; color: var(--red); font-size: .85rem; }
+
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 .foot { color: var(--muted); font-size: .78rem; padding-block: 24px 40px; }
 

@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
+
   <header class="top">
     <div class="brand">
       <span class="dot"></span>
@@ -24,37 +25,62 @@
     </div>
   </header>
 
-  <main>
-    <section class="stats" id="stats"></section>
+  <!-- Login gate: the dashboard data is encrypted; it is only decrypted with this username + password -->
+  <section id="login" class="login" aria-labelledby="loginTitle">
+    <form id="loginForm" class="login-card" autocomplete="on">
+      <h2 id="loginTitle" data-i18n="loginTitle">Sign in</h2>
+      <p class="hint" data-i18n="loginHint">Private dashboard. Data is decrypted only in your browser.</p>
 
-    <section class="filters" aria-label="filters">
-      <input id="q" type="search" data-i18n-ph="search" placeholder="Search title, company, city…">
-      <label class="field"><span data-i18n="minScore">Min score</span>
-        <input id="minScore" type="range" min="0" max="100" value="50"><output id="minScoreOut">50</output>
+      <label class="field-block">
+        <span data-i18n="username">Username</span>
+        <input id="lUser" type="text" name="username" autocomplete="username" autocapitalize="off" spellcheck="false" required>
       </label>
-      <select id="source" aria-label="source"></select>
-      <select id="sort" aria-label="sort">
-        <option value="score" data-i18n="sortScore">Best match</option>
-        <option value="new" data-i18n="sortNew">Newest</option>
-      </select>
-      <div class="toggles">
-        <label class="toggle"><input type="checkbox" id="fNew"><span data-i18n="fNew">New (3 days)</span></label>
-        <label class="toggle"><input type="checkbox" id="fEnglish"><span data-i18n="fEnglish">English</span></label>
-        <label class="toggle"><input type="checkbox" id="fSmall"><span data-i18n="fSmall">Small / startup</span></label>
-        <label class="toggle"><input type="checkbox" id="fRemote"><span data-i18n="fRemote">Remote</span></label>
-        <label class="toggle"><input type="checkbox" id="fSaved"><span data-i18n="fSaved">Saved</span></label>
-        <label class="toggle"><input type="checkbox" id="fHidden"><span data-i18n="fHidden">Show hidden/applied</span></label>
-      </div>
-    </section>
+      <label class="field-block">
+        <span data-i18n="password">Password</span>
+        <input id="lPass" type="password" name="password" autocomplete="current-password" required>
+      </label>
 
-    <p class="count" id="count" aria-live="polite"></p>
-    <section class="list" id="list"></section>
-    <p class="empty" id="empty" hidden data-i18n="empty">No jobs match these filters.</p>
-  </main>
+      <button id="lBtn" class="btn primary wide" type="submit" data-i18n="unlock">Unlock</button>
+      <p id="loginErr" class="login-err" role="alert" hidden></p>
+    </form>
+  </section>
 
-  <footer class="foot">
-    <p data-i18n="foot">Scores are estimates. Company size/age is guessed by AI from the ad text — always verify.</p>
-  </footer>
+  <div id="app" hidden>
+    <main>
+      <section class="stats" id="stats"></section>
+
+      <section class="filters" aria-label="filters">
+        <input id="q" type="search" data-i18n-ph="search" placeholder="Search title, company, city…">
+        <label class="field"><span data-i18n="minScore">Min score</span>
+          <input id="minScore" type="range" min="0" max="100" value="50"><output id="minScoreOut">50</output>
+        </label>
+        <select id="source" aria-label="source"></select>
+        <select id="sort" aria-label="sort">
+          <option value="score" data-i18n="sortScore">Best match</option>
+          <option value="new" data-i18n="sortNew">Newest</option>
+        </select>
+        <div class="toggles">
+          <label class="toggle"><input type="checkbox" id="fNew"><span data-i18n="fNew">New (3 days)</span></label>
+          <label class="toggle"><input type="checkbox" id="fEnglish"><span data-i18n="fEnglish">English</span></label>
+          <label class="toggle"><input type="checkbox" id="fSmall"><span data-i18n="fSmall">Small / startup</span></label>
+          <label class="toggle"><input type="checkbox" id="fRemote"><span data-i18n="fRemote">Remote</span></label>
+          <label class="toggle"><input type="checkbox" id="fSaved"><span data-i18n="fSaved">Saved</span></label>
+          <label class="toggle"><input type="checkbox" id="fHidden"><span data-i18n="fHidden">Show hidden/applied</span></label>
+        </div>
+      </section>
+
+      <p class="count" id="count" aria-live="polite"></p>
+      <section class="list" id="list"></section>
+      <p class="empty" id="empty" hidden data-i18n="empty">No jobs match these filters.</p>
+    </main>
+
+    <footer class="foot">
+      <p data-i18n="foot">Scores are estimates. Company size/age is guessed by AI from the ad text — always verify.</p>
+      <p><button id="lockBtn" class="chip" type="button" data-i18n="lock">Lock</button></p>
+    </footer>
+  </div>
+
+  <script src="crypto.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

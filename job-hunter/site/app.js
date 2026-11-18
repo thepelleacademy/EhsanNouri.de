@@ -1,12 +1,13 @@
-/* Job Hunter UI. Job data comes from third-party ads → NEVER use innerHTML with it (XSS). DOM APIs only. */
+/* Job Hunter UI. Job data comes from third-party ads → NEVER use innerHTML with it (XSS). DOM APIs only.
+   Data is AES-GCM encrypted in data/jobs.enc.json and only decrypted after the login form (crypto.js). */
 (function () {
   "use strict";
 
   // ---- named settings (edit freely) ----
-  const DATA_URL = "data/jobs.json";
+  const DATA_URL = "data/jobs.enc.json";
   const HOT_SCORE = 75;          // red glow + top badge
   const NEW_DAYS = 3;            // "New" filter window
-  const STORAGE_KEY = "jobhunter.v1";
+  const STORAGE_KEY = "jobhunter.v1";   // saved/hidden marks (per browser, never contains credentials)
   const STORAGE_LANG = "jobhunter.lang";
 
   const I18N = {
@@ -21,6 +22,9 @@
       german_moderate: "German needed", big_company: "Large company", staffing: "Staffing", large: "Large",
       micro: "micro company", small: "small company", medium: "mid-size", young: "young company", unknown: "",
       established: "", old: "",
+      loginTitle: "Sign in", loginHint: "Private dashboard. Data is decrypted only in your browser.",
+      username: "Username", password: "Password", unlock: "Unlock", unlocking: "Unlocking…",
+      wrong: "Wrong username or password.", loadErr: "Could not load the data. Try again later.", lock: "Lock",
     },
     fa: {
       title: "شکارچی شغل", search: "جست‌وجو در عنوان، شرکت، شهر…", minScore: "حداقل امتیاز",
@@ -33,12 +37,15 @@
       german_moderate: "کمی آلمانی", big_company: "شرکت بزرگ", staffing: "کاریابی", large: "بزرگ",
       micro: "شرکت خیلی کوچک", small: "شرکت کوچک", medium: "شرکت متوسط", young: "شرکت جوان", unknown: "",
       established: "", old: "",
+      loginTitle: "ورود", loginHint: "داشبورد خصوصی. داده‌ها فقط داخل مرورگر خودت رمزگشایی می‌شوند.",
+      username: "نام کاربری", password: "رمز عبور", unlock: "ورود", unlocking: "در حال بازکردن…",
+      wrong: "نام کاربری یا رمز عبور اشتباه است.", loadErr: "داده‌ها بارگذاری نشد. بعداً دوباره امتحان کن.", lock: "قفل کردن",
     },
   };
 
   const $ = (id) => document.getElementById(id);
   let lang = safeGet(STORAGE_LANG) || ((navigator.language || "").toLowerCase().startsWith("fa") ? "fa" : "en");
-  let data = { jobs: [], generated_at: "" };
+  let data = { jobs: [], generated_at: "" };   // lives in memory only; never persisted
   let marks = loadMarks();
 
   function safeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -167,19 +174,72 @@
     }
   }
 
-  async function init() {
+  /* ---- login ---- */
+  async function unlock(username, password) {
+    const r = await fetch(DATA_URL, { cache: "no-store" });
+    if (!r.ok) throw new Error("load:" + r.status);
+    const blob = await r.json();
+    // AES-GCM authentication fails for a wrong password, so a wrong attempt rejects with OperationError.
+    const payload = await window.JobCrypto.decryptBlob(blob, username, password);
+    payload.jobs = (payload.jobs || []).map((j) => Object.assign({ flags: [], red_flags: [] }, j));
+    return payload;
+  }
+
+  function showError(text) {
+    const e = $("loginErr");
+    e.textContent = text;
+    e.hidden = false;
+  }
+
+  function showApp() {
+    $("login").hidden = true;
+    $("app").hidden = false;
+    applyLang();
+  }
+
+  function showLogin() {
+    data = { jobs: [], generated_at: "" };
+    $("app").hidden = true;
+    $("login").hidden = false;
+    $("lPass").value = "";
+    $("loginErr").hidden = true;
+    $("lastRun").textContent = "";
+    applyLang();
+    $("lUser").focus();
+  }
+
+  function bindLogin() {
+    $("loginForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const user = $("lUser").value.trim();
+      const pass = $("lPass").value;
+      const btn = $("lBtn");
+      btn.disabled = true;
+      btn.textContent = t("unlocking");
+      $("loginErr").hidden = true;
+      try {
+        data = await unlock(user, pass);
+        $("lPass").value = "";
+        showApp();
+      } catch (err) {
+        const wrong = err && err.name === "OperationError";
+        showError(wrong ? t("wrong") : t("loadErr"));
+        $("lPass").select();
+      } finally {
+        btn.disabled = false;
+        btn.textContent = t("unlock");
+      }
+    });
+    $("lockBtn").addEventListener("click", showLogin);
+  }
+
+  function init() {
     ["q", "minScore", "source", "sort", "fNew", "fEnglish", "fSmall", "fRemote", "fSaved", "fHidden"].forEach((id) =>
       $(id).addEventListener("input", () => { $("minScoreOut").textContent = $("minScore").value; render(); }));
     $("langBtn").addEventListener("click", () => { lang = lang === "fa" ? "en" : "fa"; safeSet(STORAGE_LANG, lang); applyLang(); });
-    try {
-      const r = await fetch(DATA_URL, { cache: "no-store" });
-      if (!r.ok) throw new Error("HTTP " + r.status);
-      data = await r.json();
-      data.jobs = (data.jobs || []).map((j) => Object.assign({ flags: [], red_flags: [] }, j));
-    } catch (e) {
-      $("lastRun").textContent = "data/jobs.json: " + e.message;
-    }
-    applyLang();
+    bindLogin();
+    applyLang();          // translate the login screen
+    $("lUser").focus();
   }
   init();
 })();

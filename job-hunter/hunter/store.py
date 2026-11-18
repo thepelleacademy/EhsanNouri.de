@@ -7,13 +7,16 @@ import tempfile
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
+from . import secure
 from .models import Job
 from .textutils import excerpt
 
 
 class State:
-    def __init__(self, path: Path):
-        self.path = path
+    def __init__(self, path: Path, creds: tuple[str, str] | None = None):
+        self.creds = creds
+        # With credentials the state is kept encrypted (state.enc.json) — safe to commit to a public repo.
+        self.path = path.with_name("state.enc.json") if creds else path
         self.jobs: dict[str, Job] = {}
         self.spend: dict[str, float] = {}
         self.runs: list[dict] = []
@@ -24,6 +27,8 @@ class State:
         if not self.path.exists():
             return
         data = json.loads(self.path.read_text(encoding="utf-8"))
+        if self.creds:
+            data = secure.decrypt_json(data, *self.creds)
         self.jobs = {k: Job.from_dict(v) for k, v in data.get("jobs", {}).items()}
         self.spend = data.get("spend", {})
         self.runs = data.get("runs", [])
@@ -54,10 +59,13 @@ class State:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         payload = {"jobs": {k: j.to_dict() for k, j in self.jobs.items()}, "spend": self.spend, "runs": self.runs,
                    "rejected": self.rejected}
+        if self.creds:
+            payload = secure.encrypt_json(payload, *self.creds)
         _atomic_write(self.path, payload)
 
 
-def export_site(state: State, path: Path, min_score: int, now: datetime | None = None) -> int:
+def export_site(state: State, path: Path, min_score: int, now: datetime | None = None,
+                creds: tuple[str, str] | None = None) -> int:
     """Public-facing JSON for job.ehsannouri.de: trimmed fields only (no profile, no full descriptions)."""
     now = now or datetime.now(timezone.utc)
     rows = []
@@ -74,8 +82,12 @@ def export_site(state: State, path: Path, min_score: int, now: datetime | None =
             "red_flags": job.ai_red_flags, "excerpt": excerpt(job.description, 500),
         })
     rows.sort(key=lambda r: (r["first_seen"], r["score"]), reverse=True)
+    payload = {"generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "count": len(rows), "jobs": rows}
+    if creds:
+        payload = secure.encrypt_json(payload, *creds)
+        path = path.with_name("jobs.enc.json")
     path.parent.mkdir(parents=True, exist_ok=True)
-    _atomic_write(path, {"generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "count": len(rows), "jobs": rows})
+    _atomic_write(path, payload)
     return len(rows)
 
 

@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 
 from .config import STATE_PATH, Env, load_companies, load_profile
 from .pipeline import run
+from .secure import check_password_strength
 from .store import State
 
 
@@ -21,7 +23,12 @@ def main(argv: list[str] | None = None) -> int:
 
     profile = load_profile()
     env = Env.from_environ(profile["ai"]["model"])
-    state = State(STATE_PATH)
+    if env.creds:
+        check_password_strength(env.job_password)
+    elif os.environ.get("JOB_REQUIRE_ENCRYPTION") == "1":
+        print("JOB_USERNAME / JOB_PASSWORD secrets are missing — refusing to write plaintext data to a public repo.")
+        return 3
+    state = State(STATE_PATH, env.creds)
     summary = run(profile, load_companies(), env, state, dry=args.dry, no_ai=args.no_ai,
                   no_notify=args.no_notify, site_url=args.site_url)
     print(json.dumps(summary, ensure_ascii=False, indent=2))

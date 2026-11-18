@@ -21,6 +21,12 @@ class Env:
     telegram_chat_id: str
     adzuna_app_id: str
     adzuna_app_key: str
+    job_username: str = ""
+    job_password: str = ""
+
+    @property
+    def creds(self) -> tuple[str, str] | None:
+        return (self.job_username, self.job_password) if self.job_username and self.job_password else None
 
     @classmethod
     def from_environ(cls, default_model: str) -> "Env":
@@ -32,6 +38,8 @@ class Env:
             telegram_chat_id=g("TELEGRAM_CHAT_ID"),
             adzuna_app_id=g("ADZUNA_APP_ID"),
             adzuna_app_key=g("ADZUNA_APP_KEY"),
+            job_username=g("JOB_USERNAME"),
+            job_password=os.environ.get("JOB_PASSWORD", ""),
         )
 
 
