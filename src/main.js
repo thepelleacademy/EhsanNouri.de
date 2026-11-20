@@ -593,7 +593,6 @@ function openCert(id) {
           ${detail ? `<div><dt>${esc(x.code)}</dt><dd>${esc(detail)}</dd></div>` : ''}
           <div><dt>${esc(L(C.certificates.title))}</dt><dd>${esc(groupLabel(x.group))}</dd></div>
         </dl>
-        ${files.image ? '' : `<p class="muted">${esc(t('ui.noScan'))}</p>`}
         ${buttons ? `<div class="actions">${buttons}</div>` : ''}
         <div class="cv-nav">
           <a class="icon-btn" href="#/certificates/${esc(all[(pos - 1 + all.length) % all.length].id)}">${ICONS.prev}<span class="sr">${esc(t('ui.prev'))}</span></a>
