@@ -328,6 +328,25 @@
       }
     },
     {
+      "id": "composite-design-01",
+      "visible": true,
+      "group": "manufacturing",
+      "issuer": "linkedin",
+      "year": "2026",
+      "code": "LinkedIn Learning",
+      "verify": "",
+      "title": {
+        "fa": "طراحی و ساخت کامپوزیت ۰۱: فرایند و مواد",
+        "en": "Composite Design and Manufacturing 01: Process and Materials",
+        "de": "Verbundwerkstoff-Design und -Fertigung 01: Prozesse und Werkstoffe"
+      },
+      "detail": {
+        "fa": "دوره آنلاین، ۱ ساعت و ۱۱ دقیقه، ID: 21e0e409da19f77ceae2aa4b700f1724f6ccf806993dac349d2c3b93d602b854",
+        "en": "Online course, 1 hour 11 minutes, ID: 21e0e409da19f77ceae2aa4b700f1724f6ccf806993dac349d2c3b93d602b854",
+        "de": "Online-Kurs, 1 Stunde 11 Minuten, ID: 21e0e409da19f77ceae2aa4b700f1724f6ccf806993dac349d2c3b93d602b854"
+      }
+    },
+    {
       "id": "draftsight",
       "visible": true,
       "group": "solidworks",
