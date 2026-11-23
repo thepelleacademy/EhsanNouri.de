@@ -39,6 +39,7 @@ jobs:
     steps:
       - name: Guard — only continue at 18:xx Berlin (manual runs always continue)
         id: guard
+        working-directory: ${{ github.workspace }}   # job-hunter/ does not exist before checkout
         run: |
           hour="$(TZ=Europe/Berlin date +%H)"
           if [ "${{ github.event_name }}" = "schedule" ] && [ "$hour" != "18" ]; then
